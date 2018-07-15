@@ -1,9 +1,21 @@
 Documentación del curso Sensores 1
 ========================================
 
+
+Another simple section
+==========================
+Text para explicar algo
+    print 'hello'
+
+
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 20
+   :caption: Contenidos:
+
+   cap1
+   cap2
+   cap3
+   
 
 
 
