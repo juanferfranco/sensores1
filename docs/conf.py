@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'sensoresDocs'
+project = 'Sensores1'
 copyright = '2018, Juan Franco'
 author = 'Juan Franco'
 

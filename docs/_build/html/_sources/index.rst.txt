@@ -9,19 +9,12 @@ Text para explicar algo
 
 
 .. toctree::
-   :maxdepth: 20
+   :maxdepth: 3
    :caption: Contenidos:
 
-   cap1
-   cap2
-   cap3
+   Semana1 <_semana1/semana1>
+   Semana2 <_semana2/semana2>
+   Semana3 <_semana3/semana3>
    
 
 
-
-Indices y tablas
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
