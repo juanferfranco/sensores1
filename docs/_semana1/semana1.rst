@@ -1,66 +1,10 @@
-SEMANA 1
+Semana 1
 ===========
+Durante esta semana vamos a introducir el curso.
 
-cap11
-^^^^^^
+La presentación de la primera clase está aquí: 
+`Clase 1.1 <https://drive.google.com/open?id=1QVoJU-GXEE79wkubxLmAi4h2y6tk-LMWXEz6_eLx9Qc>`__.
 
-
-.. code:: cpp
-
-    #include <ESP8266WiFi.h>
-
-    void setup()
-    {
-    Serial.begin(115200);
-    Serial.println();
-
-    WiFi.begin("network-name", "pass-to-network");
-
-    Serial.print("Connecting");
-    while (WiFi.status() != WL_CONNECTED)
-    {
-        delay(500);
-        Serial.print(".");
-    }
-    Serial.println();
-
-    Serial.print("Connected, IP address: ");
-    Serial.println(WiFi.localIP());
-    }
-
-    void loop() {}
-
-Test
-
-cap12
-^^^^^^
-
-.. code:: cpp
-
-    #include <ESP8266WiFi.h>
-
-    void setup()
-    {
-    Serial.begin(115200);
-    Serial.println();
-
-    WiFi.begin("network-name", "pass-to-network");
-
-    Serial.print("Connecting");
-    while (WiFi.status() != WL_CONNECTED)
-    {
-        delay(500);
-        Serial.print(".");
-    }
-    Serial.println();
-
-    Serial.print("Connected, IP address: ");
-    Serial.println(WiFi.localIP());
-    }
-
-    void loop() {}
-
-More Code
-
-cap13
-^^^^^^
+Objetivo
+---------
+Introducir el curso
