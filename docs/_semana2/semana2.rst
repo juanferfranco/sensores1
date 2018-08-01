@@ -2,7 +2,7 @@ Semana 2
 ===========
 Esta semana vamos a responder varias preguntas: 
 
-¿Cómo se transforma un programa escrito para una plataforma microcontrolada, arduino es este caso, en un archivo binario?
+¿Cómo se transforma un programa escrito para una plataforma microcontrolada, arduino en este caso, en un archivo binario?
 
 ¿Cómo es posible transferir el archivo binario del computador a la memoria *flash* del microcontrolador?
 
