@@ -1,4 +1,4 @@
-Curso Sensores 2 2018-20
+Curso Sensores 1 2018-20
 ========================================
 
 ¿Para qué sirve este curso?
@@ -48,6 +48,11 @@ Este curso es de 3 créditos repartidos en 4 horas de trabajo en el aula y 5 hor
    Semana1 <_semana1/semana1>
    Semana2 <_semana2/semana2>
    Semana3 <_semana3/semana3>
+   Semana4 <_semana4/semana4>
+   Semana5 <_semana5/semana5>
+   Semana6 <_semana6/semana6>
+   Semana7 <_semana7/semana7>
+   Semana8 <_semana8/semana8>
 
 
 

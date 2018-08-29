@@ -7,4 +7,5 @@ La presentación de la primera clase está aquí:
 
 Objetivo
 ---------
-Introducir el curso
+Introducir el curso mostrando su propóstio, competencias a desarrollar, cronograma, metodología de trabajo, evaluación 
+y dedicación 

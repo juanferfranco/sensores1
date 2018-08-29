@@ -12,7 +12,8 @@ Esta semana vamos a responder varias preguntas:
 Objetivos
 ---------
 
-1. Entender la cadena de herramientas necesarias para transformar un programa desde un lenguaje de alto nivel hasta código binario.
+1. Entender la cadena de herramientas necesarias para transformar un programa desde un lenguaje de alto nivel hasta código
+   binario.
 
 2. Entender cómo se transfiere un programa del computador a la memoria *flash* del microcontrolador.
 
