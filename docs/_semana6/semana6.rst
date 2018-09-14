@@ -30,9 +30,9 @@ La trama está compuesta por los siguientes campos:
 * Fin de trama: *
 * Checksum: xor de los datos reibidos desde el encabezado hasta el fin de la trama sin incluirla.
 
-Por ejemplo, una trama válida será: RGB=250,23,129*4C. En este caso, la trama indica que se desea encender el LED rojo 
-a un duty cycle de 250/255, el LED green a 23/255 y el LED blue a 129/255. Las caracteres 4C indican el resultado de la 
-operación XOR de: R^G^B^=^2^5^0^,^2^,^3^,^1^2^9.
+Por ejemplo, una trama válida será: RGB=250,23,129*66. En este caso, la trama indica que se desea encender el LED rojo 
+a un duty cycle de 250/255, el LED green a 23/255 y el LED blue a 129/255. Las caracteres 66 indican el resultado de la 
+operación XOR de: R^G^B^=^2^5^0^,^2^3^,^1^2^9.
 
 Considere el siguiente material de ayuda:
 
