@@ -28,10 +28,23 @@ El siguiente paso es instalar la biblioteca `ke:tai <http://ketai.org/>`__. ke:t
 sensores, cámara y los dispositivos de red del celular, entre ellos el radio bluetooth. Para instalar la biblioteca abra 
 el administrador de contribuciones de processing, busque ketai e instale la biblioteca.
 
-Ejercicio 4: prueba bluetooth
-------------------------------
-Una vez instaladas todas las herramientas anteriores es hora de probar el funcionamiento de bluetooth. Vamos a utilizar
-el `siguiente <http://ketai.org/examples/bluetoothcursors/>`__ programa de prueba para verificar el funcionamiento de la 
-aplicación. Note que el programa tiene algunas dependencias de bibliotecas que se deberán instalar, en particular oscP5 
-que podrá instalar de nuevo a través del manejado de contribuciones.
+Ejercicio 4: acceder al acelerómetro del celular
+-------------------------------------------------
+Ahora vamos a realizar una `aplicación simple <http://ketai.org/examples/accelerometer/>`__ que permita acceder al 
+acelerómetro del celular. 
 
+Ejercicio 5: prueba bluetooth
+------------------------------
+Una vez instaladas todas las herramientas anteriores es hora de probar el funcionamiento del bluetooth entre processing 
+y arduino. Vamos a utilizar el `siguiente <http://ketai.org/examples/bluetoothcursors/>`__ programa de prueba para 
+verificar el funcionamiento de la aplicación. Note que el programa tiene algunas dependencias de bibliotecas que se deberán 
+instalar, en particular oscP5. Para instalar la biblioteca utilice el manejador de contribuiciones que trae el propio IDE 
+de processing.
+
+En esta aplicación solo instalaremos oscP5 para que la aplicación funcione; sin embargo, para realizar las pruebas con 
+el arduino vamos a reemplazar OSC por nuestro propio protocolo binario (el que usted quiera para verificar el 
+funcionamiento)
+
+Ejercicio 6: LED RGB bluetooth
+-------------------------------
+Utilizando como base el ejercicio anterior realizar una aplicación para controlar el LED RGB por bluetooth.
