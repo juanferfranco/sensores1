@@ -17,6 +17,10 @@ interfaz serial conectada a la plataforma robótica.
 Para aprender a utilizar los puertos seriales del ESP32 con el framework de Arduino, lea la información del siguiente 
 `enlace <https://quadmeup.com/arduino-esp32-and-3-hardware-serial-ports/>`__.
 
+Para integrar sistemas que operan a diferentes voltajes es necesario adaptar sus interfaces. Este `enlace <https://learn.sparkfun.com/tutorials/logic-levels>`__ 
+explica cómo funcionan los niveles lógicos y este otro `enlace <https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide>`__ 
+muestra un circuito simple para realizar las adaptaciones de voltajes entre sistemas.
+
 Ejercicio 7: Bluetooth
 -----------------------
 Ahora reprograme el ESP32 para recibir las tramas del protocolo por bluetooth. Utilice, para realizar las pruebas, la 
