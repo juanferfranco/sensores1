@@ -1,7 +1,7 @@
 Semana 13
 ===========
 Esta semana exploraremos cómo utilizar processing para el desarrollo de aplicaciones móviles. Este ejercicio será la base 
-para construir una aplicación que permmita comunicar processing con un sensor y/o actuadore remoto mediante bluetooth 
+para construir una aplicación que permmita comunicar processing con un sensor y/o actuador remoto mediante bluetooth 
 clásico.
 
 Objetivo
