@@ -1,3 +1,5 @@
 {
-    "python.jediEnabled": false
+    "python.jediEnabled": false,
+    "python.pythonPath": "C:\\Users\\JuanFernandoFrancoHi\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe",
+    "python.linting.pylintEnabled": true
 }

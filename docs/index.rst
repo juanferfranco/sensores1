@@ -1,11 +1,10 @@
-Curso Sensores 1 2018-20
+Curso Sensores 1 2019-10
 ========================================
 
 ¿Para qué sirve este curso?
 -----------------------------
 Para aprender a integrar sistemas de cómputo con sensores y actuadores utilizando puertos de comunicación serial e 
 interfaces inalámbricas.
-
 
 Descripción del curso
 ----------------------
@@ -28,14 +27,15 @@ ejercicios prácticos. En las sesiones presenciales se realizarán lecturas cort
 
 Cronograma
 ----------
-`Tabla de actividades <https://drive.google.com/open?id=12I2h_w2sKcXWp6exMlOxxAGbt4mU9_AZcjuT0CyzbOE>`__.
+`Tabla de actividades <https://drive.google.com/open?id=1OCgYpnpQ8FSwBI6o41Zr3rhoPoCaPESbgXEIJl6k_VY>`__.
 
 Evaluación
 -----------
-Parcial teórico: 20% - Semana 8
-Parcial práctico: 20% - Semana 8
-Final teórico: 20% - Semana 16
-Trabajo Final: 40% - Semana 16
+La evaluación del curso se dividirá en dos componentes:
+* Proyectos cortos: 70% (ver en el cronograma el valor de cada proyecto). Cada proyecto será evaluado en una sesión posterior
+  al proyecto. La evaluación será a libro cerrado. Solo se podrá sacar, impresa, la solución del proyecto.
+* Proyecto Final:   30%. El proyecto final tendrá una presentación y unos entregables. El objetivo de este trabajo es 
+  integrar todo lo aprendido durante el semestre.
 
 Dedicación
 ----------
@@ -48,18 +48,4 @@ Este curso es de 3 créditos repartidos en 4 horas de trabajo en el aula y 5 hor
    Semana1 <_semana1/semana1>
    Semana2 <_semana2/semana2>
    Semana3 <_semana3/semana3>
-   Semana4 <_semana4/semana4>
-   Semana5 <_semana5/semana5>
-   Semana6 <_semana6/semana6>
-   Semana7 <_semana7/semana7>
-   Semana8 <_semana8/semana8>
-   Semana9 <_semana9/semana9>
-   Semana10 <_semana10/semana10>
-   Semana11 <_semana11/semana11>
-   Semana12 <_semana12/semana12>
-   Semana13 <_semana13/semana13>
-   Semana14 <_semana14/semana14>
-   Semana15 <_semana15/semana15>
-   Semana16 <_semana16/semana16>
-   Semana18 <_semana18/semana18>
 

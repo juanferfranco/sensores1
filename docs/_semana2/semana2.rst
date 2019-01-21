@@ -1,27 +1,24 @@
 Semana 2
 ===========
-Esta semana vamos a responder varias preguntas: 
-
-¿Cómo se transforma un programa escrito para una plataforma microcontrolada, arduino en este caso, en un archivo binario?
-
-¿Cómo es posible transferir el archivo binario del computador a la memoria *flash* del microcontrolador?
-
-¿Puedo modificar el *framework* de arduino?
-
+Esta semana vamos a estudiar el concepto de interrupciones y algunos cuidados que debemos tener con las variables que se 
+utilizan en las interrpciones (foreground) y el programa principal (background). También veremos una herramienta de simulación 
+que nos permitirá estudiar más a fondo el controlador y su plataforma de software.
 
 Objetivos
 ---------
 
-1. Entender la cadena de herramientas necesarias para transformar un programa desde un lenguaje de alto nivel hasta código
-   binario.
+1. Comprender el concepto de interrupción en un sistema microcontrolado.
 
-2. Entender cómo se transfiere un programa del computador a la memoria *flash* del microcontrolador.
+2. Utilizar las interrupciones para disparar eventos internos y externos del controlador.
 
-3. Realizar modificaciones básicas al código fuente del *framework* de arduino.
+3. Reconocer posible condiciones de carrera en el uso compartido de variables entre partes concurrentes de un programa.
+
+4. Reconocer y utilizar una herramienta de simulación que nos permita estudiar de manera controlada una plataforma de 
+   cómputo embebida.
 
 Procedimiento
 ---------------
-`Aquí <https://drive.google.com/open?id=1m777Fr4nRKh3kFz3q9AccEi1Xy-ZD_u7FjEBU4kbseA>`__ se puede encontrar la guía de 
+`Aquí <https://drive.google.com/open?id=1X_WiwKiswiFmsdNatnjmPTooP7_lT51rSkpsQs-xjm4>`__ se puede encontrar la guía de 
 trabajo para esta semana y los materiales necesarios para realizar los ejercicios.
 
 
