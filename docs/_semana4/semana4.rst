@@ -5,7 +5,7 @@ relacionaremos características de la capa física con abstracciones de la capa 
 clase se puede complementar con estos enlaces:
 
 * Capa física del serial `enlace 1 <https://learn.sparkfun.com/tutorials/serial-communication/all>`__ y
-  `enlace 2<https://gammon.com.au/forum/?id=10894>`__
+  `enlace 2 <https://gammon.com.au/forum/?id=10894>`__
 * Capa de `aplicación <https://gammon.com.au/serial>` del serial.
 
 En la segunda sesión discutiremos el uso de la palabra reservada volatile y un caso de condición de carrera. Adicionalmente, 
