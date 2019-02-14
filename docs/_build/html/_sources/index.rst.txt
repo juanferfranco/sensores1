@@ -27,10 +27,17 @@ ejercicios prácticos. En las sesiones presenciales se realizarán lecturas cort
 
 Cronograma
 ----------
-`Tabla de actividades <https://drive.google.com/open?id=12I2h_w2sKcXWp6exMlOxxAGbt4mU9_AZcjuT0CyzbOE>`__.
+`Tabla de actividades <https://drive.google.com/open?id=1OCgYpnpQ8FSwBI6o41Zr3rhoPoCaPESbgXEIJl6k_VY>`__.
 
 Evaluación
+-----------
+La evaluación del curso se dividirá en dos componentes:
 
+* Proyectos cortos: 70% (ver en el cronograma el valor de cada proyecto). Cada proyecto será evaluado en una sesión posterior
+  al proyecto. La evaluación será a libro cerrado. Solo se podrá sacar, impresa, la solución del proyecto.
+
+* Proyecto Final:   30%. El proyecto final tendrá una presentación y unos entregables. El objetivo de este trabajo es 
+  integrar todo lo aprendido durante el semestre.
 
 Dedicación
 ----------

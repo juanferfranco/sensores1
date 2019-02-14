@@ -32,8 +32,10 @@ Cronograma
 Evaluación
 -----------
 La evaluación del curso se dividirá en dos componentes:
+
 * Proyectos cortos: 70% (ver en el cronograma el valor de cada proyecto). Cada proyecto será evaluado en una sesión posterior
   al proyecto. La evaluación será a libro cerrado. Solo se podrá sacar, impresa, la solución del proyecto.
+
 * Proyecto Final:   30%. El proyecto final tendrá una presentación y unos entregables. El objetivo de este trabajo es 
   integrar todo lo aprendido durante el semestre.
 
@@ -48,4 +50,5 @@ Este curso es de 3 créditos repartidos en 4 horas de trabajo en el aula y 5 hor
    Semana1 <_semana1/semana1>
    Semana2 <_semana2/semana2>
    Semana3 <_semana3/semana3>
+   Semana4 <_semana4/semana4>
 
