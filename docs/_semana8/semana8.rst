@@ -10,6 +10,7 @@ hacer que el código sea más modular y reutilizable entre proyectos.
 En `este <https://drive.google.com/open?id=1RNlMkv_AYJ41Ggb2Vbj72aAIBGnUAhvF>`__ enlace se puede encontrar la implementación 
 de la máquina de estados de la semana pasada, pero con los cambios previamente señalados.
 
+
 Ejercicio 1
 ------------
 Una experiencia interactiva posee un sensor que produce mucho ruido eléctrico cuando cambia de estado. La siguiente figura muestra
