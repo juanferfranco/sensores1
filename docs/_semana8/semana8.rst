@@ -14,7 +14,7 @@ de la máquina de estados de la semana pasada, pero con los cambios previamente 
 Ejercicio 1
 ------------
 Una experiencia interactiva posee un sensor que produce mucho ruido eléctrico cuando cambia de estado. La siguiente figura muestra
-una transición capturada con un osciloscopio donde puede apreciarse el fenómeno.
+una transición, capturada con un osciloscopio, donde puede apreciarse el fenómeno.
 
 .. image:: ../_static/bounce.jpg
 
