@@ -54,6 +54,7 @@ escrita por Steven Cogswell y publicada el 23 de mayo de 2011. En
 `este <https://awtfy.com/2011/05/23/a-minimal-arduino-library-for-processing-serial-commands/>`__ sitio se puede leer la 
 documentación inicial del proyecto.
 
-
+NOTA: el código del ejercicio 1 lo iremos colocando 
+`aquí <https://drive.google.com/open?id=1SadUq9lhGqGKTBEKJd1Gm9a81YqlYRVb>`__.
 
 
