@@ -49,11 +49,6 @@ actuador es un display con interfaz de comunicación serial (lo simularemos con 
 * Si la secuencia se ingresa correctamente el controlador pasará de nuevo al modo de configuración de lo contrario continuará
   la fatal cuenta regresiva.
 
-En la segunda sesión de esta semana vamos a analizar la biblioteca `ArduinoSerialCommand <https://github.com/scogswell/ArduinoSerialCommand>`__ 
-escrita por Steven Cogswell y publicada el 23 de mayo de 2011. En 
-`este <https://awtfy.com/2011/05/23/a-minimal-arduino-library-for-processing-serial-commands/>`__ sitio se puede leer la 
-documentación inicial del proyecto.
-
 NOTA: el código del ejercicio 1 lo iremos colocando 
 `aquí <https://drive.google.com/open?id=1SadUq9lhGqGKTBEKJd1Gm9a81YqlYRVb>`__.
 
