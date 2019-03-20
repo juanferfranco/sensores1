@@ -24,7 +24,7 @@ Este lo realizaremos de manera grupal.
 * En el constructor de la biblioteca: ¿Cómo hace la biblioteca para saber que ya se recibió un comando completo?
 * ¿Cómo se borra el buffer de recepción de caracteres de un comando?
 * ¿A qué se refiere la biblioteca con un token?
-* Cuando se la biblioteca devuelve un token ¿Qué devuelve exactamente?
+* Cuando se dice que la biblioteca devuelve un token ¿Qué devuelve exactamente?
 
 
 Ejercicio 2
@@ -45,7 +45,7 @@ Ejercicio 3
 Ejercicio 4
 -------------
 Empleando la biblioteca, construya una aplicación en el arduino que responda a los siguientes comandos todos terminado con 
-'\n'
+`\\n`
 
 * red value
 * green value
@@ -56,7 +56,7 @@ Tenga en cuenta que:
 
 * value representará números enteros entre 0 y 255.
 * Para probar el funcionamiento conecte un actuadore RGB (puede ser un LED).
-* Si el arduino entiende el comando responderá con los caracteres OK\n. En caso contrario no responderá nada.
+* Si el arduino entiende el comando responderá con los caracteres `OK\\n`. En caso contrario no responderá nada.
 
 Ejercicio 5
 ------------
