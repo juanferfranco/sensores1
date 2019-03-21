@@ -55,7 +55,7 @@ Empleando la biblioteca, construya una aplicación en el arduino que responda a 
 Tenga en cuenta que:
 
 * value representará números enteros entre 0 y 255.
-* Para probar el funcionamiento conecte un actuadore RGB (puede ser un LED).
+* Para probar el funcionamiento, conecte un actuador RGB (puede ser un LED).
 * Si el arduino entiende el comando responderá con los caracteres `OK\\n`. En caso contrario no responderá nada.
 
 Ejercicio 5
