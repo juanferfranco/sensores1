@@ -15,5 +15,5 @@ de trabajo para esta semana.
 
 Evaluación
 ------------
-La semana entrante durante la sesión 2 realizaremos la evaluación correspondiente. Es necesario que el proyecto de esta semana 
+La semana entrante, durante la sesión 2, realizaremos la evaluación correspondiente. Es necesario que el proyecto de esta semana 
 esté terminado para poder realizar la evaluación en el tiempo preestablecido.
