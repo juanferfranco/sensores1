@@ -12,7 +12,7 @@ para producir aplicaciones interactivas.
 Objetivo
 ----------
 Integrar sensores/actuadores, que utilicen mecanismos de comunicación serial, con motores de videjuegos 
-para prototipar y producir experiencias interactivas.
+para prototipar y producir aplicaciones interactivas.
 
 Metodología
 ------------
