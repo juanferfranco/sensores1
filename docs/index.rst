@@ -39,6 +39,21 @@ La evaluación del curso se dividirá en dos componentes:
 * Proyecto Final:   30%. El proyecto final tendrá una presentación y unos entregables. El objetivo de este trabajo es 
   integrar todo lo aprendido durante el semestre.
 
+Para la exposición del proyecto final
+--------------------------------------------
+* La presentación inicia con un demo (video) 
+* El tiempo por exposición es de 10 minutos .
+* La exposición debe tener como mínimo los siguientes elementos:
+
+    * Motivación personal para la selección de la aplicación.
+    * Exposición del diseño de la experiencia.
+    * Exposición del diseño e implementación de la parte técnica.
+    * Se debe entregar un video (formato mp4) de máximo 3 minutos (optimizado en tamaño) donde se muestre y luego explique 
+      la experiencia funcionando.
+    * Se debe entregar un documento estilo paper que tenga un tutorial con la explicación paso a paso para reproducir 
+      la experiencia. El tutorial debe incluir los pasos para instalar y configurar todas las herramientas necesarias. TODO 
+      LO NECESARIO PARA REPRODUCIR la experiencia.
+
 Dedicación
 ----------
 Este curso es de 3 créditos repartidos en 4 horas de trabajo en el aula y 5 horas de trabajo autónomo.
