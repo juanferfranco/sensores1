@@ -1,13 +1,13 @@
 Semana 1
 ===========
-Esta semana vamos s introducir el curso y a realizar una prueba diagnóstica.
+Esta semana vamos a introducir el curso y a realizar una prueba diagnóstica.
 
 Procedimiento
 ---------------
 Vamos a realizar una evaluación formativa para diagnosticar el nivel de programación.
 
 NOTA: en este ejercicio no debemos utilizar funciones del tipo delay (use la función millis).
-La razón es la función delay puede boquear en algunas plataformas al microcontrolador (?). 
+Lo anterior es porque la función delay puede boquear en algunas plataformas al microcontrolador (?). 
 ¿Y cuál es el problema con esto?
 
 Se debe realizar una calculadora que solicite:
