@@ -1,25 +1,17 @@
 Semana 1
 ===========
-Esta semana vamos a responder varias preguntas: 
-
-¿Cómo se transforma un programa escrito para una plataforma microcontrolada, arduino en este caso, en un archivo binario?
-
-¿Cómo es posible transferir el archivo binario del computador a la memoria *flash* del microcontrolador?
-
-¿Puedo modificar el *framework* de arduino?
-
-
-Objetivos
----------
-
-1. Entender la cadena de herramientas necesarias para transformar un programa desde un lenguaje de alto nivel hasta código
-   binario.
-
-2. Entender cómo se transfiere un programa del computador a la memoria *flash* del microcontrolador.
-
-3. Realizar modificaciones básicas al código fuente del *framework* de arduino.
+Esta semana vamos s introducir el curso y a realizar una prueba diagnóstica.
 
 Procedimiento
 ---------------
-`Aquí <https://drive.google.com/open?id=1m777Fr4nRKh3kFz3q9AccEi1Xy-ZD_u7FjEBU4kbseA>`__ se puede encontrar la guía de 
-trabajo para esta semana y los materiales necesarios para realizar los ejercicios.
+Vamos a realizar una evaluación formativa para diagnosticar el nivel de programación.
+
+NOTA: en este ejercicio no debemos utilizar funciones del tipo delay (use la función millis).
+La razón es la función delay puede boquear en algunas plataformas al microcontrolador (?). 
+¿Y cuál es el problema con esto?
+
+Se debe realizar una calculadora que solicite:
+
+    Ingresar la operación: +, - *, /, %.
+    Ingresar el operando uno. El usuario puede ingresar un número entero de 1,2 o 3 dígitos.
+    Ingresar el operando dos. El usuario puede ingresar un número entero de 1,2 o 3 dígitos.
