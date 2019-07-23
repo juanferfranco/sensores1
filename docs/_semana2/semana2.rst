@@ -1,24 +1,15 @@
 Semana 2
 ===========
-Esta semana vamos a estudiar el concepto de interrupciones y algunos cuidados que debemos tener con las variables que se 
-utilizan en las interrpciones (foreground) y el programa principal (background). También veremos una herramienta de simulación 
-que nos permitirá estudiar más a fondo el controlador y su plataforma de software.
+Esta semana realizaremos dos actividades:
 
-Objetivos
----------
+1. Analizaremos una solución al problema de la semana anterior y veremos cómo 
+   funciona en el puerto serial desde la capa física.
 
-1. Comprender el concepto de interrupción en un sistema microcontrolado.
+2. Vamos a estudiar cómo se transforma un programa de un arduino desde el 
+   código de alto nivel hasta grabarlo en la memoria del controlador.
 
-2. Utilizar las interrupciones para disparar eventos internos y externos del controlador.
-
-3. Reconocer posible condiciones de carrera en el uso compartido de variables entre partes concurrentes de un programa.
-
-4. Reconocer y utilizar una herramienta de simulación que nos permita estudiar de manera controlada una plataforma de 
-   cómputo embebida.
-
-Procedimiento
+Material
 ---------------
-`Aquí <https://drive.google.com/open?id=1X_WiwKiswiFmsdNatnjmPTooP7_lT51rSkpsQs-xjm4>`__ se puede encontrar la guía de 
-trabajo para esta semana y los materiales necesarios para realizar los ejercicios.
-
+`Aquí <https://docs.google.com/presentation/d/1ALFSDo1SPdwFz1l3JuEe_uvgPX0AkpxW5rRN4zhH0ac/edit?usp=sharing>`__ se puede 
+encontrar parte del material que analizaremos en clase.
 
