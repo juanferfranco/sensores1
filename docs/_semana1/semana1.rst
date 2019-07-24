@@ -7,7 +7,7 @@ Procedimiento
 Vamos a realizar una evaluación formativa para diagnosticar el nivel de programación.
 
 NOTA: en este ejercicio no debemos utilizar funciones del tipo delay (use la función millis).
-Lo anterior es porque la función delay puede boquear en algunas plataformas al microcontrolador (?). 
+Lo anterior es porque la función delay puede bloquear en algunas plataformas al microcontrolador (?). 
 ¿Y cuál es el problema con esto?
 
 Se debe realizar una calculadora que solicite:
