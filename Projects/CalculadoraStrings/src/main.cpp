@@ -3,10 +3,9 @@
 // VERY IMPORTANT: 
 // This code needs a new line character in addition to the data.
 
-#ifdef DEBUG
-#define DEBUG(MSG, VALUE) \
-  Serial.print(MSG);      \
-  Serial.println(VALUE);
+//#define _DEBUG 1
+#ifdef _DEBUG
+#define DEBUG(MSG, VALUE)  Serial.print(MSG); Serial.println(VALUE)
 #else
 #define DEBUG(MSG, VALUE)
 #endif
