@@ -2,10 +2,10 @@ Semana 3
 ===========
 Esta semana realizaremos dos actividades:
 
-2. Vamos a estudiar cómo se transforma un programa de un arduino desde 
+1. Vamos a estudiar cómo se transforma un programa de un arduino desde 
    el código de alto nivel hasta grabarlo en la memoria del controlador.
 
-3. Vamos a realizar modificaciones simples al código fuente del framework
+2. Vamos a realizar modificaciones simples al código fuente del framework
    de arduino
 
 Material
