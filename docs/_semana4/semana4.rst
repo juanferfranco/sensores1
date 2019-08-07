@@ -31,13 +31,14 @@ A continuación se muestra el reto de la semana anterior:
 
 Note en el código la palabra reservada static. En este caso las variables marcadas con el
 modificador static le indican al compilador que oldTime y ledState DEBEN ser privadas a la
-función loops, es decir, no podrán ser accedidas por fuera de loop; sin embargo, estas 
-variables no estarán definidas en el stack a diferencia de la variable newTime que si estarán
-definida allí. Y esto qué implica? Pues que cada vez que se llame a loop el valor de newTime
-será actualizado, en cambio oldTime y ledState conservarán siempre el último valor almacenado.
+función loop, es decir, no podrán ser accedidas por fuera de loop; sin embargo, estas 
+variables no estarán definidas en el stack a diferencia de la variable newTime que si estará
+definida allí. ¿Y esto qué implica? Pues que cada vez que se retorne de la función loop 
+el valor de newTime será perderá, en cambio oldTime y ledState conservarán siempre el 
+último valor almacenado.
 
-Para esta semana
------------------
+Lo que haremos esta semana
+---------------------------
 Esta semana realizaremos dos ejercicios para introducir la técnica de programación de 
 máquinas de estado.
 
@@ -50,15 +51,13 @@ osciloscopio, donde puede apreciarse el fenómeno.
 .. image:: ../_static/bounce.jpg
 
 En la figura se observa el ruido generado en la transición de la señal del estado alto 
-al estado bajo; sin embargo, el mismo fenómeno ocurre al cambiar de estado bajo a alto. 
+al estado bajo; sin embargo, el mismo fenómeno ocurre al cambiar del estado bajo al alto. 
 Note que además pueden ocurrir falsos positivos en la señal, que se manifiestan 
 como pulsos de muy corta duración.
 
 Un ingeniero electrónica experto informa que podemos considerar que el sensor ha 
-cambiado de estado cuando la señal esté estable por lo menos durante X ms. 
-El valor de X puede programarse enviando por un puerto serial tres caracteres, 
-``1``, ``2`` y ``3``, correspondiente a tres para X: 100ms, 500ms y 1000ms 
-respectivamente. 
+cambiado de estado cuando la señal esté estable por lo menos durante 100 ms sin ruido y 
+sin falsos positivos.
 
 Se debe realizar una aplicación que filtre el comportamiento ruidoso del sensor y 
 reporte por un puerto serial únicamente los valores 
@@ -68,7 +67,7 @@ estables de este así: ``1`` cuando el sensor cambie de 0 a 1 y ``0`` cuando cam
 Ejercicio 2
 ------------
 Se requiere construir una aplicación para controlar una bomba de tiempo. La siguiente 
-figura ilustra la interfaz de la bomba. El circuito de control de la bomba está compuesta 
+figura ilustra la interfaz de la bomba. El circuito de control de la bomba está compuesto 
 por tres sensores (botones: UP, DOWN, ARM), un display (LCD) y una salida para 
 activar la bomba. Los sensores son digitales al igual que la salida de activación de la 
 bomba. El display posee una interfaz de comunicación serial (lo simularemos con el PC). 
@@ -76,12 +75,12 @@ El controlador funciona así:
 
 .. image:: ../_static/bomb.png
 
-* Inicia con un valor preconfigurado para activar la bomba de 20 segundos.
-* Inicia en modo de configuración, es decir, no cuenta áun, el conteo está ``desarmado``.
+* Inicia en modo de configuración, es decir, no cuenta áun, el conteo regresivo 
+  está ``desarmado``. El valor incial del conteo regresivo es de 20 segundos.
 * En el modo de configuración, los botones UP y DOWN permiten aumentar o disminuir el 
   timpo inicial de la bomba.
-* El tiempo se puede programar entre 1 segundo y 60 segundos.
-* Cada que se modifica el tiempo, se debe visualizar el valor en el LCD (enviamos el 
+* El tiempo se puede programar entre 10 y 60 segundos con cambios de 1 segundo. 
+* El tiempo de configuración se debe visualizar en el LCD (enviamos el 
   valor al PC).
 * El botón ARM arma la bomba.
 * Una vez armada la bomba, comienza la cuenta regresiva que será visualizada en el LCD en
