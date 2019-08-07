@@ -75,7 +75,7 @@ El controlador funciona así:
 
 .. image:: ../_static/bomb.png
 
-* Inicia en modo de configuración, es decir, no cuenta áun, el conteo regresivo 
+* Inicia en modo de configuración, es decir, no cuenta aún, el conteo regresivo 
   está ``desarmado``. El valor incial del conteo regresivo es de 20 segundos.
 * En el modo de configuración, los botones UP y DOWN permiten aumentar o disminuir el 
   timpo inicial de la bomba.
