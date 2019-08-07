@@ -89,7 +89,7 @@ El controlador funciona así:
 * La bomba explotará (se activa la salida de activación de la bomba) cuando el tiempo 
   llegue a cero. En este punto el control regreserá al modo de configuración.
 * Una vez la bomba esté armada es posible desactivarla ingresando un código de seguridad. 
-  El código será la siguiente secuencia de botones presionados cada uno a la vez: 
+  El código será la siguiente secuencia de botones presionados uno después de otro: 
   UP, DOWN, DOWN, UP, UP, ARM.
 * Si la secuencia se ingresa correctamente el controlador pasará de nuevo al modo de 
   configuración de lo contrario continuará la fatal cuenta regresiva.
