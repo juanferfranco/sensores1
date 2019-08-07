@@ -7,9 +7,9 @@ hacer que el código sea más modular y reutilizable entre proyectos.
 
 ¿Cómo utilizar el código?
 --------------------------
-En `este <https://drive.google.com/open?id=1RNlMkv_AYJ41Ggb2Vbj72aAIBGnUAhvF>`__ enlace se puede encontrar la implementación 
-de la máquina de estados de la semana pasada, pero con los cambios previamente señalados.
-
+En `este <https://drive.google.com/open?id=1RNlMkv_AYJ41Ggb2Vbj72aAIBGnUAhvF>`__ enlace 
+se puede encontrar la implementación de la máquina de estados de la semana pasada, pero 
+con los cambios previamente señalados.
 
 Ejercicio 1
 ------------
