@@ -1,15 +1,15 @@
-Curso Sensores 1 2019-10
+Curso Sensores 1 2019-20
 ========================================
 
 ¿Para qué sirve este curso?
 -----------------------------
-Para aprender a integrar sistemas de cómputo con sensores y actuadores utilizando puertos de comunicación serial e 
-interfaces inalámbricas.
+Para aprender a integrar sistemas de cómputo con sensores y actuadores utilizando puertos de comunicación
+seriales.
 
 Descripción del curso
 ----------------------
-El objetivo del curso es aprender a integrar sensores y actuadores a sistemas de cómputo para la producción de 
-experiencias interactivas.
+El objetivo del curso es aprender a integrar sensores y actuadores a sistemas de cómputo para la 
+producción de experiencias interactivas.
 
 Propósito del curso
 ---------------------
@@ -26,33 +26,18 @@ En las sesiones de trabajo autónomo se deben realizar lecturas del material te�
 ejercicios prácticos. En las sesiones presenciales se realizarán lecturas cortas y ejercicios practicos.
 
 Cronograma
-----------
-`Tabla de actividades <https://drive.google.com/open?id=1OCgYpnpQ8FSwBI6o41Zr3rhoPoCaPESbgXEIJl6k_VY>`__.
+-----------
+`Tabla de actividades <https://drive.google.com/open?id=1kArdkwix-3VCNSje3RKLJZ_kg_YGCDKYn0pMd1BODrY>`__.
 
 Evaluación
 -----------
-La evaluación del curso se dividirá en dos componentes:
+La evaluación del curso se dividirá en tres proyectos:
 
-* Proyectos cortos: 70% (ver en el cronograma el valor de cada proyecto). Cada proyecto será evaluado en una sesión posterior
-  al proyecto. La evaluación será a libro cerrado. Solo se podrá sacar, impresa, la solución del proyecto.
+* Proyectos 1 (30%) y 2 (30%): serán valorados por medio de una sustentación, portafolio y un informe escrito.
+  El proyecto 1 para la semana 5, el proyecto 2 para la semana 10.
 
-* Proyecto Final:   30%. El proyecto final tendrá una presentación y unos entregables. El objetivo de este trabajo es 
-  integrar todo lo aprendido durante el semestre.
-
-Para la exposición del proyecto final
---------------------------------------------
-* La presentación inicia con un demo (video) 
-* El tiempo por exposición es de 10 minutos .
-* La exposición debe tener como mínimo los siguientes elementos:
-
-    * Motivación personal para la selección de la aplicación.
-    * Exposición del diseño de la experiencia.
-    * Exposición del diseño e implementación de la parte técnica.
-    * Se debe entregar un video (formato mp4) de máximo 3 minutos (optimizado en tamaño) donde se muestre y luego explique 
-      la experiencia funcionando.
-    * Se debe entregar un documento estilo paper que tenga un tutorial con la explicación paso a paso para reproducir 
-      la experiencia. El tutorial debe incluir los pasos para instalar y configurar todas las herramientas necesarias. TODO 
-      LO NECESARIO PARA REPRODUCIR la experiencia.
+* Proyecto Final (40%): el proyecto final tendrá una presentación, portafolio y un informe escrito. 
+  Este proyecto es para la semana 16.
 
 Dedicación
 ----------
@@ -66,13 +51,3 @@ Este curso es de 3 créditos repartidos en 4 horas de trabajo en el aula y 5 hor
    Semana2 <_semana2/semana2>
    Semana3 <_semana3/semana3>
    Semana4 <_semana4/semana4>
-   Semana5 <_semana5/semana5>
-   Semana6 <_semana6/semana6>
-   Semana7 <_semana7/semana7>
-   Semana8 <_semana8/semana8>
-   Semana9 <_semana9/semana9>
-   Semana10 <_semana10/semana10>
-   Semana11 <_semana11/semana11>
-   Semana12 <_semana12/semana12>
-   Semana13 <_semana13/semana13>
-

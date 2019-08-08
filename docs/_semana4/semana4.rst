@@ -99,6 +99,8 @@ El controlador funciona así:
 
 Ejercicio 1
 ------------
+Solución al ejercicio 1:
+
 .. code-block:: c 
    :lineno-start: 1
 
