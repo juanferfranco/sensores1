@@ -37,6 +37,9 @@ definida allí. ¿Y esto qué implica? Pues que cada vez que se retorne de la fu
 el valor de newTime será perderá, en cambio oldTime y ledState conservarán siempre el 
 último valor almacenado.
 
+Una nota más: la técnica correcta para medir intervalos de tiempos se explica
+`aquí <http://www.gammon.com.au/millis>`__.
+
 Lo que haremos esta semana
 ---------------------------
 Esta semana realizaremos dos ejercicios para introducir la técnica de programación de 
