@@ -25,7 +25,7 @@ Vamos a retomar el problema de la calculadora:
   el usuario. Luego procese la cadena de caracteres identificando los operadores y el operando.
 
 * Por último repita el ejercicio, pero esta vez utilizando métodos de la clase String de arduino. No 
-  confundir con string (con mayúscula) son dos cosas diferentes.
+  confundir con string (con s minúscula) son dos cosas diferentes.
 
 NOTA: no utilice la función parseInt. 
 
