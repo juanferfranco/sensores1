@@ -29,5 +29,3 @@ Vamos a retomar el problema de la calculadora:
 
 NOTA: no utilice la función parseInt. 
 
-
-
