@@ -21,7 +21,7 @@ Vamos a retomar el problema de la calculadora:
   y un estado para esperar el segundo operando. ¿Cómo se detecta que se recibió el primer operando? ¿Cómo 
   se detecta que recibió el último operando?
 
-* Repita el ejercicio anterior, pero esta vez almacenando en un buffer<la cadena completa introducida por 
+* Repita el ejercicio anterior, pero esta vez almacenando en un buffer la cadena completa introducida por 
   el usuario. Luego procese la cadena de caracteres identificando los operadores y el operando.
 
 * Por último repita el ejercicio, pero esta vez utilizando métodos de la clase String de arduino. No 
