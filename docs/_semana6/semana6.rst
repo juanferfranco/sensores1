@@ -20,5 +20,4 @@ Vamos a retomar el problema de la calculadora:
 * Por último repita el ejercicio, pero esta vez utilizando métodos de la clase String de arduino. No 
   confundir con string (con s minúscula) son dos cosas diferentes.
 
-NOTA: no utilice la función parseInt. 
-
+NOTA: no utilice la función parseInt.
