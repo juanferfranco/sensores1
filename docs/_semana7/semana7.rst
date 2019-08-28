@@ -1,11 +1,6 @@
 Semana 7
 ===========
-Esta semana estudiaremos una implementación de la máquina de estados pero esta vez utilizando C++. Tenga en cuenta que el objetivo 
-de estas sesiones, además de mostrar diferentes técnicas de implementación de las máquinas de estado, busca introducir conceptos 
-y técnicas de los lenguajes de programación C, C++. Dichas técnicas de programación serán necesarias para los próximos ejercicios 
-del curso así como también para temas futuros en motores de videojuegos como Unreal Engine o internet de las cosas.
+Esta semana realizaremos la evaluación formativa correspondiente al parcial número 1.
 
-Esta semana analizaremos la implementación de una nueva máquina de estados en C++.
-`Aquí <https://drive.google.com/open?id=1XX3azDMr_bB3R0xBXDeKecCQoC9RFz-772cKGWdC1Hs>`__ se puede 
-consultar el material para esta sesión.
-
+En este `enlace <https://docs.google.com/document/d/1orXa5p4tVBUFLO81j_1FP1e1A1y_LhxVbCm9GWpnotI/edit?usp=sharing>`__
+ se encuentra el enunciado de la evaluación.
