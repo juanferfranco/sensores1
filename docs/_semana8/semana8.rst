@@ -1,55 +1,68 @@
 Semana 8
 ===========
-Esta semana realizaremos dos ejercicios de aplicación utilizando parte del código estudiado la semana pasado. Para estos
-ejercicios, el código que brinda los servicios de colas y tiempo a la aplicación se ha encapsulado en clases C++. Esto busca 
-hacer que el código sea más modular y reutilizable entre proyectos.
+Esta semana realizaremos la retroalimentación de la evaluación de la semanana pasada. Vamos 
+a implementar también un nuevo ejercicio para practicar máquinas de estado y protocolos de 
+comunicación.
 
+Material
+---------
 
-¿Cómo utilizar el código?
---------------------------
-En `este <https://drive.google.com/open?id=1RNlMkv_AYJ41Ggb2Vbj72aAIBGnUAhvF>`__ enlace 
-se puede encontrar la implementación de la máquina de estados de la semana pasada, pero 
-con los cambios previamente señalados.
+Un posible modelo del ejercicio de la evaluación es el siguiente:
 
-Ejercicio 1
-------------
-Una experiencia interactiva posee un sensor que produce mucho ruido eléctrico cuando cambia de estado. La siguiente figura muestra
-una transición, capturada con un osciloscopio, donde puede apreciarse el fenómeno.
+.. image:: ../_static/SM.jpeg
 
-.. image:: ../_static/bounce.jpg
+Ejercicio
+----------
+Asuma que un arduino UNO tiene conectados varios sensores y actuadores así:
 
-En la figura se observa el ruido generado en la transición de la señal del estado alto al estado bajo; sin embargo, el mismo 
-fenómeno ocurre al cambiar de estado bajo a alto. Note que además pueden ocurrir falsos positivos en la señal que se manifiestan 
-como pulsos de muy corta duración.
+Dos sensores digitales
 
-Un ingeniero electrónica experto informa que podemos considerar que el sensor ha cambiado de estado cuando la señal esté estable
-por lo menos durante X ms. El valor de X puede programarse enviando por un puerto serial tres caracteres, ``1``, ``2`` y ``3``, 
-correspondiente a tres para X: 100ms, 500ms y 1000ms respectivamente. 
+Dos sensores analógicos: valores de 0 a 1023
 
-Se debe realizar una aplicación que filtre el comportamiento del sensor y reporte por un puerto serial únicamente los valores 
-estables del sensor así: ``1`` cuando el sensor cambie de 0 a 1 y ``0`` cuando cambien de 1 a 0.
+Dos actuadores digitales.
 
-Ejercicio 2
-------------
-Se requiere construir una aplicación para controlar una bomba de tiempo que al explotar genera mucha risa. La siguiente figura 
-ilustra la interfaz de la bomba compuesta por tres sensores (botones) y un actuador (LCD). Los sensores son digitales y el 
-actuador es un display con interfaz de comunicación serial (lo simularemos con el PC). El controlador funciona así: 
+Dos actuadores analógicos.
 
-.. image:: ../_static/bomb.png
+A su vez el arduino se conecta a un computador a través del puerto USB y se comunica 
+utilizando la interfaz Serial. Realice un programa que realice las siguientes tareas 
+concurrentes:
 
-* Inicia con un valor preconfigurado de 20 segundos.
-* Debe iniciar en modo de configuración, es decir, inicialmente desarmado.
-* En el modo de configuración, los botones UP y DOWN permiten aumentar o disminuir el timpo inicial de la bomba.
-* El tiempo se puede programar entre 1 segundo y 60 segundos.
-* Cada que se modifica el tiempo, se debe visualizar el valor en el LCD (enviamos el valor al PC).
-* El botón ARM arma la bomba.
-* Una vez armada la bomba comienza la cuenta regresiva que será visualizada en el LCD.
-* La bomba explotará cuando el tiempo llegue a cero y la aplicación terminará.
-* Es posible desactivar la bomba ingresando un código de seguridad. El código será: UP, DOWN, DOWN, UP, UP y ARM.
-* Si la secuencia se ingresa correctamente el controlador pasará de nuevo al modo de configuración de lo contrario continuará
-  la fatal cuenta regresiva.
+Recibir comandos a través de la interfaz Serial
 
-NOTA: el código del ejercicio 1 lo iremos colocando 
-`aquí <https://drive.google.com/open?id=1SadUq9lhGqGKTBEKJd1Gm9a81YqlYRVb>`__.
+Enciende y apaga un LED a una frecuencia de 10 Hz
 
+Enciende y apaga un LED a una frecuencia de 5 Hz.
 
+Los comandos recibidos por el puerto serial serán los siguientes:
+
+read D1. Este comando hace que se envie al PC el valor del sensor digital 1. 
+El arduino devuelve la cadena:  D1 estado. Donde estado puede ser 1 o 0.
+
+read D2: enviar al PC el valor del sensor digital 2.  
+El arduino devuelve la cadena: D2 estado. Donde estado puede ser 1 o 0.
+
+read A1: enviar el PC el valor del sensor analógico 1.  
+El arduino devuelve la cadena A1 valor. Donde valor está entre 0 y 1023.
+
+read A2: enviar el PC el valor del sensor analógico 2. 
+El arduino devuelve la cadena A2 valor. Donde valor está entre 0 y 1023.
+
+write O1 estado: donde estado puede ser 1 o 0. 
+Activa o desactiva la salida digital 1 
+
+write O2 estado: donde estado puede ser 1 o 0. 
+Activa o desactiva la salida digital 2 
+
+write P1 valor: donde valor puede ser de 0 a 255. 
+Escribir un valor de PWM igual a valor en el actuador analógico 1. 
+
+write P2 valor: donde valor puede ser de 0 a 255. 
+Escribir un valor de PWM igual a valor en el actuador analógico 2.
+	
+NOTAS:
+
+Para cualquier de los comando write el arduino debe devolver ACK si reconoce el comando y 
+NACK si no lo reconoce. Usted debe decidir, dados los requisitos de la aplicación, 
+si requiere introducir caracteres de nueva línea y/o retorno de carro. 
+TENGA PRESENTE que LOS LEDs deben funcionar SIEMPRE a 5 Hz y 10 HZ como se declaró previamente, 
+ese decir, su funcionamiento no puede ser interrumpido por las operaciones del puerto serial

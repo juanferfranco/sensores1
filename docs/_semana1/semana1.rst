@@ -12,6 +12,6 @@ Lo anterior es porque la función delay puede bloquear en algunas plataformas al
 
 Se debe realizar una calculadora que solicite:
 
-    Ingresar la operación: +, - *, /, %.
-    Ingresar el operando uno. El usuario puede ingresar un número entero de 1,2 o 3 dígitos.
-    Ingresar el operando dos. El usuario puede ingresar un número entero de 1,2 o 3 dígitos.
+* Ingresar la operación: suma, resta, multiplicacion, división, módulo.
+* Ingresar el operando uno. El usuario puede ingresar un número entero de 1,2 o 3 dígitos.
+* Ingresar el operando dos. El usuario puede ingresar un número entero de 1,2 o 3 dígitos.
