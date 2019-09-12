@@ -86,7 +86,7 @@ Este otro ejemplo muestra como adicionar cajas de textos y modificar labels en l
 
 Con respecto al manejo del serial. 
 Ingrese a este `sitio <https://processing.org/reference/libraries/serial/index.html>`__. Abra 
-cada las funciones del API y observe los ejemplos. Notará que es el uso es muy similar al del 
+cada una de las funciones del API y observe los ejemplos. Notará que el uso es muy similar al del 
 API de Arduino.
 
 
