@@ -89,4 +89,10 @@ Ingrese a este `sitio <https://processing.org/reference/libraries/serial/index.h
 cada una de las funciones del API y observe los ejemplos. Notará que el uso es muy similar al del 
 API de Arduino.
 
+Sustentación parcial 1
+-----------------------
+
+En el siguiente `enlace <https://drive.google.com/open?id=1wlD7Lxjqr7CV8DbnAp_7Y5KiCOVtX5JeoEEPrFzTvD4>`__ 
+se encuentra el enunciado de la sustentación.
+
 
