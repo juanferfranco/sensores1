@@ -1,17 +1,13 @@
 Semana 13
 ===========
 
-Sesión 1: continuaremos con la guía de integración de sensores/actuadres con Unity. Vamos a introducir el concepto 
-de corrutinas y cómo están relacionadas con los hilos. Adicionalmente discutiremos el modelo de concurrencia usado por 
-la mayoría de motores de juegos.
+Esta semana vamos a introducir algunos conceptos para la 
+integración de sensores y actuadores con aplicaciones interactivas más 
+complejas que processing, tales como Unity.
 
-Sesion 2: realizaremos la evaluación 4 relativa a la integración de sensores y actuadores con sistemas de cómputo usando 
-protocolos binarios. En este `enlace <https://drive.google.com/open?id=13IBjl94-Kf7dPN3XXcvQIZPRJsuJBGlz9Egsfv29dLk>`__ 
-está el enunciado de la evaluación. `Aquí <https://drive.google.com/open?id=1yWc7UxbOEmeeDZ637h9DeYl-wL6Eyhaj>`__ está 
-la solución a la evaluación.
+Material
+----------
+En `este enlace <https://drive.google.com/open?id=1rkSL-DyORk19jfnax9FUph7jeXIgKb4Zl1eBfyVtQrQ>`__ se encuentra el material para la sesión 1
 
-Procedimiento
----------------
-Para la sesión 1: `aquí <https://drive.google.com/open?id=1GbBn3hNteY9uzXQ5SxJPEJ2aRVZ0WjspKaiaUdzOoUM>`__ está la 
-guía de nuevo.
-
+Y en este `enlace <http://www.albahari.com/threading/>`__ encontraremos el material 
+para la sesión 2.

@@ -1,7 +1,12 @@
 Semana 14
 ===========
 
-Continuaremos con la guía de integración de sensores/actuadres con Unity. 
-`Aquí <https://drive.google.com/open?id=1GbBn3hNteY9uzXQ5SxJPEJ2aRVZ0WjspKaiaUdzOoUM>`__ está la 
-guía.
+Esta semana vamos a estudiar un detalle un paquete para Unity que permite 
+realizar comunicaciones seriales de manera más robusta. Este paquete será la 
+base para construir nuestros prototocolos de comunicación ASCII con diferentes 
+sensores y actuadores.
 
+Procedimiento
+-------------------------
+La guía para esta sema será 
+`esta <https://drive.google.com/open?id=1HY9ocUXXVxhxCPJ6bSe0YpPXEPWudITRncw2FNWDZTU>`__ .
