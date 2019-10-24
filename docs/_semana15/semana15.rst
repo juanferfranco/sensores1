@@ -19,6 +19,8 @@ detalladamente cómo funciona el sistema.
 SE DEBE entregar un docuemento que explique detalladamente cómo funciona el 
 código.
 
+Cada estudiante se compromete con el siguiente contrato que cada uno escribió:
+
 Contrato de Luis
 -----------------
 Evaluación final, sensores I; Tiene de dos sensores, un pulsador y un 
