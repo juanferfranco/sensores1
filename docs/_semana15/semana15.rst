@@ -54,4 +54,6 @@ reproducción de la canción.
 
 Contrato de Camila
 -------------------
-
+Un juego tipo flappy birds; se usará un ultrasonido que permitirá mover el 
+cubo arriba y abajo para evitar chocar con los obstaculos, 
+si lo hace un led rojo se encenderá,  sino estara en verde.
