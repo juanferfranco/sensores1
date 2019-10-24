@@ -40,7 +40,10 @@ indica que hubo un choque (este estará prendido 3 segundos aproximadamente).
 
 Contrato de Camilo
 -------------------
-
+Lo que voy a realizar es por medio de un sistema de partículas en tiempo real 
+que por medio de un ultrasonido va a ir cambiando según los valores que arroje 
+este y por medio de unity mandar valores a arduino para que realice un juego de 
+luces por medio de leds.
 
 Contrato de Ros
 ----------------
