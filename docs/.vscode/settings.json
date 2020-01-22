@@ -1,5 +1,5 @@
 {
-    "python.jediEnabled": false,
-    "python.pythonPath": "C:\\Users\\JuanFernandoFrancoHi\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe",
-    "python.linting.pylintEnabled": true
+    "restructuredtext.confPath": "${workspaceFolder}",
+    "cSpell.language": "en,es",
+    "python.pythonPath": "/usr/bin/python3"
 }
