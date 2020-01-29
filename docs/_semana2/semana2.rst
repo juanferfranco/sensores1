@@ -18,6 +18,5 @@ En los siguientes enlaces se pueden ver dos soluciones al problema
 de la calculadora:
 
 * `Solución 1 <https://github.com/juanferfranco/sensores1/tree/master/Projects/Calculadora>`__
-  se puede ver una solución.
 * `Solución 2 <https://github.com/juanferfranco/sensores1/tree/master/Projects/CalculadoraStrings>`__.
 * `Desde el código fuente hasta el código de máquina <https://docs.google.com/presentation/d/1ALFSDo1SPdwFz1l3JuEe_uvgPX0AkpxW5rRN4zhH0ac/edit?usp=sharing>`__
