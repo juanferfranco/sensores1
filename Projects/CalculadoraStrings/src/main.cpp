@@ -45,6 +45,7 @@ void taskCalc()
     case calcStates::getOperation:
       if (Serial.available())
       {
+        delay(1);
         operation = Serial.read();
         int peekData;
         while(1){

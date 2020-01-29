@@ -43,7 +43,7 @@ void taskCalc()
   {
 
     case calcStates::getOperation:
-      if (Serial.available())
+      if (Serial.available() > 1 )
       {
         operation = Serial.read();
         Serial.read();
@@ -54,7 +54,7 @@ void taskCalc()
       break;
 
     case calcStates::getFirstOperand:
-      if (Serial.available())
+      if (Serial.available() > 1)
       {
         firstOperand = Serial.parseInt();
         Serial.read();
@@ -65,7 +65,7 @@ void taskCalc()
       break;
 
     case calcStates::getSecondOperand:
-      if (Serial.available())
+      if (Serial.available()>1)
       {
         secondOperand = Serial.parseInt();
         Serial.read();
