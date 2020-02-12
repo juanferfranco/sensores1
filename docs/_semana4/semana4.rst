@@ -1,152 +1,82 @@
 Semana 4
 ===========
-A continuación se muestra el reto de la semana anterior:
+Esta semana realizaremos las siguientes actividades:
 
-.. code-block:: c 
-   :lineno-start: 1
+Sesión 1: retroalimentación del parcial 1. La acción
+de mejora ya se realizó al dejar continuar el parcial
+en la casa.
 
-    const unsigned long TIMEOUT = 1000;
+Sesión 2: estudiaremos cómo modelar e implementar sistemas
+embebidos usando máquinas de estado.
 
-    void setup() {
-        Serial.begin(115200);
-    }
 
-    void loop() {
-        static unsigned long oldTime = 0;
-        static bool ledState = false;
+Sesión 1
+^^^^^^^^^
+En `este enlace <https://github.com/juanferfranco/sensores1/tree/master/Projects/parcial1>`__
+se presenta una posible solución al problema de la evaluación sumativa.
 
-    //  unsigned long initTime = micros();
-    
-        unsigned long newTime = millis();
-        if (newTime - oldTime >= TIMEOUT) {
-            oldTime = newTime;
-            if(true == ledState)Serial.println("LED OFF");
-            else Serial.println("LED ON");
-            ledState = !ledState;
-        //    Serial.print("Loop takes: ");
-        //    Serial.print(micros() - initTime);
-        //    Serial.println(" us");
-        }
-    }
+.. seealso:: 
 
-Note en el código la palabra reservada static. En este caso las variables marcadas con el
-modificador static le indican al compilador que oldTime y ledState DEBEN ser privadas a la
-función loop, es decir, no podrán ser accedidas por fuera de loop; sin embargo, estas 
-variables no estarán definidas en el stack a diferencia de la variable newTime que si estará
-definida allí. ¿Y esto qué implica? Pues que cada vez que se retorne de la función loop 
-el valor de newTime será perderá, en cambio oldTime y ledState conservarán siempre el 
-último valor almacenado.
+    En `este sitio <http://www.gammon.com.au/millis>`__ se analiza la técnica que
+    hemos venido utilizando para medir tiempos sin bloquear el microcontrolador.
 
-Una nota más: la técnica correcta para medir intervalos de tiempos se explica
-`aquí <http://www.gammon.com.au/millis>`__.
+Sesión 2
+^^^^^^^^^
+Para abordar la técnica de programación usando máquinas de estado vamos a
+realizar dos ejercicios.
 
-Lo que haremos esta semana
----------------------------
-Esta semana realizaremos dos ejercicios para introducir la técnica de programación de 
-máquinas de estado.
 
 Ejercicio 1
 ------------
-Una experiencia interactiva posee un sensor que produce mucho ruido eléctrico cuando 
-cambia de estado. La siguiente figura muestra una transición, capturada con un 
-osciloscopio, donde puede apreciarse el fenómeno.
+Una experiencia interactiva posee un sensor que produce ruido eléctrico al
+cambiar de estado. La siguiente figura, capturada con un osciloscopio
+muestra una captura de la señal del sensor.
 
 .. image:: ../_static/bounce.jpg
 
-En la figura se observa el ruido generado en la transición de la señal del estado alto 
-al estado bajo; sin embargo, el mismo fenómeno ocurre al cambiar del estado bajo al alto. 
-Note que además pueden ocurrir falsos positivos en la señal, que se manifiestan 
+En la figura se observa el ruido generado en la transición de la señal que
+genera el sensor al pasar del estado alto al estado bajo; sin embargo, el
+mismo fenómeno ocurre al cambiar del estado bajo al alto. Note que
+además pueden ocurrir falsos positivos en la señal, que se manifiestan
 como pulsos de muy corta duración.
 
-Un ingeniero electrónica experto informa que podemos considerar que el sensor ha 
-cambiado de estado cuando la señal esté estable por lo menos durante 100 ms sin ruido y 
-sin falsos positivos.
+Un ingeniero electrónica experto nos indica que podemos considerar un
+cambio de estado en el sensor siempre que la señal esté estable por
+lo menos durante 100 ms, es decir, sin ruido y sin falsos positivos.
 
-Se debe realizar una aplicación que filtre el comportamiento ruidoso del sensor y 
-reporte por un puerto serial únicamente los valores 
-estables de este así: ``1`` cuando el sensor cambie de 0 a 1 y ``0`` cuando cambien de 
-1 a 0.
+Se debe realizar una aplicación que filtre el comportamiento ruidoso
+del sensor y reporte por un puerto serial únicamente los valores
+estables de la señal.
 
 Ejercicio 2
 ------------
-Se requiere construir una aplicación para controlar una bomba de tiempo. La siguiente 
-figura ilustra la interfaz de la bomba. El circuito de control de la bomba está compuesto 
-por tres sensores (botones: UP, DOWN, ARM), un display (LCD) y una salida para 
-activar la bomba. Los sensores son digitales al igual que la salida de activación de la 
-bomba. El display posee una interfaz de comunicación serial (lo simularemos con el PC). 
-El controlador funciona así: 
+Se requiere construir una aplicación para controlar una bomba temporizada.
+La siguiente figura ilustra la interfaz de la bomba. El circuito de control
+de la bomba está compuesto por tres sensores, en este caso pulsadores,
+denominados UP, DOWN, ARM (los simularemos con el PC), un display (LCD) y
+una salida para activar la bomba (simularemos la salida con el PC).
+Los sensores son digitales al igual que la salida de activación de
+la bomba. El display posee una interfaz de comunicación serial.
+El controlador funciona así:
 
 .. image:: ../_static/bomb.png
 
-* Inicia en modo de configuración, es decir, no cuenta aún, el conteo regresivo 
-  está ``desarmado``. El valor incial del conteo regresivo es de 20 segundos.
-* En el modo de configuración, los botones UP y DOWN permiten aumentar o disminuir el 
-  timpo inicial de la bomba.
-* El tiempo se puede programar entre 10 y 60 segundos con cambios de 1 segundo. 
-* El tiempo de configuración se debe visualizar en el LCD (enviamos el 
+* Inicia en modo de configuración, es decir, no cuenta aún, la bomba está
+  ``desarmada``. El valor inicial del conteo regresivo es de 20 segundos.
+* En el modo de configuración, los pulsadores UP y DOWN permiten
+  aumentar o disminuir el tiempo inicial de la bomba.
+* El tiempo se puede programar entre 10 y 60 segundos con cambios de 1 segundo.
+* El tiempo de configuración se debe visualizar en el LCD (enviamos el
   valor al PC).
-* El botón ARM arma la bomba.
-* Una vez armada la bomba, comienza la cuenta regresiva que será visualizada en el LCD en
-  por medio de una cuenta regresiva en segundos.
-* La bomba explotará (se activa la salida de activación de la bomba) cuando el tiempo 
-  llegue a cero. En este punto el control regreserá al modo de configuración.
-* Una vez la bomba esté armada es posible desactivarla ingresando un código de seguridad. 
-  El código será la siguiente secuencia de botones presionados uno después de otro: 
-  UP, DOWN, DOWN, UP, UP, ARM.
-* Si la secuencia se ingresa correctamente el controlador pasará de nuevo al modo de 
-  configuración de lo contrario continuará la fatal cuenta regresiva.
-
-
-Ejercicio 1
-------------
-Solución al ejercicio 1:
-
-.. code-block:: c 
-   :lineno-start: 1
-
-    #define INPUTPIN 23
-    #define TIMEOUT 100
-    #define WAIT_SENSOR_CHANGES 0
-    #define WAIT_TIMEOUT 1
-
-    uint8_t stateVar = WAIT_SENSOR_CHANGES;
-    uint8_t pinStableValue;
-    uint32_t oldTime;
-
-    void setup() {
-        Serial.begin(115200);
-        pinMode(INPUTPIN, INPUT_PULLUP);
-        pinStableValue = digitalRead(INPUTPIN);
-    }
-
-    void Task() {
-    uint8_t pin;
-    
-        switch (stateVar) {
-            case WAIT_SENSOR_CHANGES:
-            pin = digitalRead(INPUTPIN);
-            if (pin != pinStableValue) {
-                stateVar = WAIT_TIMEOUT;
-                oldTime = millis();
-            }
-            break;
-            case WAIT_TIMEOUT:
-
-                pin = digitalRead(INPUTPIN);
-                if(pin == pinStableValue){
-                stateVar = WAIT_SENSOR_CHANGES;
-                }
-                
-                uint32_t newTime = millis();
-                if( (newTime - oldTime) >= TIMEOUT ){
-                pinStableValue = pin;
-                Serial.println("Timout");
-                stateVar = WAIT_SENSOR_CHANGES;
-                }
-            break;
-        }
-    }
-
-    void loop() {
-        Task();
-    }
+* El pulsador ARM arma la bomba.
+* Una vez armada la bomba, comienza la cuenta regresiva que será visualizada
+  en el LCD en por medio de una cuenta regresiva en segundos.
+* La bomba explotará (se activa la salida de activación de la bomba) cuando
+  el tiempo llegue a cero. En este punto el control regresará al modo de
+  configuración.
+* Una vez la bomba esté armada es posible desactivarla ingresando un código
+  de seguridad. El código será la siguiente secuencia de pulsadores
+  presionados uno después de otro:  UP, DOWN, DOWN, UP, UP, ARM.
+* Si la secuencia se ingresa correctamente el controlador pasará de nuevo
+  al modo de configuración de lo contrario continuará la fatal cuenta
+  regresiva.
