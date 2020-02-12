@@ -4,6 +4,5 @@ void setup() {
 }
 
 void loop() {
-  task1();
-
+  task1(); //Sergio
 }
