@@ -25,7 +25,7 @@ Actividad
 En esta sesión se propondrá la construcción del modelo para la bomba y luego
 solucionaremos el problema entre todos.
 
-`Aquí <./bomb.ino>`__ queda el trabajo realizado entre todos el día de hoy:
+`Aquí <https://github.com/juanferfranco/sensores1/tree/master/docs/_semana5/bomb.ino>`__ queda el trabajo realizado entre todos el día de hoy:
 
 .. code-block:: cpp 
    :lineno-start: 1
