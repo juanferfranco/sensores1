@@ -61,3 +61,4 @@ el aula y 5 horas de trabajo autónomo.
    Semana3 <_semana3/semana3>
    Semana4 <_semana4/semana4>
    Semana5 <_semana5/semana5>
+   Semana6 <_semana6/semana6>
