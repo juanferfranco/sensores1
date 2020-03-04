@@ -8,6 +8,8 @@ En esta sesión realizaremos la retroalimentación del parcial número 2.
 Un posible modelo de la solución es este:
 
 .. image:: ../_static/parcial2SM.jpg
+   :scale: 100%
+   :align: center
 
 Y una posible implementación del modelo es este otro modelo en C++:
 
@@ -111,6 +113,12 @@ Y una posible implementación del modelo es este otro modelo en C++:
     void loop() {
       taskCom();
     }
+
+Un ejemplo de una escenario de prueba:
+
+.. image:: ../_static/vector1.jpg
+   :scale: 100%
+   :align: center
 
 
 Sesión 2
