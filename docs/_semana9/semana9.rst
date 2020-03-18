@@ -1,92 +1,158 @@
 Semana 9
 ===========
-Esta semanas abordaremos la construcción de aplicaciones que hagan uso de protocolos de 
-comunicación ASCII para intercambiar información con sensores y/o actuadores.
 
-En la primera sesión revisaremos dudas en la implementación del ejercicio de la semana pasada.
-Para la segunda sesión, vamos a comenzar la implementación una aplicación para el ejercicio, 
-pero utilizando processing. En `este <https://processing.org/reference/libraries/>`__ enlace 
-podemos consultar algunas bibliotecas, por ejemplo, Interfascia y Serial.
+Sesión 1
+----------
+Continuareamos analizando el material sobre hilos `aquí <http://www.albahari.com/threading/>`__
 
+Sesión 2
+----------
+Vamos a realizar los siguientes ejercicios para introducir la necesidad de contar con hilos
+al utilizar entrada salida.
 
-Este ejemplo, permite adicionar botones:
+Ejercicio 1
+^^^^^^^^^^^^
 
-.. code-block:: java 
+Un ejercicio extra para comenzar a calentar, sin hilos aún.
+La idea del ejercicio es comunicar a través del puerto serial
+el computador con un arduino, en este caso, un ESP32. Si desea
+trabajar en visual studio solo se requiere crear una aplicación
+.NET framework tipo consola. En caso de utilizar .netcore se pueden
+seguir los siguientes pasos en la terminal:
+
+* mkdir dotNetTest
+* cd dotNetTest
+* dotnet new console
+* En la siguiente línea, antes de versión tenemos doble guión. Ojo se ve como
+  un solo guión, pero son dos.
+* dotnet add package System.IO.Ports --version 4.7
+* code .
+* copiar el código
+* dotnet build
+* dotnet run
+
+Este es el código para programar en el arduino:
+
+.. code-block:: cpp
    :lineno-start: 1
 
-    import interfascia.*;
-
-    GUIController c;
-    IFButton b1, b2;
-    IFLabel l;
-
     void setup() {
-        size(200, 100);
-        background(155);
-        
-        c = new GUIController (this);
-        
-        b1 = new IFButton ("Green", 40, 40, 40, 17);
-        b2 = new IFButton ("Blue", 120, 40, 40, 17);
-
-        b1.addActionListener(this);
-        b2.addActionListener(this);
-
-        c.add (b1);
-        c.add (b2);
+      Serial.begin(115200);
     }
 
-    void draw() {
+    void loop() {
 
+      if(Serial.available()){
+        if(Serial.read() == '1'){
+          Serial.print("Hello from ESP32");
+        }
+      }
     }
 
-    void actionPerformed (GUIEvent e) {
-        if (e.getSource() == b1) {
-            background(100, 155, 100);
-        } else if (e.getSource() == b2) {
-            background(100, 100, 130);
+
+Este es el código para programar en el computador:
+
+.. code-block:: csharp
+   :lineno-start: 1
+
+    using System;
+    using System.IO.Ports;
+
+    namespace hello_serialport{
+        class Program{
+            static void Main(string[] args)
+            {
+                SerialPort _serialPort = new SerialPort();
+                // Allow the user to set the appropriate properties.
+                _serialPort.PortName = "/dev/ttyUSB0";
+                _serialPort.BaudRate = 115200;
+                _serialPort.DtrEnable = true;
+                _serialPort.Open();
+                byte[] data = {0x31};
+                _serialPort.Write(data,0,1);
+                byte[] buffer = new byte[20];
+
+                while(true){
+                    if(_serialPort.BytesToRead > 0){
+                        _serialPort.Read(buffer,0,20);
+                        Console.WriteLine(System.Text.Encoding.ASCII.GetString(buffer));
+                        Console.ReadKey();
+                        _serialPort.Write(data,0,1);
+                    }
+                }
+            }
         }
     }
 
-Este otro ejemplo muestra como adicionar cajas de textos y modificar labels en la GUI.
+Ejercicio 2
+^^^^^^^^^^^^
+Este es el código para programar en el arduino:
 
-.. code-block:: java 
+.. code-block:: cpp
    :lineno-start: 1
 
-    import interfascia.*;
-
-    GUIController c;
-    IFTextField t;
-    IFLabel l;
-
     void setup() {
-        size(200, 100);
-        background(150);
-        
-        c = new GUIController(this);
-        t = new IFTextField("Text Field", 25, 30, 150);
-        l = new IFLabel("", 25, 70);
-        
-        c.add(t);
-        c.add(l);
-        
-        t.addActionListener(this);
-    
+      Serial.begin(115200);
     }
 
-    void draw() {
-    
+    void loop() {
+
+      if(Serial.available()){
+        if(Serial.read() == '1'){
+          delay(1000);
+          Serial.print("Hello from ESP32\n");
+        }
+      }
     }
 
-    void actionPerformed(GUIEvent e) {
-        if (e.getMessage().equals("Completed")) {
-            l.setLabel(t.getValue());
+Este es el código para programar el computador
+
+.. code-block:: cpp
+   :lineno-start: 1
+
+    using System;
+    using System.IO.Ports;
+    using System.Threading;
+
+    namespace serialTestBlock
+    {
+    class Program{
+            static void Main(string[] args)
+            {
+                SerialPort _serialPort = new SerialPort();
+                _serialPort.PortName = "/dev/ttyUSB0";
+                _serialPort.BaudRate = 115200;
+                _serialPort.DtrEnable = true;
+                _serialPort.Open();
+
+                byte[] data = {0x31};
+                byte[] buffer = new byte[20];
+                int counter = 0;
+
+                while(true){
+                    if(Console.KeyAvailable == true){
+                        Console.ReadKey(true);
+                        _serialPort.Write(data,0,1);
+                        string message = _serialPort.ReadLine();
+                        Console.WriteLine(message);
+                    }
+                    Console.WriteLine(counter);
+                    counter = (counter + 1) % 100;
+                    Thread.Sleep(100);
+                } 
+            }   
         }
     }
 
-Con respecto al manejo del serial. 
-Ingrese a este `sitio <https://processing.org/reference/libraries/serial/index.html>`__. Abra 
-cada una de las funciones del API y observe los ejemplos. Notará que el uso es muy similar al del 
-API de Arduino.
+* Conecte el arduino.
+* Modifique el código del computador asignando el puerto
+  serial correcto.
+* Corra el código del computador.
+* Al presionar cualquier tecla qué pasa?
 
+Ejercicio 3: Reto
+^^^^^^^^^^^^^^^^^^
+Con lo que hemos discutido hoy cómo podríamos solucionar el
+problema anterior, considerando que no es posible (por el
+ejercicio académico) modificar el código de Arduino?
 
