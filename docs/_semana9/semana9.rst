@@ -156,12 +156,68 @@ Con lo que hemos discutido hoy cómo podríamos solucionar el
 problema anterior, considerando que no es posible (por el
 ejercicio académico) modificar el código de Arduino?
 
+.. warning::
+   Alerta de spoiler
+
+   El siguiente código muestra una posible solución al reto
+
+.. code-block:: csharp
+   :lineno-start: 1
+
+    using System;
+    using System.IO.Ports;
+    using System.Threading;
+
+    namespace SerialTest
+    {
+        class Program
+        {
+            static void Main(string[] args)
+            {
+
+                int counter = 0;
+
+                Thread t = new Thread(readKeyboard);
+                t.Start();
+
+                while (true)
+                {
+                    Console.WriteLine(counter);
+                    counter = (counter + 1) % 100;
+                    Thread.Sleep(100);
+                }
+            }
+
+            static void readKeyboard()
+            {
+
+                SerialPort _serialPort = new SerialPort(); ;
+                _serialPort.PortName = "COM4";
+                _serialPort.BaudRate = 115200;
+                _serialPort.DtrEnable = true;
+                _serialPort.Open();
+
+                byte[] data = { 0x31 };
+
+                while (true) {     
+                    if (Console.KeyAvailable == true)
+                    {
+                        Console.ReadKey(true);
+                        _serialPort.Write(data, 0, 1);
+                        string message = _serialPort.ReadLine();
+                        Console.WriteLine(message);
+                    }
+                }
+            }
+        }
+    }
+
 Ejercicio 4: Reto
 ^^^^^^^^^^^^^^^^^^^^
 Este ejercicio lo podemos comenzar en la sesión 2 y la idea
 es terminarlo en las horas de trabajo autónomas:
 
-Asuma que un arduino UNO tiene conectados varios sensores y actuadores así:
+Asuma que un arduino tiene conectados varios sensores y actuadores así:
 
 * Dos sensores digitales
 * Dos sensores analógicos: valores de 0 a 1023
@@ -218,4 +274,5 @@ NACK si no lo reconoce. Usted debe decidir, dados los requisitos de la aplicaci�
 si requiere introducir caracteres de nueva línea y/o retorno de carro. 
 TENGA PRESENTE que LOS LEDs deben funcionar SIEMPRE a 5 Hz y 10 HZ como se declaró previamente, 
 ese decir, su funcionamiento no puede ser interrumpido por las operaciones del puerto serial
+
 
