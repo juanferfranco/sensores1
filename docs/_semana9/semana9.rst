@@ -269,7 +269,7 @@ La aplicación del computador es tipo consola en C# y debe tener:
 
 NOTAS:
 
-Para cualquier de los comando write el arduino debe devolver ACK si reconoce el comando y 
+Para cualquier de los comandos write el arduino debe devolver ACK si reconoce el comando y 
 NACK si no lo reconoce. Usted debe decidir, dados los requisitos de la aplicación, 
 si requiere introducir caracteres de nueva línea y/o retorno de carro. 
 TENGA PRESENTE que LOS LEDs deben funcionar SIEMPRE a 5 Hz y 10 HZ como se declaró previamente, 
