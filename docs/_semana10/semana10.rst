@@ -102,5 +102,5 @@ Para la sustentación:
 * 1: se incluyen todas las sesiones. En particular la 5 es correcta, precisa y detallada.
 * 0.6: incluye todas las sesiones, pero la sección 5 evidencia algunos problemas conceptuales leves
 * 0.4: incluye todas las sesiones, pero la sección 5 evidencia algunos problemas conceptuales graves
-* 0: no entregó la sustentación completa o la sustentación no evidencia la realización y entendimiento
+* 0: no entregó la sustentación completa o la sustentación no evidencia la realización y/o entendimiento
   del trabajo.
