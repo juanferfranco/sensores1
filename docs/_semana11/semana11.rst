@@ -431,6 +431,9 @@ del ejercicio 6?
 
 Sesión 2
 ----------
+
+Reto 1
+^^^^^^^^
 En esta sesión realizaremos un reto con protocolos binarios
 que permita comunicar un sensor con una aplicación interactiva.
 
@@ -444,3 +447,12 @@ la cual enviaremos comandos al sensor tal como aparecen en el archivo de
 prueba.
 
 No olviden calcular y verificar el checksum en Arduino y en C#.
+
+Reto 2
+^^^^^^^^
+Ahora modifique el código de la aplicación interactiva de tal manera que tengamos:
+
+* Dos hilos.
+* Un hilo debe imprimir cada 100 ms el valor de un contador.
+* Otro hilo pendiente de los eventos del teclado.
+* Asigne una tecla a cada comando que será enviado al arduino.
