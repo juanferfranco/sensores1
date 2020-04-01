@@ -442,3 +442,5 @@ Para ello vamos a programar un arduino para simular el sensor (vale un millón
 de pesos el sensor) y vamos programar una aplicación interactiva en C# desde
 la cual enviaremos comandos al sensor tal como aparecen en el archivo de
 prueba.
+
+No olviden calcular y verificar el checksum en Arduino y en C#.
