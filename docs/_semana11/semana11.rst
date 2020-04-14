@@ -442,7 +442,7 @@ que provee el fabricante del sensor de RFID. El archivo se encuentra
 `aquí <https://drive.google.com/file/d/1iVr2Fiv8wXLqNyShr_EOplSvOJBIPqJP/view>`__.
 
 Para ello vamos a programar un arduino para simular el sensor (vale un millón
-de pesos el sensor) y vamos programar una aplicación interactiva en C# desde
+de pesos el sensor) y vamos a programar una aplicación interactiva en C# desde
 la cual enviaremos comandos al sensor tal como aparecen en el archivo de
 prueba.
 
