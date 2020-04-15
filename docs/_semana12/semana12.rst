@@ -349,9 +349,9 @@ algunas cosas nuevas.
 
 Una vez haga el paso anterior:
 
-* Cree un proyecto nuevo de Unity.
+* Cree un proyecto nuevo en Unity.
 * Configure el soporte para el puerto serial tal como lo realizó en la guía.
-* OJO, no instale el paquete Ardity. SI LA LO HIZO, vuelva a comenzar.
+* OJO, no instale el paquete Ardity. SI YA LO HIZO, vuelva a comenzar.
 * Ahora tome únicamente LOS SCRIPTS de Ardity necesarios (SOLO LOS NECESARIOS)
-  para hacer que la aplicación de la guía funciones de nuevo.
+  para hacer que la aplicación de la guía funcione de nuevo.
 
