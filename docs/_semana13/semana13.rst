@@ -283,7 +283,11 @@ Ahora vamos a analizar cómo transita la letra A desde el SampleUserPolling_Read
 el arduino.
 
 Para enviar la letra usamos el método SendSerialMessage de la clase SerialController. Observe
-que la clase tiene dos variables privadas importantes:
+que la clase tiene dos variables protegidas importantes:
+
+.. image:: ../_static/serialControllerUMLClass.jpg
+   :scale: 35%
+   :align: center
 
 .. code-block:: csharp
    :lineno-start: 1
