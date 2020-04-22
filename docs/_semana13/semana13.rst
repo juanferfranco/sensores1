@@ -590,7 +590,7 @@ MUY IMPORTANTE lo que vimos hoy para el parcial:
     }
 
 Note que primero se envía y luego el hilo se bloquea. NO SE DESBLOQUEARÁ HASTA que no envíen
-una respuesta desde Arduino o pasen 100ms que es el tiempo que dura bloqueada la función
+una respuesta desde Arduino o pasen 100 ms que es el tiempo que dura bloqueada la función
 antes de generar una excepción de timeout de lectura.
 
 .. code-block:: csharp
@@ -602,13 +602,13 @@ antes de generar una excepción de timeout de lectura.
     private const int readTimeout = 100;
 
 
-En el enunciado se pide enviar cada 100ms peticiones a Arduino y también la orden de encender
+En el enunciado se pide enviar cada 100 ms peticiones a Arduino y también la orden de encender
 y apagar un actuador. ANALICEN entonces el patrón de comunicación anterior PARA QUE NO DEJEN
 BLOQUEADO el hilo.
 
 .. warning::
 
    SIEMPRE QUE ENVÍEN ALGO, EL HILO SE BLOQUEA ESPERANDO UNA RESPUESTA DEL ARDUINO. SI 
-   ARDUINO NO RESPONDE DURANTE 100MS READLINE GENERA UNA EXCEPCIÓN DE TIMEOUT Y SE BLOQUEA
-   DURANTE 100MS MÁS, Y ASÍ SUCESIVAMENTE.
+   ARDUINO NO RESPONDE DURANTE 100 MS READLINE GENERA UNA EXCEPCIÓN DE TIMEOUT Y SE BLOQUEA
+   DURANTE 100 MS MÁS, Y ASÍ SUCESIVAMENTE.
 
