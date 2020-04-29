@@ -45,7 +45,7 @@ archivo de prueba enviado por el fabricante del sensor.
 El siguiente código simula el funcionamiento del sensor RFID para poder
 probar una aplicación interactiva que se conecte al sensor.
 
-.. code-block:: c
+.. code-block:: cpp
    :lineno-start: 1
 
     #include <Arduino.h>
