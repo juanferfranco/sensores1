@@ -100,7 +100,7 @@ Fase 1 (motivación )
 * Descripción: asistir al encuentro sincrónico donde se introducirá el curso y se
   explicará la actividad, su importancia, su relación con los criterios de competencia y
   cómo será evaluada.
-* Recursos: Ingresar al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
+* Recursos: ingresar al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
 * Duración de la actividad: 30 minutos sincrónicos.
 * Forma de trabajo: grupal
 
@@ -109,7 +109,12 @@ Fase 2 (diagnóstico-repaso)
 * Fecha: julio 8 de 2020
 * Descripción: leer las preguntas y ejercicios orientadores para autoevaluar si se tienen
   los conocimientos necesarios para abordar el reto.
-* Recursos: realizar `esta guía <https://docs.google.com/presentation/d/1dJEfVysAZUY0561bICTVKtmZg8D6Ix8klRKGw6DZTp4/edit?usp=sharing>`__.
+* Recursos: 
+
+  * Realiza `esta guía <https://docs.google.com/presentation/d/1dJEfVysAZUY0561bICTVKtmZg8D6Ix8klRKGw6DZTp4/edit?usp=sharing>`__.
+  * Ingresar al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
+    para resolver dudas en tiempo real con el docente.
+
 * Duración de la actividad: 1 hora 10 minutos
 * Forma de trabajo: individual con solución de dudas en tiempo real
 

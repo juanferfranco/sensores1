@@ -95,7 +95,10 @@ en 8 fases, menos la unidad 1 que será una unidad de dignóstico-repaso.
 
 Cronograma
 -----------
-`Proyecto docente <https://docs.google.com/spreadsheets/d/18qYiWmmAH7VTyWcctqr6s8gvk22g0SGkZcdrIYbH8tg/edit?usp=sharing>`__.
+.. raw:: html
+
+   <a href="https://docs.google.com/spreadsheets/d/18qYiWmmAH7VTyWcctqr6s8gvk22g0SGkZcdrIYbH8tg/edit?usp=sharing" target="_blank">Proyecto docente</a>
+   <br> </br>
 
 Evaluación
 -----------
