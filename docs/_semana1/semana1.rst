@@ -117,6 +117,7 @@ Fase 3 (realización)
 * Descripción: proceder con la solución del reto.
 * Recursos: para abordar el reto de programación te recomiendo que tengas a la mano el siguiente material
 
+  * Comienza leyendo la rúbrica de evaluación de esta unidad `aquí <https://docs.google.com/spreadsheets/d/1BBX2NvCzYes-8secjsjTpg0Xfz07FXdxTsugO2d8F8M/edit?usp=sharing>`.__
   * Leer la documentación y los ejemplos de la clase `Serial Port <https://docs.microsoft.com/en-us/dotnet/api/system.io.ports.serialport?view=netframework-4.8>`__
     de C# y .NET.
   * Leer la documentación del manejo del puerto `serial de arduino <https://www.arduino.cc/reference/en/language/functions/communication/serial/>`__
