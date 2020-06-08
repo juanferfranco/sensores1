@@ -19,6 +19,8 @@ Código de honor
 ----------------
 Para realizar este reto se espera que hagas lo siguiente:
 
+* Colabora con tus compañeros cuando así se indique.
+* Trabaja de manera individual cuando la actividad así te lo proponga.
 * Uses solo la documentación oficial del framework de arduino y .NET de Microsoft.
 * NO DEBES utilizar sitios en internet con soluciones al problema.
 * NO DEBES hacer uso de foros.
