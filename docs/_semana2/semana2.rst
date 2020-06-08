@@ -4,9 +4,12 @@ Semana 2
 Propósito de aprendizaje
 --------------------------
 
-Analizar la plataforma de hardware y software del controlador que se empleará como interfaz entre los sensores-actuadores y las plataformas de software interactivas a utilizar en el curso.
+Analizar la plataforma de hardware y software del controlador que se empleará
+como interfaz entre los sensores-actuadores y las plataformas de software
+interactivas a utilizar en el curso.
 
-Construir aplicaciones simples para el controlador con el fin de explorar algunas posibilidades y características de su plataforma de software.
+Construir aplicaciones simples para el controlador con el fin de explorar algunas
+posibilidades y características de su plataforma de software.
 
 
 Actividad de aprendizaje
@@ -22,11 +25,11 @@ Para realizar este reto se espera que hagas lo siguiente:
 
 * Colabora con tus compañeros cuando así se indique.
 * Trabaja de manera individual cuando la actividad así te lo proponga.
-* Uses solo la documentación oficial del framework de arduino y .NET de Microsoft.
-* NO DEBES utilizar sitios en internet con soluciones al problema.
+* Usa solo la documentación oficial del framework del controlador y .NET de Microsoft.
+* NO DEBES utilizar sitios en Internet con soluciones o ideas para abordar el problema.
 * NO DEBES hacer uso de foros.
-* ¿Entonces qué hacer si no me funciona algo? experimenta, crea hipótesis,
-  experiementa, observa y concluye.
+* ¿Entonces qué hacer si no me funciona algo? Te propongo que experimentes, crea hipótesis,
+  experiementa de nuevo, observa y concluye.
 * NO OLVIDES, este curso se trata de pensar y experimentar NO de BUSCAR soluciones
   en Internet.
 
@@ -37,42 +40,42 @@ Enunciado:
 ^^^^^^^^^^^
 Debes controlar el funcionamiento algunos sensores, actuadores y tareas desde el computador.
 
-* Debes crear dos aplicaciones: una para el PC y otra para un Arduino.
+* Debes crear dos aplicaciones: una para el PC y otra para tu controlador.
 * La aplicación del PC la debes realizar usando Visual Studio y será 
   del tipo Consola con .NET framework.
-* La aplicación del PC y del Arduino interacturán por medio de un modelo
-  cliente servidor. La aplicación del PC será el cliente y el Arduino el servidor.
-* Para la aplicación del arduino: 
+* La aplicación del PC y del controlador interacturán por medio de un modelo
+  cliente servidor. La aplicación del PC será el cliente y la del controlador el servidor.
+* Para la aplicación del controlador: 
 
   * Crea 4 tareas concurrentes. 
-  * La tarea uno encederá y apagará continuamente LED a 1 Hz;
+  * La tarea uno encederá y apagará continuamente un LED a 1 Hz;
     la tarea 2 otro LED a 5 Hz; la tarea 3 otro LED a 7Hz; la tarea 4 recibirá comandos
     para leer un sensor digital, leer un sensor analógico, modificar un actuador digital,
-    modificar un actuadore analógico por PWM.
+    modificar un actuador analógico por PWM.
 
 * En la aplicación del PC debes solicitarle al usuario comandos para interactuar con la
-  aplicación del arduino:
+  aplicación del controlador:
 
   * Un comando para modificar la frecuencia de cada una de las tareas 1, 2 y 3. Debes
     especificar la tarea y la frecuencia.
   * Para la tarea 4 define comandos que te permitan seleccionar el sensor/actuador y los
     valores respectivos.
 
-* Ten presente que solo podrás comunicarte con el arduino una tengas toda la información,
+* Ten presente que solo podrás comunicarte con el controlador una vez tengas toda la información,
   es decir, no debes hacer envíos parciales.
 * El PC preguntará si se deseas continuar con la aplicación o terminar.
 
 ¿Qué debes entregar?
 ^^^^^^^^^^^^^^^^^^^^^^
 
-* Crea una carpeta. Guarda allí dos carpetas. Cada uno con el proyecto para el PC
-  y para el Arduino. Guarda los proyectos completos.
-  En la carpeta guarda un archivo .pdf donde colocarás cuatro cosas:
+* Crea una carpeta principal. Guarda allí dos carpetas más, cada uno con el proyecto para el PC
+  y para el controlador. Guarda los proyectos completos. Adicionalmente,
+  en la carpeta principal guarda un archivo .pdf donde colocarás cuatro cosas:
   
-  * La versión de visual studio utilizada.
-  * La versión de arduino
+  * La versión de Visual Studio utilizada.
+  * La versión del software para programar el controlador.
   * UN ENLACE a tu ONE DRIVE donde estará alojado el video de sustentación.
-  * Una tabla de contenidos que indique el segundo en el cual se pueden encontrar
+  * Una tabla de contenidos que indique el instante de tiempo en el cual se pueden encontrar
     cada una de las sesiones siguientes.
 
 ¿Qué deberá tener el video de sustentación?
@@ -82,7 +85,7 @@ Debes controlar el funcionamiento algunos sensores, actuadores y tareas desde el
   en tu curso de narrativa audiovisual.
 * Cuida la calidad del audio y del video.
 * Sección 1: introducción, donde dirás tu nombre y si realizaste el RETO
-  completo o si te faltó, indiques claramente qué te faltó y por qué.
+  completo. Si no terminaste indica claramente qué te faltó y por qué.
 * Sección 2: muestra que tus dos programas compilan correctamente y sin errores
   o advertencias problemáticas.
 * Sección 3: Realiza una demostración del funcionamiento donde ilustres todos los
@@ -90,8 +93,9 @@ Debes controlar el funcionamiento algunos sensores, actuadores y tareas desde el
 * Define un conjuntos de vectores de prueba donde indiques los datos de entrada y el
   resultado esperado.
 * Aplica los vectores de prueba y muestra que si producen los valores esperados.
-* Sección 4: Explicación de la arquitectura de las aplicaciones. Utiliza una
-  aplicación de WhiteBoard para esto.
+* Sección 4: explica la arquitectura de las aplicaciones. Utiliza una
+  aplicación de `WhiteBoard <https://www.microsoft.com/en-us/microsoft-365/microsoft-whiteboard/digital-whiteboard-app>`__
+  para esto.
 * Tus explicaciones deben ser claras, precisas y completas. No olvides planear 
   bien tu video de sustentación.
 * Debes explicar las partes de la aplicación, la función que realiza cada parte y
@@ -101,28 +105,28 @@ Debes controlar el funcionamiento algunos sensores, actuadores y tareas desde el
 * Sección 5: protocolo de integración entre las aplicaciones.
 * Debes explicar claramente cómo se comunicarán tus aplicaciones.
 * Muestra de manera detallada los pasos que deben realizar cada una de las aplicaciones.
-  Te recomiendo utilizar un diagrama de secuencias.
+  Te recomiendo utilizar un `diagrama de secuencias <https://en.wikipedia.org/wiki/Sequence_diagram#:~:text=A%20sequence%20diagram%20shows%20object,the%20functionality%20of%20the%20scenario.>`__.
 
 
 Trayecto de acciones, tiempos y formas de trabajo
 ---------------------------------------------------
 
-Fase 1 (motivación )
+Fase 1 (motivación)
 ^^^^^^^^^^^^^^^^^^^^^^
 
-* Fecha: julio 15 de 2020
-* Descripción: asistir al encuentro sincrónico donde se introducirá la actividad de
+* Fecha: julio 15 de 2020 - 2 p.m.
+* Descripción: asiste al encuentro sincrónico donde se introducirá la actividad de
   aprendizaje de la unidad 2 correspondiente a las semanas 2 y 3.
-* Recursos: Ingresar al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
+* Recursos: ingresa al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
 * Duración de la actividad: 20 minutos sincrónicos.
 * Forma de trabajo: grupal
 
 Fase 2 (diagnóstico-repaso)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 * Fecha: julio 15 de 2020
-* Descripción: leer las preguntas y ejercicios orientadores para autoevaluar si se tienen
-  los conocimientos necesarios para abordar el reto.
-* Recursos: realizar `esta guía <https://docs.google.com/presentation/d/1y270S1bs49Vn-EX6OJqZrTqaCy2EWlUHECcKAD9ZUrg/edit?usp=sharing>`__.
+* Descripción: lee las preguntas y ejercicios orientadores para autoevaluar si tienes
+  los conocimientos necesarios para abordar el RETO.
+* Recursos: realiza `esta guía <https://docs.google.com/presentation/d/1y270S1bs49Vn-EX6OJqZrTqaCy2EWlUHECcKAD9ZUrg/edit?usp=sharing>`__.
 * Duración de la actividad: 1 hora 10 minutos
 * Forma de trabajo: individual con solución de dudas en tiempo real
 
@@ -150,7 +154,7 @@ Fase 4 (ejercicios y discusión)
 
 Fase 5 (retroalimentación): 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 17 de 2020
+* Fecha: julio 17 de 2020 - 2 p.m.
 * Descripción: encuentro sincrónico para compartir y discutir los ejercicios. 
 * Recursos: 
   

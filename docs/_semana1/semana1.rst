@@ -21,11 +21,11 @@ Para realizar este reto se espera que hagas lo siguiente:
 
 * Colabora con tus compañeros cuando así se indique.
 * Trabaja de manera individual cuando la actividad así te lo proponga.
-* Uses solo la documentación oficial del framework de arduino y .NET de Microsoft.
-* NO DEBES utilizar sitios en internet con soluciones al problema.
+* Usa solo la documentación oficial del framework del controlador y .NET de Microsoft.
+* NO DEBES utilizar sitios en Internet con soluciones o ideas para atacar el problema.
 * NO DEBES hacer uso de foros.
-* ¿Entonces qué hacer si no me funciona algo? experimenta, crea hipótesis,
-  experiementa, observa y concluye.
+* ¿Entonces qué hacer si no me funciona algo? Te propongo que experimentes, crea hipótesis,
+  experiementa de nuevo, observa y concluye.
 * NO OLVIDES, este curso se trata de pensar y experimentar NO de BUSCAR soluciones
   en Internet.
 
@@ -36,29 +36,29 @@ Enunciado:
 ^^^^^^^^^^^
 Se trata de una calculadora interactiva
 
-* Debes crear dos aplicaciones: una para el PC y otra para un Arduino.
+* Debes crear dos aplicaciones: una para el PC y otra para un controlador.
 * La aplicación del PC la debes realizar usando Visual Studio y será 
   del tipo Consola con .NET framework.
-* La aplicación del PC y del Arduino interacturán por medio de un modelo
-  cliente servidor. La aplicación del PC será el cliente y el Arduino el servidor.
+* La aplicación del PC y del controlador interacturán por medio de un modelo
+  cliente servidor. La aplicación del PC será el cliente y la del controlador el servidor.
 * En el PC debes solicitar al usuario tres datos: operando 1, operando 2
   (serán enteros positivos de 16 bits) y operador: suma o resta.
-* UNA VEZ, y solo UNA VEZ se tengan los tres datos el PC deberá enviar la información
-  al Arduino.
-* El Arduino realizará el cálculo y devolverá el resultado al PC para visualizarlo.
+* UNA VEZ, y solo UNA VEZ tengas los tres datos, el PC deberá enviar la información
+  al controlador.
+* El controlador realizará el cálculo y devolverá el resultado al PC para visualizarlo.
 * El PC preguntará si se deseas continuar con más cálculos o terminar la aplicación.
 
 ¿Qué debes entregar?
 ^^^^^^^^^^^^^^^^^^^^^^
 
-* Crea una carpeta. Guarda allí dos carpetas. Cada uno con el proyecto para el PC
-  y para el Arduino. Guarda los proyectos completos.
-  En la carpeta guarda un archivo .pdf donde colocarás cuatro cosas:
+* Crea una carpeta principal. Guarda allí dos carpetas más, cada uno con el proyecto para el PC
+  y para el controlador. Guarda los proyectos completos. Adicionalmente,
+  en la carpeta principal guarda un archivo .pdf donde colocarás cuatro cosas:
   
-  * La versión de visual studio utilizada.
-  * La versión de arduino
+  * La versión de Visual Studio utilizada.
+  * La versión del software para programar el controlador.
   * UN ENLACE a tu ONE DRIVE donde estará alojado el video de sustentación.
-  * Una tabla de contenidos que indique el segundo en el cual se pueden encontrar
+  * Una tabla de contenidos que indique el instante de tiempo en el cual se pueden encontrar
     cada una de las sesiones siguientes.
 
 ¿Qué deberá tener el video de sustentación?
@@ -67,8 +67,8 @@ Se trata de una calculadora interactiva
 * Máximo 20 minutos: debes planear el video tal como aprendiste en segundo semestre
   en tu curso de narrativa audiovisual.
 * Cuida la calidad del audio y del video.
-* Sección 1: introducción, donde dirás tu nombre y si realizaste el ejercicio
-  completo o si te faltó indiques claramente qué te faltó y por qué.
+* Sección 1: introducción, donde dirás tu nombre y si realizaste el RETO
+  completo. Si no terminaste indica claramente qué te faltó y por qué.
 * Sección 2: muestra que tus dos programas compilan correctamente y sin errores
   o advertencias problemáticas.
 * Sección 3: Realiza una demostración del funcionamiento donde ilustres todos los
@@ -76,8 +76,9 @@ Se trata de una calculadora interactiva
 * Define un conjuntos de vectores de prueba donde indiques los datos de entrada y el
   resultado esperado.
 * Aplica los vectores de prueba y muestra que si producen los valores esperados.
-* Sección 4: Explicación de la arquitectura de las aplicaciones. Utiliza una
-  aplicación de WhiteBoard para esto.
+* Sección 4: explica la arquitectura de las aplicaciones. Utiliza una
+  aplicación de `WhiteBoard <https://www.microsoft.com/en-us/microsoft-365/microsoft-whiteboard/digital-whiteboard-app>`__
+  para esto.
 * Tus explicaciones deben ser claras, precisas y completas. No olvides planear 
   bien tu video de sustentación.
 * Debes explicar las partes de la aplicación, la función que realiza cada parte y
@@ -87,27 +88,26 @@ Se trata de una calculadora interactiva
 * Sección 5: protocolo de integración entre las aplicaciones.
 * Debes explicar claramente cómo se comunicarán tus aplicaciones.
 * Muestra de manera detallada los pasos que deben realizar cada una de las aplicaciones.
-  Te recomiendo utilizar un diagrama de secuencias.
-
+  Te recomiendo utilizar un `diagrama de secuencias <https://en.wikipedia.org/wiki/Sequence_diagram#:~:text=A%20sequence%20diagram%20shows%20object,the%20functionality%20of%20the%20scenario.>`__.
 
 Trayecto de acciones, tiempos y formas de trabajo
 ---------------------------------------------------
 
-Fase 1 (motivación )
+Fase 1 (motivación)
 ^^^^^^^^^^^^^^^^^^^^^^
 
-* Fecha: julio 8 de 2020
-* Descripción: asistir al encuentro sincrónico donde se introducirá el curso y se
-  explicará la actividad, su importancia, su relación con los criterios de competencia y
-  cómo será evaluada.
+* Fecha: julio 8 de 2020 - 2 p.m.
+* Descripción: asiste al encuentro sincrónico donde se introducirá el curso y se
+  explicará la actividad de aprendizaje, su importancia, su relación con los
+  criterios de competencia y cómo será evaluada.
 * Recursos: ingresar al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
 * Duración de la actividad: 30 minutos sincrónicos.
 * Forma de trabajo: grupal
 
 Fase 2 (diagnóstico-repaso)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 8 de 2020
-* Descripción: leer las preguntas y ejercicios orientadores para autoevaluar si se tienen
+* Fecha: julio 8 de 2020 - 2:30 p.m.
+* Descripción: lee las preguntas y ejercicios orientadores para autoevaluar si se tienen
   los conocimientos necesarios para abordar el reto.
 * Recursos: 
 
@@ -121,13 +121,13 @@ Fase 2 (diagnóstico-repaso)
 Fase 3 (realización)
 ^^^^^^^^^^^^^^^^^^^^^
 * Fecha: julio 8-9 de 2020
-* Descripción: proceder con la solución del reto.
+* Descripción: procede con la solución del reto.
 * Recursos: para abordar el reto de programación te recomiendo que tengas a la mano el siguiente material
 
   * Comienza leyendo la rúbrica de evaluación de esta unidad `aquí <https://docs.google.com/spreadsheets/d/1BBX2NvCzYes-8secjsjTpg0Xfz07FXdxTsugO2d8F8M/edit?usp=sharing>`__.
-  * Leer la documentación y los ejemplos de la clase `Serial Port <https://docs.microsoft.com/en-us/dotnet/api/system.io.ports.serialport?view=netframework-4.8>`__.
+  * Lee la documentación y los ejemplos de la clase `Serial Port <https://docs.microsoft.com/en-us/dotnet/api/system.io.ports.serialport?view=netframework-4.8>`__
     de C# y .NET.
-  * Leer la documentación del manejo del puerto `serial de arduino <https://www.arduino.cc/reference/en/language/functions/communication/serial/>`__.
+  * Lee la documentación del manejo del puerto `serial de arduino <https://www.arduino.cc/reference/en/language/functions/communication/serial/>`__.
     y los ejemplos.
 
 * Duración de la actividad: 3 horas de trabajo autónomo 
@@ -136,11 +136,11 @@ Fase 3 (realización)
 Fase 4 (sustentación):
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 * Fecha: julio 9-10 de 2020
-* Descripción: realizar el video de sustentación.
+* Descripción: realiza el video de sustentación.
 * Recursos: para realizar el video de sustentación te recomiendo los siguientes recursos
   
   * Software para capturar `OBS Studio <https://obsproject.com/>`__.
-  * Ver `este <https://www.youtube.com/watch?time_continue=3&v=1tuJjI7dhw0>`__
+  * Observa `este <https://www.youtube.com/watch?time_continue=3&v=1tuJjI7dhw0>`__
     tutorial para el manejo de OBS Studio.
 
 * Duración de la actividad: 2 horas de trabajo autónomo
@@ -148,12 +148,12 @@ Fase 4 (sustentación):
 
 Fase 5 (retroalimentación): 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 10 de 2020
+* Fecha: julio 10 de 2020 - 2 p.m.
 * Descripción: encuentro sincrónico para compartir y discutir los resultados del reto. 
   El docente comparte su solución al reto y se discuten algunas soluciones de los estudiantes.
   El estudiante realiza acciones de mejora.
-* Recursos: Ingresar al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
-* Duración de la actividad: 50 minutos discusión y 50 minutos para que hagas las acciones de mejora sobre tu trabajo.
+* Recursos: ingresa al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
+* Duración de la actividad: 50 minutos discusión y 50 minutos para que hagas las acciones de mejora a tu trabajo.
 * Forma de trabajo: colaborativo con solución de dudas en tiempo real y trabajo individual en la acción de mejora.
 
 Criterios de evaluación
