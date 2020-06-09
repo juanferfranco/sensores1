@@ -221,21 +221,14 @@ Analiza el siguiente código:
    :lineno-start: 1
 
     void setup() {
-       Serial.begin(115200);
-
+      Serial.begin(115200);
     }
 
-
     void loop() {
-
       uint8_t counter = 20;
-
       counter++;
-
       Serial.println(counter);
-
       delay(100);
-
     }
 
 Compara el código anterior con este:
@@ -245,20 +238,13 @@ Compara el código anterior con este:
 
     void setup() {
        Serial.begin(115200);
-
     }
 
-
     void loop() {
-
       static uint8_t counter = 20;
-
       counter++;
-
       Serial.println(counter);
-
       delay(100);
-
     }
 
 Ahora compara con este otro código:
@@ -266,20 +252,16 @@ Ahora compara con este otro código:
 .. code-block:: cpp
    :lineno-start: 1
 
-	uint8_t counter = 5;
+    uint8_t counter = 5;
 
     void setup() {
        Serial.begin(115200);
-
     }
-
-
     void incCounter() {
       static uint8_t counter = 10;
       counter++;
       Serial.print("Counter in incCounter: ");
       Serial.println(counter);
-
     }
 
     void loop() {
@@ -383,64 +365,63 @@ el código del ejercicio 6 en tareas.
 .. code-block:: cpp
    :lineno-start: 1    
 
-	void setup() {
-	  task1();
-	  task2();
-	}
+	  void setup() {
+	    task1();
+	    task2();
+	  }
 
-	void task1(){
-	  static uint32_t previousMillis = 0;
-	  static const uint32_t interval = 1250;
-	  static bool taskInit = false;
-	  static const uint8_t ledPin =  3;
-	  static uint8_t ledState = LOW;
+	  void task1(){
+	    static uint32_t previousMillis = 0;
+	    static const uint32_t interval = 1250;
+	    static bool taskInit = false;
+	    static const uint8_t ledPin =  3;
+	    static uint8_t ledState = LOW;
 	  
-	  if(taskInit == false){
-	  	pinMode(ledPin, OUTPUT);	
-	    taskInit = true;
+	    if(taskInit == false){
+	  	  pinMode(ledPin, OUTPUT);	
+	      taskInit = true;
 	  }
 	  
 	  uint32_t currentMillis = millis();	
-	   if ( (currentMillis - previousMillis) >= interval) {
-	     previousMillis = currentMillis;
-	     if (ledState == LOW) {
-	       ledState = HIGH;
-	     } else {
-	       ledState = LOW;
-	     }
-	     digitalWrite(ledPin, ledState);
+	    if ( (currentMillis - previousMillis) >= interval) {
+	      previousMillis = currentMillis;
+	      if (ledState == LOW) {
+	        ledState = HIGH;
+	      } else {
+	        ledState = LOW;
+	      }
+	      digitalWrite(ledPin, ledState);
 	   }
-	}
-
-	void task2(){
-	  static uint32_t previousMillis = 0;
-	  static const uint32_t interval = 370;
-	  static bool taskInit = false;
-	  static const uint8_t ledPin =  5;
-	  static uint8_t ledState = LOW;
-	  
-	  if(taskInit == false){
-	  	pinMode(ledPin, OUTPUT);	
-	    taskInit = true;
 	  }
+
+	  void task2(){
+	    static uint32_t previousMillis = 0;
+	    static const uint32_t interval = 370;
+	    static bool taskInit = false;
+	    static const uint8_t ledPin =  5;
+	    static uint8_t ledState = LOW;
 	  
-	  uint32_t currentMillis = millis();	
-	   if ( (currentMillis - previousMillis) >= interval) {
-	     previousMillis = currentMillis;
-	     if (ledState == LOW) {
-	       ledState = HIGH;
-	     } else {
-	       ledState = LOW;
-	     }
-	     digitalWrite(ledPin, ledState);
-	   }
-	}
+	    if(taskInit == false){
+	  	  pinMode(ledPin, OUTPUT);	
+	      taskInit = true;
+	    }
+	  
+	    uint32_t currentMillis = millis();	
+	    if ( (currentMillis - previousMillis) >= interval) {
+	      previousMillis = currentMillis;
+	      if (ledState == LOW) {
+	        ledState = HIGH;
+	      } else {
+	        ledState = LOW;
+	      }
+	      digitalWrite(ledPin, ledState);
+	    }
+	  }
 
-	void loop() {
-	  task1();
-	  task2();
-	}
-
+	  void loop() {
+	    task1();
+	    task2();
+	  }
 
 Una de las ventajas del código anterior es que favorece el trabajo
 en equipo. Nota que se puede entregar a cada persona del equipo una
@@ -469,16 +450,16 @@ todas las tareas así:
     }
 
     void setup() {
-	  task1();
-	  task2();
-    task3();
-	}
+	    task1();
+	    task2();
+      task3();
+	  }
 
-	void loop() {
-	  task1();
-	  task2();
-    task3();
-	}
+	  void loop() {
+	    task1();
+	    task2();
+      task3();
+	  }
 
 Analiza detenidamente el código anterior. Experimenta y asegurate de entenderlo
 perfectamente antes de continuar.
@@ -500,9 +481,9 @@ Para la tarea 1 (task1):
    :lineno-start: 1 
 
     if(taskInit == false){
-	  	pinMode(ledPin, OUTPUT);	
+	    pinMode(ledPin, OUTPUT);	
 	    taskInit = true;
-	}
+	  }
 
 Para la tarea 2 (task2):
 
@@ -512,7 +493,7 @@ Para la tarea 2 (task2):
     if(taskInit == false){
 	  	pinMode(ledPin, OUTPUT);	
 	    taskInit = true;
-	}
+	  }
 
 
 En el código anterior cada tarea tiene una variable que permite
@@ -603,11 +584,11 @@ previousMillis, interval, ledPin, ledState.
 
     class LED{
         private:
-            uint32_t previousMillis;
-            const uint32_t interval;
-            const uint8_t ledPin;
-            uint8_t ledState = LOW;
-	};
+        uint32_t previousMillis;
+        const uint32_t interval;
+        const uint8_t ledPin;
+        uint8_t ledState = LOW;
+	  };
 
 De esta manera en cada tarea podremos crear un nuevo LED así:
 
@@ -656,17 +637,17 @@ permite definir los valores iniciales de cada objeto.
 
     class LED{
         private:
-            uint32_t previousMillis;
-            const uint32_t interval;
-            const uint8_t ledPin;
-            uint8_t ledState = LOW;
+        uint32_t previousMillis;
+        const uint32_t interval;
+        const uint8_t ledPin;
+        uint8_t ledState = LOW;
 
         public:
-            LED(uint8_t _ledpin, uint32_t _interval): ledPin(_ledpin), interval(_interval) {
-                pinMode(_ledpin, OUTPUT);
-                previousMillis = 0;
-            }
-	};
+          LED(uint8_t _ledpin, uint32_t _interval): ledPin(_ledpin), interval(_interval) {
+          pinMode(_ledpin, OUTPUT);
+          previousMillis = 0;
+        }
+	  };
 
 El constructor de la clase es un método que recibe los valores
 iniciales del objeto y no devuelve nada.
@@ -684,7 +665,7 @@ Ahora si podemos definir cada objeto:
    :lineno-start: 1
 
     void task2(){
-        static LED led(5, 1360);
+      static LED led(5, 1360);
 
 .. code-block:: cpp
    :lineno-start: 1
@@ -743,7 +724,7 @@ La versión final del código será:
 .. code-block:: cpp
    :lineno-start: 1
 
-	class LED{
+	  class LED{
 	    private:
 	
             uint32_t previousMillis;
@@ -771,27 +752,27 @@ La versión final del código será:
                     digitalWrite(ledPin, ledState);
                 }
             }
-	};
+	  };
 
-	void setup() {
-	  task1();
-	  task2();
-	}
+	  void setup() {
+	    task1();
+	    task2();
+	  }
 
-	void task1(){
-	  static LED led(3,1250);
-	  led.toggleLED();
-	}
+    void task1(){
+	    static LED led(3,1250);
+	    led.toggleLED();
+	  }
 
-	void task2(){
-	  static LED led(5,375);
-	  led.toggleLED();
-	}
+	  void task2(){
+	    static LED led(5,375);
+	    led.toggleLED();
+	  }
 
-	void loop() {
-	  task1();
-	  task2();
-	}
+	  void loop() {
+	    task1();
+	    task2();
+	  }
 
 Ejercicio 10
 ^^^^^^^^^^^^^
@@ -905,5 +886,3 @@ result.
 
 * ¿Qué crees entonces que son los punteros? 
 * ¿Para qué sirven los punteros?
-
-
