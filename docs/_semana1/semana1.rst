@@ -52,14 +52,17 @@ Se trata de una calculadora interactiva
 ^^^^^^^^^^^^^^^^^^^^^^
 
 * Crea una carpeta principal. Guarda allí dos carpetas más, cada uno con el proyecto para el PC
-  y para el controlador. Guarda los proyectos completos. Adicionalmente,
-  en la carpeta principal guarda un archivo .pdf donde colocarás cuatro cosas:
+  y para el controlador. Guarda los proyectos completos. 
+* En la carpeta principal guarda una copia de la rúbrica con tu autoevaluación.
+* En la carpeta principal guarda un archivo .pdf donde colocarás cuatro cosas:
   
   * La versión de Visual Studio utilizada.
   * La versión del software para programar el controlador.
   * UN ENLACE a tu ONE DRIVE donde estará alojado el video de sustentación.
   * Una tabla de contenidos que indique el instante de tiempo en el cual se pueden encontrar
     cada una de las sesiones siguientes.
+* Comprime la carpeta principal en formato .ZIP
+* Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=463170>`__.
 
 ¿Qué deberá tener el video de sustentación?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
