@@ -866,9 +866,9 @@ en detalle el siguiente código
 
 En la función loop se define un arreglo de enteros de 8
 bits sin signo (uint8_t). A la función processData le estamos
-pasando como la dirección del primer elemento
+pasando la dirección del primer elemento
 del arreglo, la cantidad de datos almacenados en el arreglo
-y la dirección de la una variable, definida también en loop,
+y la dirección de la variable result, definida también en loop,
 donde se almancenará el resultado de processData. Nota que
 processData no retorna un valor y sin embargo, produce un
 resultado que puede guardarse en la variable result.
