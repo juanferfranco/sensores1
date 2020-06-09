@@ -431,32 +431,26 @@ todas las tareas así:
 .. code-block:: cpp
    :lineno-start: 1 
 
-	  void task1(){
-    .
-    .
-    .
+    void task1(){
+    // CODE
     }
     
     void task2(){
-    .
-    .
-    .
+    // CODE
     }
 
     void task3(){
-    .
-    .
-    .
+    // CODE
     }
 
     void setup() {
-	    task1();
-	    task2();
+      task1();
+      task2();
       task3();
 	  }
 
 	  void loop() {
-	    task1();
+      task1();
 	    task2();
       task3();
 	  }
@@ -481,8 +475,8 @@ Para la tarea 1 (task1):
    :lineno-start: 1 
 
     if(taskInit == false){
-	    pinMode(ledPin, OUTPUT);	
-	    taskInit = true;
+      pinMode(ledPin, OUTPUT);	
+      taskInit = true;
 	  }
 
 Para la tarea 2 (task2):
@@ -491,8 +485,8 @@ Para la tarea 2 (task2):
    :lineno-start: 1 
 
     if(taskInit == false){
-	  	pinMode(ledPin, OUTPUT);	
-	    taskInit = true;
+      pinMode(ledPin, OUTPUT);	
+      taskInit = true;
 	  }
 
 
@@ -526,16 +520,16 @@ Para la tarea 2:
 .. code-block:: cpp
    :lineno-start: 1 
 
-	  uint32_t currentMillis = millis();	
-	   if ( (currentMillis - previousMillis) >= interval) {
-	     previousMillis = currentMillis;
-	     if (ledState == LOW) {
-	       ledState = HIGH;
-	     } else {
-	       ledState = LOW;
-	     }
-	     digitalWrite(ledPin, ledState);
-	   }
+    uint32_t currentMillis = millis();	
+	  if ( (currentMillis - previousMillis) >= interval) {
+	    previousMillis = currentMillis;
+	    if (ledState == LOW) {
+	      ledState = HIGH;
+	    } else {
+	      ledState = LOW;
+	    }
+	    digitalWrite(ledPin, ledState);
+	  }
 
 Nota que los datos sobre los que actúa cada código, aunque
 tienen el mismo nombre son datos distintos:
@@ -545,22 +539,22 @@ Para la tarea 1:
 .. code-block:: cpp
    :lineno-start: 1 
 
-	  static uint32_t previousMillis = 0;
-	  static const uint32_t interval = 1250;
-	  static bool taskInit = false;
-	  static const uint8_t ledPin =  3;
-	  static uint8_t ledState = LOW;
+	 static uint32_t previousMillis = 0;
+	 static const uint32_t interval = 1250;
+	 static bool taskInit = false;
+	 static const uint8_t ledPin =  3;
+	 static uint8_t ledState = LOW;
 
 Para la tarea 2:
 
 .. code-block:: cpp
    :lineno-start: 1 
 
-	  static uint32_t previousMillis = 0;
-	  static const uint32_t interval = 370;
-	  static bool taskInit = false;
-	  static const uint8_t ledPin =  5;
-	  static uint8_t ledState = LOW;
+	 static uint32_t previousMillis = 0;
+	 static const uint32_t interval = 370;
+	 static bool taskInit = false;
+	 static const uint8_t ledPin =  5;
+	 static uint8_t ledState = LOW;
 
 Pero ¿Por qué son distintos? porque estamos declarando las variables
 como estáticas dentro de cada tarea.
