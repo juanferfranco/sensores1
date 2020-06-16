@@ -15,7 +15,7 @@ posibilidades y características de su plataforma de software.
 Actividad de aprendizaje
 -------------------------
 
-Se realizará las SEMANA 2 y 3 de julio 13 al 24.
+Se realizará las SEMANA 2 y 3 (semana julio 13 y semana julio 20).
 
 Lee con detenimiento el código de honor y luego los pasos que debes seguir
 para evidenciar esta actividad.
@@ -116,7 +116,7 @@ Trayecto de acciones, tiempos y formas de trabajo
 Fase 1 (motivación)
 ^^^^^^^^^^^^^^^^^^^^^^
 
-* Fecha: julio 15 de 2020 - 2 p.m.
+* Fecha: julio 13 de 2020 - 2 p.m.
 * Descripción: asiste al encuentro sincrónico donde se introducirá la actividad de
   aprendizaje de la unidad 2 correspondiente a las semanas 2 y 3.
 * Recursos: ingresa al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
@@ -125,7 +125,7 @@ Fase 1 (motivación)
 
 Fase 2 (diagnóstico-repaso)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 15 de 2020
+* Fecha: julio 13 de 2020
 * Descripción: lee las preguntas y ejercicios orientadores para autoevaluar si tienes
   los conocimientos necesarios para abordar el RETO.
 * Recursos: realiza `esta guía <https://docs.google.com/presentation/d/1y270S1bs49Vn-EX6OJqZrTqaCy2EWlUHECcKAD9ZUrg/edit?usp=sharing>`__.
@@ -134,17 +134,17 @@ Fase 2 (diagnóstico-repaso)
 
 Fase 3 (fundamentación)
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 15-16 de 2020
+* Fecha: julio 13-14 de 2020
 * Descripción: realiza las lecturas donde se explican los fundamentos conceptuales de la plataforma de software utilizada para 
   la construcción de los programas del controlador.
 * Recursos: observa `este <https://docs.google.com/presentation/d/1KGtjm8v-BUcXMhfFBSAfXOtJ8RtVSL0e90qEHsblnMc/edit?usp=sharing>`__
-  meterial.
+  material.
 * Duración de la actividad: 1 hora de trabajo autónomo 
 * Forma de trabajo: individual
 
 Fase 4 (ejercicios y discusión)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 15-16-17 de 2020
+* Fecha: julio 13-14-15 de 2020
 * Descripción: realiza los ejercicios propuestos. Acuerda reuniones con tus compañeros para trabajar de manera *colaborativa*
 * Recursos: 
 
@@ -155,15 +155,17 @@ Fase 4 (ejercicios y discusión)
 
 Fase 5 (retroalimentación): 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 17 de 2020 - 2 p.m.
+* Fecha: julio 15 de 2020 - 2 p.m.
 * Descripción: encuentro sincrónico para compartir y discutir los ejercicios. 
 * Recursos: 
   
   * Ingresar al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
   * Corrige tus ejercicios (acciones de mejora)
 
-* Duración de la actividad: 50 minutos discusión y 50 minutos para que hagas las acciones de mejora sobre tu trabajo.
-* Forma de trabajo: colaborativo con solución de dudas en tiempo real y trabajo individual en la acción de mejora.
+* Duración de la actividad: 50 minutos de discusión y 50 minutos para que hagas
+  las acciones de mejora sobre tu trabajo.
+* Forma de trabajo: colaborativo con solución de dudas en tiempo real y 
+  trabajo individual en la acción de mejora.
 
 .. _ejercicios:
 
@@ -189,7 +191,9 @@ Ejercicio 2: modificar el código fuente de arduino
 Tomando con referencia el ejercicio anterior:
 
 * Busca el archivo main.cpp.
-* Modifica este archivo de tal manera que antes y después de llamar la función loop se envíe por  el puerto serial el valor que devuelve la función millis().
+* Modifica este archivo de tal manera que antes y después de llamar
+  la función loop se envíe por  el puerto serial el valor que devuelve
+  la función millis().
 * Salva el archivo main.cpp con los cambios.
 * Abre el IDE de arduino y carga el ejemplo Blink.
 * Abre la consola.
@@ -871,7 +875,7 @@ bits sin signo (uint8_t). A la función processData le estamos
 pasando la dirección del primer elemento
 del arreglo, la cantidad de datos almacenados en el arreglo
 y la dirección de la variable result, definida también en loop,
-donde se almancenará el resultado de processData. Nota que
+donde se almacenará el resultado de processData. Nota que
 processData no retorna un valor y sin embargo, produce un
 resultado que puede guardarse en la variable result.
 

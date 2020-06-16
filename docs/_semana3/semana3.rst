@@ -6,7 +6,7 @@ Trayecto de acciones, tiempos y formas de trabajo
 
 Fase 6 (RETO)
 ^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 22-23 de 2020 - 2 p.m.
+* Fecha: julio 20-21 de 2020 - 2 p.m.
 * Descripción: procede con la solución del reto.
 * Recursos: para abordar el reto de programación te recomiendo que tengas a la mano el siguiente material
 
@@ -28,7 +28,7 @@ Fase 6 (RETO)
 
 Fase 7 (sustentación):
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 22-23-24 de 2020
+* Fecha: julio 20-21-22 de 2020
 * Descripción: realiza el video de sustentación.
 * Recursos: para realizar el video de sustentación te recomiendo los siguientes recursos
   
@@ -41,12 +41,12 @@ Fase 7 (sustentación):
 
 Fase 8 (retroalimentación): 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 24 de 2020 - 2 p.m.
+* Fecha: julio 22 de 2020 - 2 p.m.
 * Descripción: encuentro sincrónico para compartir y discutir los resultados del RETO. 
 * Recursos: ingresa al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
 * Duración de la actividad: 
   
-  * 50 minutos discusión.
+  * 50 minutos de discusión.
   * 50 minutos para que hagas las acciones de mejora sobre tu trabajo.
 
 * Forma de trabajo: colaborativo con solución de dudas en tiempo real y trabajo individual en la acción de mejora.

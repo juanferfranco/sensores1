@@ -98,7 +98,7 @@ Trayecto de acciones, tiempos y formas de trabajo
 Fase 1 (motivación)
 ^^^^^^^^^^^^^^^^^^^^^^
 
-* Fecha: julio 8 de 2020 - 2 p.m.
+* Fecha: julio 6 de 2020 - 2 p.m.
 * Descripción: asiste al encuentro sincrónico donde se introducirá el curso y se
   explicará la actividad de aprendizaje, su importancia, su relación con los
   criterios de competencia y cómo será evaluada.
@@ -109,12 +109,12 @@ Fase 1 (motivación)
 Fase 2 (diagnóstico-repaso)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 * Fecha: julio 8 de 2020 - 2:30 p.m.
-* Descripción: lee las preguntas y ejercicios orientadores para autoevaluar si se tienen
+* Descripción: lee las preguntas y ejercicios orientadores para autoevaluar si tienes
   los conocimientos necesarios para abordar el reto.
 * Recursos: 
 
   * Realiza `esta guía <https://docs.google.com/presentation/d/1dJEfVysAZUY0561bICTVKtmZg8D6Ix8klRKGw6DZTp4/edit?usp=sharing>`__.
-  * Ingresar al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
+  * Ingresa al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
     para resolver dudas en tiempo real con el docente.
 
 * Duración de la actividad: 1 hora 10 minutos
@@ -122,7 +122,7 @@ Fase 2 (diagnóstico-repaso)
 
 Fase 3 (realización)
 ^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 8-9 de 2020
+* Fecha: julio 6-7 de 2020
 * Descripción: procede con la solución del reto.
 * Recursos: para abordar el reto de programación te recomiendo que tengas a la mano el siguiente material
 
@@ -137,7 +137,7 @@ Fase 3 (realización)
 
 Fase 4 (sustentación):
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 9-10 de 2020
+* Fecha: julio 7-8 de 2020
 * Descripción: realiza el video de sustentación.
 * Recursos: para realizar el video de sustentación te recomiendo los siguientes recursos
   
@@ -150,13 +150,15 @@ Fase 4 (sustentación):
 
 Fase 5 (retroalimentación): 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 10 de 2020 - 2 p.m.
+* Fecha: julio 8 de 2020 - 2 p.m.
 * Descripción: encuentro sincrónico para compartir y discutir los resultados del reto. 
   El docente comparte su solución al reto y se discuten algunas soluciones de los estudiantes.
   El estudiante realiza acciones de mejora.
 * Recursos: ingresa al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
-* Duración de la actividad: 50 minutos discusión y 50 minutos para que hagas las acciones de mejora a tu trabajo.
-* Forma de trabajo: colaborativo con solución de dudas en tiempo real y trabajo individual en la acción de mejora.
+* Duración de la actividad: 50 minutos de discusión y 50 minutos para que hagas las
+  acciones de mejora a tu trabajo.
+* Forma de trabajo: colaborativo con solución de dudas en tiempo real y trabajo
+  individual en la acción de mejora.
 
 Criterios de evaluación
 ------------------------
