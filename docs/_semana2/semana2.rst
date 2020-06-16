@@ -14,13 +14,14 @@ posibilidades y características de su plataforma de software.
 
 Actividad de aprendizaje
 -------------------------
+
 Se realizará las SEMANA 2 y 3 de julio 13 al 24.
 
 Lee con detenimiento el código de honor y luego los pasos que debes seguir
 para evidenciar esta actividad.
 
 Código de honor
-----------------
+^^^^^^^^^^^^^^^^
 Para realizar este reto se espera que hagas lo siguiente:
 
 * Colabora con tus compañeros cuando así se indique.
@@ -29,12 +30,10 @@ Para realizar este reto se espera que hagas lo siguiente:
 * NO DEBES utilizar sitios en Internet con soluciones o ideas para abordar el problema.
 * NO DEBES hacer uso de foros.
 * ¿Entonces qué hacer si no me funciona algo? Te propongo que experimentes, crea hipótesis,
-  experiementa de nuevo, observa y concluye.
+  experimenta de nuevo, observa y concluye.
 * NO OLVIDES, este curso se trata de pensar y experimentar NO de BUSCAR soluciones
   en Internet.
 
-Actividad de aprendizaje
--------------------------
 
 Enunciado: 
 ^^^^^^^^^^^
@@ -77,7 +76,7 @@ Debes controlar el funcionamiento algunos sensores, actuadores y tareas desde el
   * La versión del software para programar el controlador.
   * UN ENLACE a tu ONE DRIVE donde estará alojado el video de sustentación.
   * Una tabla de contenidos que indique el instante de tiempo en el cual se pueden encontrar
-    cada una de las sesiones siguientes.
+    cada una de las secciones solicitas para el video.
 * Comprime la carpeta principal en formato .ZIP
 * Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=463516>`__.
 
