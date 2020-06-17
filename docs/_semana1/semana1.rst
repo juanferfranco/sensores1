@@ -38,7 +38,7 @@ Se trata de una calculadora interactiva
 * Debes crear dos aplicaciones: una para el PC y otra para un controlador.
 * La aplicación del PC la debes realizar usando Visual Studio y será 
   del tipo Consola con .NET framework.
-* La aplicación del PC y del controlador interacturán por medio de un modelo
+* La aplicación del PC y del controlador interactuarán por medio de un modelo
   cliente servidor. La aplicación del PC será el cliente y la del controlador el servidor.
 * En el PC debes solicitar al usuario tres datos: operando 1, operando 2
   (serán enteros positivos de 16 bits) y operador: suma o resta.

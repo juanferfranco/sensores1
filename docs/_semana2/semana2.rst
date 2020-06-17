@@ -42,12 +42,12 @@ Debes controlar el funcionamiento algunos sensores, actuadores y tareas desde el
 * Debes crear dos aplicaciones: una para el PC y otra para tu controlador.
 * La aplicación del PC la debes realizar usando Visual Studio y será 
   del tipo Consola con .NET framework.
-* La aplicación del PC y del controlador interacturán por medio de un modelo
+* La aplicación del PC y del controlador interactuarán por medio de un modelo
   cliente servidor. La aplicación del PC será el cliente y la del controlador el servidor.
 * Para la aplicación del controlador: 
 
   * Crea 4 tareas concurrentes. 
-  * La tarea uno encederá y apagará continuamente un LED a 1 Hz;
+  * La tarea uno encenderá y apagará continuamente un LED a 1 Hz;
     la tarea 2 otro LED a 5 Hz; la tarea 3 otro LED a 7Hz; la tarea 4 recibirá comandos
     para leer un sensor digital, leer un sensor analógico, modificar un actuador digital,
     modificar un actuador analógico por PWM.
@@ -468,7 +468,7 @@ Ejercicio 9
 ^^^^^^^^^^^^^
 Observa detenidamente el código de las siguientes tareas. ¿Es muy similar, verdad?
 En este ejercicio veremos una construcción interesante de
-C++ que favorece el reuso de código. Nota que el código de las tareas
+C++ que permite reutilizar código. Nota que el código de las tareas
 1 y 2 es prácticamente el mismo, solo que está actuando sobre diferentes datos. 
 
 ¿Cómo así? ¿Recuerdas tu curso de programación orientado a objetos?
