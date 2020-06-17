@@ -11,7 +11,7 @@ mayor comodidad el curso.
 Actividad de aprendizaje
 -------------------------
 
-Se realizará la SEMANA 1 de julio 6 al 10.
+Se realizará la SEMANA 1 (julio 6).
 
 Lee con detenimiento el código de honor y luego los pasos que debes seguir
 para evidenciar esta actividad.
@@ -108,7 +108,7 @@ Fase 1 (motivación)
 
 Fase 2 (diagnóstico-repaso)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 8 de 2020 - 2:30 p.m.
+* Fecha: julio 6 de 2020 - 2:30 p.m.
 * Descripción: lee las preguntas y ejercicios orientadores para autoevaluar si tienes
   los conocimientos necesarios para abordar el reto.
 * Recursos: 

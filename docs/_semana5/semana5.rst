@@ -20,7 +20,7 @@ Fase 6 (RETO)
 
 * Duración de la actividad: 
   
-  * 1 hora 40 minutos con solución de dudas en tiempo real.
+  * Dos sesiones de 1 hora 40 minutos cada una para solución de dudas en tiempo real.
   * 5 horas de trabajo autónomo: 3 horas entre agosto 3 y 5 y 2 horas más luego de agosto 5.
 
 * Forma de trabajo: individual.

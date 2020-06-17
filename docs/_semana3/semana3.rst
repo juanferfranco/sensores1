@@ -6,7 +6,7 @@ Trayecto de acciones, tiempos y formas de trabajo
 
 Fase 6 (RETO)
 ^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 20-21 de 2020 - 2 p.m.
+* Fecha: julio 20 de 2020 - 2 p.m.
 * Descripción: procede con la solución del reto.
 * Recursos: para abordar el reto de programación te recomiendo que tengas a la mano el siguiente material
 
@@ -28,7 +28,7 @@ Fase 6 (RETO)
 
 Fase 7 (sustentación):
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 20-21-22 de 2020
+* Fecha: julio 21-22 de 2020
 * Descripción: realiza el video de sustentación.
 * Recursos: para realizar el video de sustentación te recomiendo los siguientes recursos
   

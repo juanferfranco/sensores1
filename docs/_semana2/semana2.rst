@@ -15,7 +15,7 @@ posibilidades y características de su plataforma de software.
 Actividad de aprendizaje
 -------------------------
 
-Se realizará las SEMANA 2 y 3 (semana julio 13 y semana julio 20).
+Se realizará las SEMANA 2 y 3 (julio 13/julio 20).
 
 Lee con detenimiento el código de honor y luego los pasos que debes seguir
 para evidenciar esta actividad.
