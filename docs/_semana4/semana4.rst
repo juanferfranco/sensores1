@@ -18,6 +18,7 @@ escenarios o vectores de prueba definidos en el modelado.
 
 Actividad de aprendizaje
 -------------------------
+
 Se realizará las SEMANAS 4, 5 y 6 (julio 27/agosto 3/agosto 10).
 
 Lee con detenimiento el código de honor y luego los pasos que
