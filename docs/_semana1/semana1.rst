@@ -52,7 +52,8 @@ Se trata de una calculadora interactiva
 
 * Crea una carpeta principal. Guarda allí dos carpetas más, cada uno con el proyecto para el PC
   y para el controlador. Guarda los proyectos completos. 
-* En la carpeta principal guarda una copia de la rúbrica con tu autoevaluación.
+* En la carpeta principal guarda una copia de la `rúbrica <https://auladigital.upb.edu.co/mod/page/view.php?id=465306>`__
+  con tu autoevaluación.
 * En la carpeta principal guarda un archivo .pdf donde colocarás cuatro cosas:
   
   * La versión de Visual Studio utilizada.
