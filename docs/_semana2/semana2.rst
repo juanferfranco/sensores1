@@ -148,7 +148,7 @@ Fase 4 (ejercicios y discusión)
 * Descripción: realiza los ejercicios propuestos. Acuerda reuniones con tus compañeros para trabajar de manera *colaborativa*
 * Recursos: 
 
-  * realiza estos :ref:`ejercicios`.
+  * realiza estos :ref:`ejercicios_sem2`.
 
 * Duración de la actividad: 4 horas de trabajo autónomo y colaborativo. Acuerda reuniones con tus compañeros.
 * Forma de trabajo: individual y colaborativa.
@@ -167,7 +167,7 @@ Fase 5 (retroalimentación):
 * Forma de trabajo: colaborativo con solución de dudas en tiempo real y 
   trabajo individual en la acción de mejora.
 
-.. _ejercicios:
+.. _ejercicios_sem2:
 
 Ejercicios
 ------------
