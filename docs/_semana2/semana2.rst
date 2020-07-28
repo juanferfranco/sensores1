@@ -68,8 +68,9 @@ Debes controlar el funcionamiento algunos sensores, actuadores y tareas desde el
 ^^^^^^^^^^^^^^^^^^^^^^
 
 * Crea una carpeta principal. Guarda allí dos carpetas más, cada uno con el proyecto para el PC
-  y para el controlador. Guarda los proyectos completos. 
-* En la carpeta principal guarda una copia de la rúbrica con tu autoevaluación.
+  y para el controlador. Guarda los proyectos completos.
+* En la carpeta principal guarda una copia de la `rúbrica <https://auladigital.upb.edu.co/mod/url/view.php?id=463520>`__
+  con tu autoevaluación.
 * En la carpeta principal guarda un archivo .pdf donde colocarás cuatro cosas:
   
   * La versión de Visual Studio utilizada.

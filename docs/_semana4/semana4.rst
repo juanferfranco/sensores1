@@ -137,7 +137,8 @@ La verificación será calculada desde el Byte 1 hasta el byte m.
 * Guarda allí el proyecto para el controlador.
 * Guarda el diagrama, en formato .pdf, con el modelo del
   software del controlador.
-* En la carpeta principal guarda una copia de la rúbrica con tu autoevaluación.
+* En la carpeta principal guarda una copia de la `rúbrica <https://auladigital.upb.edu.co/mod/url/view.php?id=483169>`__
+  con tu autoevaluación.
 * En la carpeta principal guarda un archivo .pdf donde colocarás tres cosas:
   
   * La versión del software para programar el controlador.
