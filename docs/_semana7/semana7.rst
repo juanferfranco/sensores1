@@ -111,44 +111,17 @@ La aplicación interactiva en el PC es tipo consola en C# y debe tener:
   * Guarda allí el proyecto para el controlador y el proyecto para la aplicación
     interactiva.
   * En la carpeta principal guarda una copia de la rúbrica con tu autoevaluación.
-  * En la carpeta principal guarda un archivo .pdf donde colocarás tres cosas:
-    
-    * La versión del software para programar el controlador y la aplicación.
-    * UN ENLACE a tu ONE DRIVE donde estará alojado el video de sustentación.
-    * Una tabla de contenidos que indique el instante de tiempo en el cual se
-      pueden encontrar cada una de las secciones solicitadas en el video.
-
   * Comprime la carpeta principal en formato .ZIP
   * Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=487305>`__.
 
-¿Qué deberá tener el video de sustentación?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+¿Qué deberás tener en cuenta para la sustentación?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Máximo 20 minutos: debes planear el video tal como aprendiste en segundo semestre
-  en tu curso de narrativa audiovisual.
-* Cuida la calidad del audio y del video.
-* Sección 1: introducción, donde dirás tu nombre y si realizaste el RETO
-  completo. Si no terminaste indica claramente qué te faltó y por qué.
-* Sección 2: muestra que tus dos programas compilan correctamente y sin errores
-  o advertencias problemáticas.
-* Sección 3: Realiza una demostración del funcionamiento donde ilustres todos los
-  aspectos solicitados.
-* Define un conjuntos de vectores de prueba donde indiques los datos de entrada y el
-  resultado esperado.
-* Aplica los vectores de prueba y muestra que si producen los valores esperados.
-* Sección 4: explica la arquitectura de las aplicaciones. Utiliza una
-  aplicación de `WhiteBoard <https://www.microsoft.com/en-us/microsoft-365/microsoft-whiteboard/digital-whiteboard-app>`__
-  para esto.
-* Tus explicaciones deben ser claras, precisas y completas. No olvides planear 
-  bien tu video de sustentación.
-* Debes explicar las partes de la aplicación, la función que realiza cada parte y
-  sus propiedades.
-* Debes explicar las relaciones entre las partes, cómo funcionan esas relaciones y
-  sus propiedades
-* Sección 5: protocolo de integración entre las aplicaciones.
-* Debes explicar claramente cómo se comunicarán tus aplicaciones.
-* Muestra de manera detallada los pasos que deben realizar cada una de las aplicaciones.
-  Te recomiendo utilizar un `diagrama de secuencias <https://en.wikipedia.org/wiki/Sequence_diagram#:~:text=A%20sequence%20diagram%20shows%20object,the%20functionality%20of%20the%20scenario.>`__.
+* La sustentación se realizará en la última sesión de esta unidad.
+* Tendrá una duración máxima de 10 minutos. Allí mostrarás: el funcionamiento y explicarás
+  cómo realizaste las pruebas, qué problemas tuviste, cómo los solucionaste.
+* Estudia muy bien tu solución y prepárate para responder algunas preguntas. 
+* Ten en cuenta la rúbrica para preparar tu sustentación.
 
 Trayecto de acciones, tiempos y formas de trabajo
 ---------------------------------------------------
@@ -215,7 +188,7 @@ Fase 5 (retroalimentación):
 .. _ejercicios:
 
 Ejercicios
-------------
+--------------
 
 Ejercicio 1
 ^^^^^^^^^^^^^
