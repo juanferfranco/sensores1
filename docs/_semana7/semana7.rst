@@ -365,13 +365,10 @@ Te diste cuenta que al presionar una tecla, el conteo se detiene
 un momento?
 
 Al construir aplicaciones interactivas no te puedes dar este lujo.
-Piensa que en vez de imprimir un contador estás renderizando una
-escena. Por tanto, las comunicaciones con el
+Piensa en esto: ¿Y si en vez de imprimir un contador estás
+renderizando una escena? Por tanto, las comunicaciones con el
 controlador y el proceso de impresión del contador en la pantalla deben
-ser dos flujos independientes.
-
-Para lograrlo, necesitas dos flujos de instrucciones independientes,
-es decir, dos hilos.
+ser dos flujos independientes, es decir, dos hilos.
 
 ¿Quieres intentarlo tu mismo?
 
