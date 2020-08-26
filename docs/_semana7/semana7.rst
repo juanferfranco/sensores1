@@ -366,8 +366,9 @@ un momento?
 
 Al construir aplicaciones interactivas no te puedes dar este lujo.
 Piensa que en vez de imprimir un contador estás renderizando una
-escena. Por tanto, debes independizar las comunicaciones con el
-controlador del proceso de impresión del contador en la pantalla.
+escena. Por tanto, las comunicaciones con el
+controlador y el proceso de impresión del contador en la pantalla deben
+ser dos flujos independientes.
 
 Para lograrlo, necesitas dos flujos de instrucciones independientes,
 es decir, dos hilos.
