@@ -7,7 +7,7 @@ Trayecto de acciones, tiempos y formas de trabajo
 Fase 6 (RETO-continuación)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 * Fecha: agosto 31 de 2020 - 2 p.m. 
-* Descripción: procede con la solución del reto y prepara la sustentación
+* Descripción: termina la solución al reto
 * Recursos: para abordar el reto de programación te recomiendo que tengas a la mano el siguiente material
 
   * Ingresa al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__.
@@ -17,7 +17,7 @@ Fase 6 (RETO-continuación)
 * Duración de la actividad: 
   
   * 1 hora 40 minutos con solución de dudas en tiempo real.
-  * 5 horas de trabajo autónomo
+  * 3 horas de trabajo autónomo
 
 * Forma de trabajo: individual.
 
