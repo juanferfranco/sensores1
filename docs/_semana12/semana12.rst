@@ -17,7 +17,7 @@ Actividad 8
 * Fecha: septiembre 21 a septiembre 23 de 2020
 * Descripción: resuelve el RETO
 * Recursos: material de esta unidad
-* Duración de la actividad: 1 hora 40 minutos. 
+* Duración de la actividad: 5 horas.
 * Forma de trabajo: individual
 
 Actividad 9
