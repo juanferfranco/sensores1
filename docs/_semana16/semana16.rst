@@ -1,24 +1,31 @@
-Semana 16
-===========
+Semana 16: Unidad 6 
+=======================
 
-..
-  Terminar el reto de la semana 14 que será entregado como la evaluación 5
+Trayecto de acciones, tiempos y formas de trabajo
+---------------------------------------------------
 
-  Evaluación 5
-  -------------
+Actividad 1
+^^^^^^^^^^^^^
+* Fecha: octubre 19 de 2020
+* Descripción: Evaluación final
+* Recursos: ingresa a Teams
+* Duración de la actividad: 1 hora , 40 minutos. 
+* Forma de trabajo: grupal
 
-  Enunciado
-  ^^^^^^^^^^
-  Entregar funcionando y sustentar el reto de la semana 14
+Actividad 2
+^^^^^^^^^^^^^
+* Fecha: octubre 19 a octubre 21 de 2020
+* Descripción: prepara la sustentación de la evaluación final
+* Recursos: mira los ejercicios abajo.
+* Duración de la actividad: 5 horas. 
+* Forma de trabajo: individual
 
-  Consideraciones:
-  ^^^^^^^^^^^^^^^^^^
-  * Plazo de entrega, miércoles 13 de mayo a las 6 p.m.
-  * Suba a `este <https://www.dropbox.com/request/DwVce66cRMKzEjnyL9BA>`__
-    enlace un archivo .pdf que contenga un enlace a la sustentación de su trabajo.
-  * El video debe tener:
+Actividad 3
+^^^^^^^^^^^^^
+* Fecha: octubre 21 de 2020
+* Descripción: sustentación de la evaluación final
+* Recursos: debes estar pendiente de la llamada del docente
+  por medio de Teams.
+* Duración de la actividad: 1 hora , 40 minutos. 
+* Forma de trabajo: individual
 
-      * INTRODUCCIÓN: indicar su nombre y si implementó completamente todo lo solicitado,
-        en caso contrario, indicar qué partes del reto no implementó.
-      * DEMOSTRACIÓN: demostrar funcionando del reto.
-      * EXPLICACIÓN: explicar cómo funciona el programa en el controlador y en Unity.

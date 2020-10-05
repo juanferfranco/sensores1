@@ -1,353 +1,585 @@
-Semana 14
-===========
+Semana 14:  Unidad 6
+======================
 
-..
-  Esta semana vamos a continuar la exploración del paquete Ardity.
+Trayecto de acciones, tiempos y formas de trabajo
+---------------------------------------------------
 
-  Sesión 1
-  ----------
+Actividad 1
+^^^^^^^^^^^^^
+* Fecha: octubre 5 de 2020
+* Descripción: solución de dudas en tiempo real con el docente 
+* Recursos: ingresa a Teams
+* Duración de la actividad: 1 hora , 20 minutos. 
+* Forma de trabajo: grupal
 
-  Ejercicio 1
-  ^^^^^^^^^^^^
-  ¿Qué excepciones se están considerando en el código?
 
-  Ejercicio 2
-  ^^^^^^^^^^^^
-  ¿Qué pasa si no reciben datos por el puerto serial durante 100ms?
+Ejercicio 1
+###############
+La semana pasada dejamos este minireto para realizar
 
-  Ejercicio 3
-  ^^^^^^^^^^^^
-  ¿Qué pasa si el cable serial se desconecta de manera inesperada?
+* Crea un proyecto nuevo en Unity.
+* Configura el soporte para el puerto serial tal como lo viste en la guía.
+* OJO, no instales el paquete Ardity. SI YA LO HICISTE, vuelva a comenzar.
+* Ahora toma únicamente LOS SCRIPTS de Ardity necesarios (SOLO LOS NECESARIOS)
+  para hacer que la aplicación de la guía funcione de nuevo.
 
-  Ejercicio 4
-  ^^^^^^^^^^^^^
-  ¿Cómo se reestablece el funcionamiento de la aplicación?
+¿Vemos los resultados obtenidos?
 
-  Ejercicio 5
-  ^^^^^^^^^^^^^
-  ¿Qué modificación tendríamos que hacer a la aplicación de arduino para
-  reestablecer la comunicación?
+Ejercicio 2
+##############
+Este ejercicio, de repaso, te propone una nueva iteración al estudio
+de la aplicación demo de la semana pasada.
 
-  Sesión 2
-  ----------
+Primero, vamos a analizar rápidamente el código de arduino:
 
-  Ejercicio 1
-  ^^^^^^^^^^^^^
-  ¿Qué modificación debemos realizar en el paquete Ardity si queremos
-  soportar un nuevo protocolo de comunicación?
+.. code-block:: cpp
+   :lineno-start: 1
 
-  RETO
-  ^^^^^
-  En la semana 11 trabajamos con un sensor que utilizaba un protocolo binario.
-  `Este era el sensor <http://www.chafon.com/productdetails.aspx?pid=382>`__.
-  Y su manual del fabricante se encuentra `aquí <https://drive.google.com/open?id=1uDtgNkUCknkj3iTkykwhthjLoTGJCcea>`__.
-  Adicionalmente usamos `este <https://drive.google.com/file/d/1iVr2Fiv8wXLqNyShr_EOplSvOJBIPqJP/view>`__
-  archivo de prueba enviado por el fabricante del sensor.
-
-  El siguiente código simula el funcionamiento del sensor RFID para poder
-  probar una aplicación interactiva que se conecte al sensor.
-
-  .. code-block:: cpp
-    :lineno-start: 1
-
-      #include <Arduino.h>
-      //#define DEBUG
-      #ifdef DEBUG
-      #define DEBUG_PRINT(msg,value) Serial.print(msg); Serial.println(value)
-      #else
-      #define DEBUG_PRINT(msg,value)
-      #endif
-      
-      void TaskReadCommand();
-      unsigned int uiCrc16Cal(unsigned char const *, unsigned char);
-      void parseCommad(uint8_t *);
-      
-      void setup()
-      {
-        Serial.begin(57600);
-      }
-      
-      void loop()
-      {
-        TaskReadCommand();
-      }
-      
-      void TaskReadCommand()
-      {
-        enum class serialStates {
-          waitLen,
-          waitData
-        };
-        
-        static auto state = serialStates::waitLen;
-        static uint8_t buffer[32] = {0};
-        static uint8_t dataCounter = 0;
-      
-        switch (state)
+    uint32_t last_time = 0;
+    
+    void setup()
+    {
+        Serial.begin(9600);
+    }
+    
+    void loop()
+    {
+        // Print a heartbeat
+        if ( (millis() - last_time) >  2000)
         {
-          case serialStates::waitLen: // wait for the first byte: len
-      
-            if (Serial.available())
-            {
-              buffer[dataCounter] = Serial.read();
-              dataCounter++;
-              state = serialStates::waitData;
-              DEBUG_PRINT("Go to rx data", "");
-            }
-            break;
-      
-          case serialStates::waitData: // read data
-            while (Serial.available())
-            {
-              buffer[dataCounter] = Serial.read();
-              dataCounter++;
-      
-              if (dataCounter == (buffer[0] + 1))
-              { // if all bytes arrived
-                // verify the checksum
-                DEBUG_PRINT("Verify the checksum", "");
-                DEBUG_PRINT("dataCount: ",´ dataCounter);
-                if (dataCounter >= 5)
-                {
-                  unsigned int checksum = uiCrc16Cal(buffer, dataCounter - 2);
-                  uint8_t lsBChecksum = (uint8_t)(checksum & 0x000000FF);
-                  uint8_t msBChecksum = (uint8_t)((checksum & 0x0000FF00) >> 8);
-                  if ((lsBChecksum == buffer[dataCounter - 2]) && (msBChecksum == buffer[dataCounter - 1]))
-                  {
-                    DEBUG_PRINT("ChecksumOK", "");
-                    parseCommad(buffer);
-                  }
-                }
-                dataCounter = 0;
-                state = serialStates::waitLen;
-                DEBUG_PRINT("Go to rx len", "");
-              }
-            }
-            break;
+            Serial.println("Arduino is alive!!");
+            last_time = millis();
         }
-      }
-      
-      void parseCommad(uint8_t *pdata)
-      {
-        uint8_t command = pdata[2];
-        static uint8_t command21[] = {0x0D, 0x00, 0x21, 0x00, 0x02, 0x44, 0x09, 0x03, 0x4E, 0x00, 0x1E, 0x0A, 0xF2, 0x16};
-        static uint8_t command24[] = {0x05, 0x00, 0x24, 0x00, 0x25, 0x29};
-        static uint8_t command2F[] = {0x05, 0x00, 0x2F, 0x00, 0x8D, 0xCD};
-        static uint8_t command22[] = {0x05, 0x00, 0x22, 0x00, 0xF5, 0x7D};
-        static uint8_t command28[] = {0x05, 0x00, 0x28, 0x00, 0x85, 0x80};
-        static uint8_t command25[] = {0x05, 0x00, 0x25, 0x00, 0xFD, 0x30};
-      
-      
-        switch (command)
+    
+        // Send some message when I receive an 'A' or a 'Z'.
+        switch (Serial.read())
         {
-          case 0x21:
-            Serial.write(command21, sizeof(command21));
-            break;
-          case 0x24:
-            Serial.write(command24, sizeof(command24));
-            break;
-      
-          case 0x2F:
-            Serial.write(command2F, sizeof(command2F));
-            break;
-      
-          case 0x22:
-            Serial.write(command22, sizeof(command22));
-            break;
-      
-          case 0x28:
-            Serial.write(command28, sizeof(command28));
-            break;
-      
-          case 0x25:
-            Serial.write(command25, sizeof(command25));
-            break;
+            case 'A':
+                Serial.println("That's the first letter of the abecedarium.");
+                break;
+            case 'Z':
+                Serial.println("That's the last letter of the abecedarium.");
+                break;
         }
-      }
-      
-      unsigned int uiCrc16Cal(unsigned char const *pucY, unsigned char ucX)
-      {
-        const uint16_t PRESET_VALUE = 0xFFFF;
-        const uint16_t POLYNOMIAL = 0x8408;
-      
-      
-        unsigned char ucI, ucJ;
-        unsigned short int uiCrcValue = PRESET_VALUE;
-      
-        for (ucI = 0; ucI < ucX; ucI++)
+    }
+
+Consideraciones a tener presentes con este código:
+
+* La velocidad de comunicación es de 9600. Esa misma velocidad se tendrá que configurar
+  del lado de Unity para que ambas partes se puedan entender.
+* Nota que no estamos usando la función delay(). Estamos usando millis para medir tiempos
+  relativos. Nota que cada dos segundos estamos enviando un mensaje indicando que el
+  arduino está activo:  ``Arduino is alive!!``
+* Observa que el buffer del serial se lee constantemente. NO estamos usando
+  el método available() que usualmente utilizamos. ¿Recuerdas lo anterior? Con available()
+  nos aseguramos que el buffer de recepción tiene al menos un byte para leer; 
+  sin embargo, cuando usamos Serial.read() sin verificar antes que tengamos datos en el
+  buffer, es muy posible que el método devuelva un -1 indicando que no había nada en el
+  buffer de recepción. NO OLVIDES ESTO POR FAVOR.
+* Por último nota que todos los mensajes enviados por arduino usan el método println.
+  ¿Y esto por qué es importante? porque println enviará la información que le pasemos
+  como argumento, codificada en ASCII, y adicionará al final 2 bytes: 0x0D y 0x0A. Estos
+  bytes serán utilizados por Ardity para detectar que la cadena enviada por Arduino está completa.
+  NO OLVIDES VERIFICAR LO ANTERIOR, si no logras identificarlo habla con el profe.
+
+Ahora analicemos la parte de Unity/Ardity. Para ello, carguemos una de las escenas ejemplo:
+DemoScene_UserPoll_ReadWrite
+
+.. image:: ../_static/scenes.jpg
+   :scale: 100%
+   :align: center
+
+Nota que la escena tiene 3 gameObjects: Main Camera, SerialController y SampleUserPolling_ReadWrite.
+
+Veamos el gameObject SampleUserPolling_ReadWrite. Este gameObject tiene dos components, un transform
+y un script. El script tiene el código como tal de la aplicación del usuario.
+
+.. image:: ../_static/user_code.jpg
+   :scale: 100%
+   :align: center
+
+Nota que el script expone una variable pública: serialController. Esta variable es del tipo SerialController.
+
+.. image:: ../_static/serialControllerVarCode.jpg
+   :scale: 100%
+   :align: center
+
+Esa variable nos permite almacenar la referencia a un objeto tipo SerialController. ¿Donde estaría ese
+objeto? Pues cuando el gameObject SerialController es creado nota que uno de sus componentes es un objeto
+de tipo SerialController:
+
+.. image:: ../_static/serialControllerGO_Components.jpg
+   :scale: 100%
+   :align: center
+
+Entonces desde el editor de Unity podemos arrastrar el gameObject SerialController al campo SerialController
+del gameObject SampleUserPolling_ReadWrite y cuando se despliegue la escena, automáticamente se inicializará
+la variable serialController con la referencia en memoria al objeto SerialController:
+
+.. image:: ../_static/serialControllerUnityEditor.jpg
+   :scale: 100%
+   :align: center
+
+De esta manera logramos que el objeto SampleUserPolling_ReadWrite tenga acceso a la información
+del objeto SerialController.
+
+Observemos ahora qué datos y qué comportamientos tendría un objeto de tipo SampleUserPolling_ReadWrite:
+
+.. code-block:: csharp
+   :lineno-start: 1
+
+    /**
+     * Ardity (Serial Communication for Arduino + Unity)
+     * Author: Daniel Wilches <dwilches@gmail.com>
+     *
+     * This work is released under the Creative Commons Attributions license.
+     * https://creativecommons.org/licenses/by/2.0/
+     */
+
+    using UnityEngine;
+    using System.Collections;
+
+    /**
+     * Sample for reading using polling by yourself, and writing too.
+     */
+    public class SampleUserPolling_ReadWrite : MonoBehaviour
+    {
+        public SerialController serialController;
+
+        // Initialization
+        void Start()
         {
-          uiCrcValue = uiCrcValue ^ *(pucY + ucI);
-          for (ucJ = 0; ucJ < 8; ucJ++)
-          {
-            if (uiCrcValue & 0x0001)
+            serialController = GameObject.Find("SerialController").GetComponent<SerialController>();
+
+            Debug.Log("Press A or Z to execute some actions");
+        }
+
+        // Executed each frame
+        void Update()
+        {
+            //---------------------------------------------------------------------
+            // Send data
+            //---------------------------------------------------------------------
+
+            // If you press one of these keys send it to the serial device. A
+            // sample serial device that accepts this input is given in the README.
+            if (Input.GetKeyDown(KeyCode.A))
             {
-              uiCrcValue = (uiCrcValue >> 1) ^ POLYNOMIAL;
+                Debug.Log("Sending A");
+                serialController.SendSerialMessage("A");
             }
+
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                Debug.Log("Sending Z");
+                serialController.SendSerialMessage("Z");
+            }
+
+
+            //---------------------------------------------------------------------
+            // Receive data
+            //---------------------------------------------------------------------
+
+            string message = serialController.ReadSerialMessage();
+
+            if (message == null)
+                return;
+
+            // Check if the message is plain data or a connect/disconnect event.
+            if (ReferenceEquals(message, SerialController.SERIAL_DEVICE_CONNECTED))
+                Debug.Log("Connection established");
+            else if (ReferenceEquals(message, SerialController.SERIAL_DEVICE_DISCONNECTED))
+                Debug.Log("Connection attempt failed or disconnection detected");
             else
-            {
-              uiCrcValue = (uiCrcValue >> 1);
-            }
-          }
+                Debug.Log("Message arrived: " + message);
         }
-        return uiCrcValue;
-      }
+    }
 
-  La semana 12 presentamos una solución a los retos de la semana 11
-  que buscaban conectar el sensor a una aplicación de consola usando
-  C#.
+Vamos a realizar una prueba. Pero antes configuremos el puerto serial en el cual está conectado
+el arduino. El arduino ya debe estar corriendo el código de muestra del sitio web del plugin.
 
-  El siguiente código muestra cómo interactuar con el sensor desde una
-  aplicación C#.
+.. image:: ../_static/serialControllerCOM.jpg
+   :scale: 100%
+   :align: center
 
-  .. code-block:: csharp
-    :lineno-start: 1
+En este caso el puerto es COM4.
 
-      using System;
-      using System.IO.Ports;
+Corre el programa, abre la consola y selecciona la ventana Game del Editor de Unity. Con la ventana
+seleccionada (click izquierdo del mouse), escribe las letras A y Z. Notarás los mensajes que aparecen
+en la consola:
 
-      namespace sem11Reto1
-      {
-          class Program
-          {
-              private static SerialPort _serialPort = new SerialPort();
-              private static readonly byte[] q_commnad = new byte[] { 0x04, 0xFF, 0x21, 0x19, 0x95 };
-              private static readonly byte[] w_commnad = new byte[] { 0x05, 0x00, 0x24, 0x00, 0x25, 0x29 };
-              private static readonly byte[] e_commnad = new byte[] { 0x05, 0x00, 0x2F, 0x1E, 0x72, 0x34 };
-              private static readonly byte[] r_commnad =  new byte[] { 0x06, 0x00, 0x22, 0x31, 0x80, 0xE1, 0x96 };
-              private static readonly byte[] t_commnad =  new byte[] { 0x05, 0x00, 0x28, 0x05, 0x28, 0xD7 };
-              private static readonly byte[] y_commnad = new byte[] { 0x05, 0x00, 0x25, 0x00, 0xFD, 0x30 };
-              private static byte[] buffer = new byte[32];
+.. image:: ../_static/unityConsole.jpg
+   :scale: 100%
+   :align: center
 
-              static void Main(string[] args)
-              {
-                  // Allow the user to set the appropriate properties.
-                  _serialPort.PortName = "COM4";
-                  _serialPort.BaudRate = 57600;
-                  _serialPort.DtrEnable = true;
-                  _serialPort.Open();
+Una vez la aplicación funcione nota algo en el código de SampleUserPolling_ReadWrite:
 
-                  while (true)
-                  {
-                      Console.WriteLine();
-                      Console.WriteLine("Commands available: Q: 0x21, W: 0x24, E: 0x2F, R: 0x22, T: 0x28, Y: 0x25");
-                      switch (Console.ReadKey(true).Key)
-                      {
-                          case ConsoleKey.Q:
-                              sendCommand(q_commnad);
-                              readData();
-                              break;
-                          case ConsoleKey.W:
-                              sendCommand(w_commnad);
-                              readData();
-                              break;
+.. code-block:: csharp
+   :lineno-start: 1
 
-                          case ConsoleKey.E:
-                              sendCommand(e_commnad);
-                              readData();
-                              break;
-                          case ConsoleKey.R:
-                              sendCommand(r_commnad);
-                              readData();
-                              break;
+    serialController = GameObject.Find("SerialController").GetComponent<SerialController>();
 
-                          case ConsoleKey.T:
-                              sendCommand(t_commnad);
-                              readData();
-                              break;
+Comenta esta línea y corre la aplicación de nuevo. Funciona?
 
-                          case ConsoleKey.Y:
-                              sendCommand(y_commnad);
-                              readData();
-                              break;
+Ahora, elimina el comentario de la línea y luego borra la referencia al SerialController
+en el editor de Unity:
 
-                          default:
-                              break;
-                      }
+.. image:: ../_static/removeSerialControllerUnityEditor.jpg
+   :scale: 100%
+   :align: center
 
-                  
-                  }
-              }
+Corre de nuevo la aplicación.
 
-              private static void sendCommand(byte[] data)
-              {
-                  Console.Write("Send this packet: ");
-                  for(int i = 0; i < data.Length; i++)
-                  {
-                      Console.Write("{0:X2}",data[i]);
-                      Console.Write(' ');
-                  }
-                  Console.WriteLine();
-                  _serialPort.Write(data, 0, data.Length);
-              }
+* ¿Qué puedes concluir?
+* ¿Para qué incluyó esta línea el autor del plugin?
 
-              private static void readData()
-              {
-                  // 1. Este llamado bloque completamente el hilo
-                  // esperando a que lleguen datos por el puerto serial
-                  while (_serialPort.BytesToRead == 0) ;
+Ahora analicemos el código del método Update de SampleUserPolling_ReadWrite:
 
-                  // 2. Leo el primer byte que me dice la longitud
-                  _serialPort.Read(buffer, 0, 1);
-                  // 3. Espero el resto de datos
-                  while (_serialPort.BytesToRead < buffer[0]) ;
+.. code-block:: csharp
+   :lineno-start: 1
 
-                  // 4. Leo los datos
-                  _serialPort.Read(buffer, 1, buffer[0]);
+    // Executed each frame
+    void Update()
+    {
+      .
+      .
+      .
+      serialController.SendSerialMessage("A");
+      .
+      .
+      .
+      string message = serialController.ReadSerialMessage();
+      .
+      .
+      .
+    }
 
-                  // 5. Verifica el checksum
-                  bool checksumOK = verifyChecksum(buffer);
-                  Console.Write("Packet received: ");
-                  for(int i = 0; i < (buffer[0] + 1); i++)
-                  {
-                      Console.Write("{0:X2}", buffer[i]);
-                      Console.Write(' ');
+¿Recuerdas cada cuánto se llama el método Update? 
 
-                  }
-                  if(checksumOK == false)
-                  {
-                      Console.WriteLine(" Checksum Fails");
-                  }
-                  else
-                  {
-                      Console.WriteLine();
-                  }
+Update se llama en cada frame. Lo llama automáticamente el motor de Unity
 
-              }
+Nota los dos métodos que se resaltan:
 
-              private static bool verifyChecksum(byte[] packet)
-              {
-                  bool checksumOK = false;
-                  byte ucI, ucJ;
+.. code-block:: csharp
+   :lineno-start: 1
 
-                  int uiCrcValue = 0x0000FFFF;
-                  int len = packet[0] + 1;
+    serialController.SendSerialMessage("A");
+    string message = serialController.ReadSerialMessage();
 
-                  for (ucI = 0; ucI < (len - 2); ucI++)
-                  {
-                      uiCrcValue = uiCrcValue ^ packet[ucI];
-                      for (ucJ = 0; ucJ < 8; ucJ++)
-                      {
-                          if ((uiCrcValue & 0x00000001) == 0x00000001)
-                          {
-                              uiCrcValue = (uiCrcValue >> 1) ^ 0x00008408;
-                          }
-                          else
-                          {
-                              uiCrcValue = (uiCrcValue >> 1);
-                          }
-                      }
-                  }
+Ambos métodos se llaman sobre el objeto cuya dirección en memoria está guardada en
+la variable serialController.
 
-                  int LSBCkecksum = uiCrcValue & 0x000000FF;
-                  int MSBCkecksum = (uiCrcValue & 0x0000FF00) >> 8;
+El primer método permite enviar la letra A y el segundo permite recibir una cadena
+de caracteres.
 
-                  if ((packet[len - 2] == LSBCkecksum) && (packet[len - 1] == MSBCkecksum)) checksumOK = true;
-                  return checksumOK;
-              }
+* ¿Cada cuánto se envía la letra A o la Z?
+* ¿Cada cuánto leemos si nos llegaron mensajes desde el arduino?
 
-          }
-      }
+Ahora vamos a analizar cómo transita la letra A desde el SampleUserPolling_ReadWrite hasta
+el arduino.
 
-  El reto entonces consiste en realizar la integración del sensor, pero esta vez
-  al motor Unity, modificando el paquete Ardity para que pueda soportar este nuevo
-  protocolo.
+Para enviar la letra usamos el método SendSerialMessage de la clase SerialController. Observa
+que la clase tiene dos variables protegidas importantes:
+
+.. image:: ../_static/serialControllerUMLClass.jpg
+   :scale: 35%
+   :align: center
+
+.. code-block:: csharp
+   :lineno-start: 1
+
+   protected Thread thread;
+   protected SerialThreadLines serialThread;
+
+Con esas variables vamos a administrar un nuevo hilo y vamos a almacenar una referencia 
+a un objeto de tipo SerialThreadLines.
+
+En el método onEnable de SerialController tenemos:
+
+.. code-block:: csharp
+   :lineno-start: 1
+
+   serialThread = new SerialThreadLines(portName, baudRate, reconnectionDelay, maxUnreadMessages);
+   thread = new Thread(new ThreadStart(serialThread.RunForever));
+   thread.Start();
+
+Aquí vemos algo muy interesante, el código del nuevo hilo que estamos creando será RunForever y
+ese código actuará sobre los datos del objeto cuya referencia está almacenada en serialThread.
+
+Vamos a concentrarnos ahora en serialThread que es un objeto de la clase SerialThreadLines:
+
+.. code-block:: csharp
+   :lineno-start: 1
+
+    public class SerialThreadLines : AbstractSerialThread
+    {
+        public SerialThreadLines(string portName,
+                                 int baudRate,
+                                 int delayBeforeReconnecting,
+                                 int maxUnreadMessages)
+            : base(portName, baudRate, delayBeforeReconnecting, maxUnreadMessages, true)
+        {
+        }
+
+        protected override void SendToWire(object message, SerialPort serialPort)
+        {
+            serialPort.WriteLine((string) message);
+        }
+
+        protected override object ReadFromWire(SerialPort serialPort)
+        {
+            return serialPort.ReadLine();
+        }
+    }
+
+Al ver este código no se observa por ningún lado el método RunForever, que es el código
+que ejecutará nuestro hilo. ¿Dónde está? Observe que SerialThreadLines también es un
+AbstractSerialThread. Entonces es de esperar que el método RunForever esté en la clase
+AbstractSerialThread.
+
+Por otro lado nota que para enviar la letra A usamos el método SendSerialMessage también
+sobre los datos del objeto reverenciado por serialThread del cual ya sabemos que es un
+SerialThreadLines y un AbstractSerialThread
+
+.. code-block:: csharp
+   :lineno-start: 1
+
+    public void SendSerialMessage(string message)
+    {
+        serialThread.SendMessage(message);
+    }
+
+Al igual que RunForever, el método SendMessage también está definido en AbstractSerialThread.
+
+Veamos entonces ahora qué hacemos con la letra A:
+
+.. code-block:: csharp
+   :lineno-start: 1
+
+    public void SendMessage(object message)
+    {
+        outputQueue.Enqueue(message);
+    }
+
+Este código nos da la clave. Lo que estamos haciendo es guardar la letra A 
+que queremos transmitir en una COLA. Esta estructura de datos permite 
+PASAR información de un HILO a otro HILO.
+
+¿Cuáles hilos?
+
+Pues tenemos en este momento dos hilos: el hilo del motor y el nuevo hilo que creamos antes.
+El hilo que ejecutará el código RunForever sobre los datos del objeto de tipo
+SerialThreadLines:AbstractSerialThread. Por tanto, observa que la letra A la estamos
+guardando en la COLA del SerialThreadLines:AbstractSerialThread
+
+Si observas con detenimiento el código de RunForever:
+
+.. code-block:: csharp
+   :lineno-start: 1
+
+    public void RunForever()
+    {
+        try
+        {
+            while (!IsStopRequested())
+            {
+                ...
+                try
+                {
+                    AttemptConnection();
+                    while (!IsStopRequested())
+                        RunOnce();
+                }
+                catch (Exception ioe)
+                {
+                ...
+                }
+            }
+        }
+        catch (Exception e)
+        {
+        ...
+        }
+    }
+
+Los detalles están en RunOnce():
+
+.. code-block:: csharp
+   :lineno-start: 1
+
+    private void RunOnce()
+    {
+        try
+        {
+            // Send a message.
+            if (outputQueue.Count != 0)
+            {
+                SendToWire(outputQueue.Dequeue(), serialPort);
+            }
+            object inputMessage = ReadFromWire(serialPort);
+            if (inputMessage != null)
+            {
+                if (inputQueue.Count < maxUnreadMessages)
+                {
+                    inputQueue.Enqueue(inputMessage);
+                }
+            }
+        }
+        catch (TimeoutException)
+        {
+        }
+    }
+
+Y en este punto vemos finalmente qué es lo que pasa: para enviar la letra
+A, el código del hilo pregunta si hay mensajes en la cola. Si los hay,
+nota que el mensaje se saca de la cola y se envía:
+
+.. code-block:: csharp
+   :lineno-start: 1
+
+   SendToWire(outputQueue.Dequeue(), serialPort);
+
+Si buscamos el método SendToWire en AbstractSerialThread vemos:
+
+.. code-block:: csharp
+   :lineno-start: 1
+   
+   protected abstract void SendToWire(object message, SerialPort serialPort);
+
+Y aquí es donde se conectan las clases SerialThreadLines con AbstractSerialThread, ya
+que el método SendToWire es abstracto, SerialThreadLines tendrá que implementarlo
+
+.. code-block:: csharp
+   :lineno-start: 1
+
+    public class SerialThreadLines : AbstractSerialThread
+    {
+        ...
+        protected override void SendToWire(object message, SerialPort serialPort)
+        {
+            serialPort.WriteLine((string) message);
+        }
+        ...
+    }
+
+Aquí vemos finalmente el uso de la clase SerialPort de C# con el método
+`WriteLine <https://docs.microsoft.com/en-us/dotnet/api/system.io.ports.serialport.writeline?view=netframework-4.8>`__ 
+
+Finalmente, para recibir datos desde el serial, ocurre el proceso contrario:
+
+.. code-block:: csharp
+   :lineno-start: 1
+
+
+    public class SerialThreadLines : AbstractSerialThread
+    {
+        ...
+        protected override object ReadFromWire(SerialPort serialPort)
+        {
+            return serialPort.ReadLine();
+        }
+    }
+
+`ReadLine <https://docs.microsoft.com/en-us/dotnet/api/system.io.ports.serialport.readline?view=netframework-4.8>`__
+también es la clase SerialPort. Si leemos cómo funciona ReadLine queda completamente claro la razón de usar otro
+hilo:
+
+.. warning::
+
+  Remarks
+  Note that while this method does not return the NewLine value, the NewLine value is removed from the input buffer.
+
+  By default, the ReadLine method will block until a line is received. If this behavior is undesirable, set the
+  ReadTimeout property to any non-zero value to force the ReadLine method to throw a TimeoutException if
+  a line is not available on the port.
+
+Por tanto, volviendo a RunOnce:
+
+.. code-block:: csharp
+   :lineno-start: 1
+
+    private void RunOnce()
+    {
+        try
+        {
+            if (outputQueue.Count != 0)
+            {
+                SendToWire(outputQueue.Dequeue(), serialPort);
+            }
+
+           object inputMessage = ReadFromWire(serialPort);
+            if (inputMessage != null)
+            {
+                if (inputQueue.Count < maxUnreadMessages)
+                {
+                    inputQueue.Enqueue(inputMessage);
+                }
+                else
+                {
+                    Debug.LogWarning("Queue is full. Dropping message: " + inputMessage);
+                }
+            }
+        }
+        catch (TimeoutException)
+        {
+            // This is normal, not everytime we have a report from the serial device
+        }
+    }
+
+Vemos que se envía el mensaje: 
+
+.. code-block:: csharp
+   :lineno-start: 1
+
+    SendToWire(outputQueue.Dequeue(), serialPort);
+
+Y luego el hilo se bloquea esperando por una respuesta:
+
+.. code-block:: csharp
+   :lineno-start: 1
+
+    object inputMessage = ReadFromWire(serialPort);
+
+Nota que primero se envía y luego el hilo se bloquea. NO SE DESBLOQUEARÁ HASTA que no envíe
+una respuesta desde Arduino o pasen 100 ms que es el tiempo que dura bloqueada la función
+antes de generar una excepción de timeout de lectura.
+
+¿Cómo sabemos que son 100 ms? 
+
+Mira con detenimiento el código. La siguiente línea te dará una pista.
+
+.. code-block:: csharp
+   :lineno-start: 1
+
+   // Amount of milliseconds alloted to a single read or connect. An
+    // exception is thrown when such operations take more than this time
+    // to complete.
+    private const int readTimeout = 100;
+
+Actividad 2
+^^^^^^^^^^^^^
+* Fecha: octubre 5 a octubre 7 de 2020
+* Descripción: trabaja en el ejercicio 2. Asegúrate de entenderlo por favor.
+  Aprovecha para repasar los conceptos de programación orientada a objetos
+  que no recuerdes.
+* Recursos: mira los ejercicios abajo.
+* Duración de la actividad: 5 horas. 
+* Forma de trabajo: individual
+
+Actividad 3
+^^^^^^^^^^^^^
+* Fecha: octubre 7 de 2020
+* Descripción: MINI RETO EN CLASE.
+* Recursos: ingresa a Teams
+* Duración de la actividad: 1 hora , 20 minutos. 
+* Forma de trabajo: grupal
+
+Trabaja en el siguiente mini-reto y aprovecha al profesor para resolver
+dudas en tiempo real.
+
+* Crea un proyecto nuevo en Unity.
+* Configura el soporte para el puerto serial tal como lo viste en la guía.
+* OJO, no instales el paquete Ardity. SI YA LO HICISTE, vuelva a comenzar.
+* Ahora toma únicamente LOS SCRIPTS de Ardity PERO sin destruir la arquitectura 
+  planteada por el autor. 
+* Ahora implementa el protocolo binario de la unidad anterior (el sensor RFID).
