@@ -7,6 +7,9 @@ Nombre del docente moderador: Juan Fernando Franco Higuita
 
 Créditos y horas totales del curso: 3 créditos - 144 horas totales
 
+`Aquí <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__ pueden ingresar a nuestros encuentros en Teams
+`Aquí <https://auladigital.upb.edu.co/course/view.php?id=9281>`__ pueden ingresar al curso en la plataforma moodle de la UPB.
+
 
 Introducción al curso
 ----------------------
