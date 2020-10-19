@@ -10,7 +10,7 @@ Actividad 1
 * Descripción: Evaluación final
 * Recursos: ingresa a Teams
 * Duración de la actividad: 1 hora , 40 minutos. 
-* Forma de trabajo: grupal
+* Forma de trabajo: individual
 
 Evaluación final
 #################
