@@ -1,4 +1,4 @@
-Semana 2 : UNIDAD 2
+UNIDAD 2
 ====================
 
 Propósito de aprendizaje
@@ -10,106 +10,6 @@ interactivas a utilizar en el curso.
 
 Construir aplicaciones simples para el controlador con el fin de explorar algunas
 posibilidades y características de su plataforma de software.
-
-
-Actividad de aprendizaje
--------------------------
-
-Se realizará las SEMANA 2 y 3
-
-Lee con detenimiento el código de honor y luego los pasos que debes seguir
-para evidenciar esta actividad.
-
-Código de honor
-^^^^^^^^^^^^^^^^
-Para realizar este reto se espera que hagas lo siguiente:
-
-* Colabora con tus compañeros cuando así se indique.
-* Trabaja de manera individual cuando la actividad así te lo proponga.
-* Usa solo la documentación oficial del framework del controlador y .NET de Microsoft.
-* NO DEBES utilizar sitios en Internet con soluciones o ideas para abordar el problema.
-* NO DEBES hacer uso de foros.
-* ¿Entonces qué hacer si no me funciona algo? Te propongo que experimentes, crea hipótesis,
-  experimenta de nuevo, observa y concluye.
-* NO OLVIDES, este curso se trata de pensar y experimentar NO de BUSCAR soluciones
-  en Internet.
-
-
-Enunciado: 
-^^^^^^^^^^^
-Debes controlar el funcionamiento algunos sensores, actuadores y tareas desde el computador.
-
-* Debes crear dos aplicaciones: una para el PC y otra para tu controlador.
-* La aplicación del PC la debes realizar usando Visual Studio y será 
-  del tipo Consola con .NET framework.
-* La aplicación del PC y del controlador interactuarán por medio de un modelo
-  cliente servidor. La aplicación del PC será el cliente y la del controlador el servidor.
-* Para la aplicación del controlador: 
-
-  * Crea 4 tareas concurrentes. 
-  * La tarea uno encenderá y apagará continuamente un LED a 1 Hz;
-    la tarea 2 otro LED a 5 Hz; la tarea 3 otro LED a 7Hz; la tarea 4 recibirá comandos
-    para leer un sensor digital, leer un sensor analógico, modificar un actuador digital,
-    modificar un actuador analógico por PWM.
-
-* En la aplicación del PC debes solicitarle al usuario comandos para interactuar con la
-  aplicación del controlador:
-
-  * Un comando para modificar la frecuencia de cada una de las tareas 1, 2 y 3. Debes
-    especificar la tarea y la frecuencia.
-  * Para la tarea 4 define comandos que te permitan seleccionar el sensor/actuador y los
-    valores respectivos.
-
-* Ten presente que solo podrás comunicarte con el controlador una vez tengas toda la información,
-  es decir, no debes hacer envíos parciales.
-* El PC preguntará si se deseas continuar con la aplicación o terminar.
-
-¿Qué debes entregar?
-^^^^^^^^^^^^^^^^^^^^^^
-
-* Crea una carpeta principal. Guarda allí dos carpetas más, cada uno con el proyecto para el PC
-  y para el controlador. Guarda los proyectos completos.
-* En la carpeta principal guarda una copia de la `rúbrica <https://auladigital.upb.edu.co/mod/url/view.php?id=691972>`__
-  con tu autoevaluación.
-* En la carpeta principal guarda un archivo .pdf donde colocarás cuatro cosas:
-  
-  * La versión de Visual Studio utilizada.
-  * La versión del software para programar el controlador.
-  * UN ENLACE a tu ONE DRIVE donde estará alojado el video de sustentación.
-  * Una tabla de contenidos que indique el instante de tiempo en el cual se pueden encontrar
-    cada una de las secciones solicitas para el video.
-* Comprime la carpeta principal en formato .ZIP
-* Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=691971>`__.
-
-¿Qué deberá tener el video de sustentación?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-* Máximo 20 minutos: debes planear el video tal como aprendiste en segundo semestre
-  en tu curso de narrativa audiovisual.
-* Cuida la calidad del audio y del video.
-* Sección 1: introducción, donde dirás tu nombre y si realizaste el RETO
-  completo. Si no terminaste indica claramente qué te faltó y por qué.
-* Sección 2: muestra que tus dos programas compilan correctamente y sin errores
-  o advertencias problemáticas.
-* Sección 3: Realiza una demostración del funcionamiento donde ilustres todos los
-  aspectos solicitados.
-* Define un conjuntos de vectores de prueba donde indiques los datos de entrada y el
-  resultado esperado.
-* Aplica los vectores de prueba y muestra que si producen los valores esperados.
-* Sección 4: explica la arquitectura de las aplicaciones. Utiliza una
-  aplicación de `WhiteBoard <https://www.microsoft.com/en-us/microsoft-365/microsoft-whiteboard/digital-whiteboard-app>`__
-  para esto.
-* Tus explicaciones deben ser claras, precisas y completas. No olvides planear 
-  bien tu video de sustentación.
-* Debes explicar las partes de la aplicación, la función que realiza cada parte y
-  sus propiedades.
-* Debes explicar las relaciones entre las partes, cómo funcionan esas relaciones y
-  sus propiedades
-* Sección 5: protocolo de integración entre las aplicaciones.
-* Debes explicar claramente cómo se comunicarán tus aplicaciones.
-* Muestra de manera detallada los pasos que deben realizar cada una de las aplicaciones.
-  Te recomiendo utilizar un `diagrama de secuencias <https://en.wikipedia.org/wiki/Sequence_diagram#:~:text=A%20sequence%20diagram%20shows%20object,the%20functionality%20of%20the%20scenario.>`__.
-
 
 Trayecto de acciones, tiempos y formas de trabajo
 ---------------------------------------------------
@@ -133,35 +33,17 @@ Actividad 2
 
 Actividad 3
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Descripción: realiza los ejercicios propuestos. Acuerda reuniones con tus compañeros para trabajar de manera *colaborativa*
-* Recursos: 
-
-  * realiza estos :ref:`ejercicios_sem2`.
-
-* Duración de la actividad: 4 horas de trabajo autónomo y colaborativo. Acuerda reuniones con tus compañeros.
+* Descripción: realiza los ejercicios propuestos. 
+  Acuerda reuniones con tus compañeros para trabajar de manera *colaborativa*
+* Recursos: realiza los siguientes ejercicios propuestos
+* Duración de la actividad: 5 horas.
 * Forma de trabajo: individual y colaborativa.
 
-Fase 5 (retroalimentación): 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 15 de 2020 - 2 p.m.
-* Descripción: encuentro sincrónico para compartir y discutir los ejercicios. 
-* Recursos: 
-  
-  * Ingresar al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
-  * Corrige tus ejercicios (acciones de mejora)
-
-* Duración de la actividad: 50 minutos de discusión y 50 minutos para que hagas
-  las acciones de mejora sobre tu trabajo.
-* Forma de trabajo: colaborativo con solución de dudas en tiempo real y 
-  trabajo individual en la acción de mejora.
-
-.. _ejercicios_sem2:
-
 Ejercicios
-------------
+###########
 
 Ejercicio 1: explorando la carpeta de arduino
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++++++++++++++++++
 
 * Descarga una versión .zip del IDE de Arduino.
 * Descomprime el archivo.
@@ -175,7 +57,7 @@ Ejercicio 1: explorando la carpeta de arduino
 * ¿Qué contiene esta carpeta?
 
 Ejercicio 2: modificar el código fuente de arduino
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Tomando con referencia el ejercicio anterior:
 
 * Busca el archivo main.cpp.
@@ -188,7 +70,7 @@ Tomando con referencia el ejercicio anterior:
 * ¿Qué puedes concluir?
 
 Ejercicio 3 
-^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++++++++++++++++++
 * ¿Recuerdas el ejemplo BlinkWithoutDelay?
 * Busca de nuevo el ejemplo.
 * Programa el arduino.
@@ -197,7 +79,7 @@ Ejercicio 3
 * ¿Qué puedes concluir con respecto a la función delay?
 
 Ejercicio 4 
-^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++++++++++++++++++
 * ¿Recuerdas el ejemplo BlinkWithoutDelay?
 * Busca de nuevo el ejemplo.
 * Programa el arduino.
@@ -208,7 +90,7 @@ Ejercicio 4
   estaba originalmente.
 
 Ejercicio 5
-^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++++++++++++++++++
 Analiza el siguiente código:
 
 .. code-block:: cpp
@@ -273,7 +155,7 @@ Ahora compara con este otro código:
 ¿Qué puedes concluir?
 
 Ejercicio 6
-^^^^^^^^^^^^
++++++++++++++++++++++++++++++++++++++++++++++++
 
 Analiza el siguiente ejemplo:
 
@@ -305,9 +187,8 @@ Analiza el siguiente ejemplo:
 Utilizando como referencia el código anterior crea un programa que
 encienda y apague tres LEDs a 1 Hz, 5 Hz y 7 Hz respectivamente.
 
-
 Ejercicio 7
-^^^^^^^^^^^^
++++++++++++++++++++++++++++++++++++++++++++++++
 Vamos a analizar uno de los ejemplos que vienen con el
 SDK de arduino. Este ejemplo nos permite ver cómo podemos
 hacer uso de los arreglos para manipular varios LEDs:
@@ -352,7 +233,7 @@ hacer uso de los arreglos para manipular varios LEDs:
 
 
 Ejercicio 8
-^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++++++++++++++++++
 El siguiente código muestra cómo puedes encapsular completamente
 el código del ejercicio 6 en tareas.
 
@@ -453,7 +334,7 @@ Analiza detenidamente el código anterior. Experimenta y asegurate de entenderlo
 perfectamente antes de continuar.
 
 Ejercicio 9
-^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++++++++++++++++++
 Observa detenidamente el código de las siguientes tareas. ¿Es muy similar, verdad?
 En este ejercicio veremos una construcción interesante de
 C++ que permite reutilizar código. Nota que el código de las tareas
@@ -763,7 +644,7 @@ La versión final del código será:
 	  }
 
 Ejercicio 10
-^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++++++++++++++++++
 Podemos llevar un paso más allá el ejercicio anterior si añadimos
 el concepto de arreglo. ¿Para qué? Observa que el código de
 task1 y task2 es muy similar. Tal vez podamos resolver el problema
@@ -821,7 +702,7 @@ usando únicamente una tarea:
 De nuevo, analiza el código anterior. Experimenta. ¿Está todo claro?
 
 Ejercicio 11: miniRETO
-^^^^^^^^^^^^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++++++++++++++++++
 ¿Qué son los punteros? para entenderlos te propongo un mini RETO. Analiza
 en detalle el siguiente código
 
@@ -874,3 +755,143 @@ result.
 
 * ¿Qué crees entonces que son los punteros? 
 * ¿Para qué sirven los punteros?
+
+Actividad 4 
+^^^^^^^^^^^^^
+
+* Descripción: discute con tu compañero de equipo los ejercicios. 
+* Recursos: ejercicios y tu propio material de solución y consulta.
+* Duración de la actividad: 2 horas.
+* Forma de trabajo: colaborativo/acuerda un encuentro con tu compañero
+
+Actividad 5
+^^^^^^^^^^^^
+* Fecha: febrero 3 - 2021 - 2 p.m.
+* Descripción: solución de dudas en tiempo real/solución al reto.
+* Recursos: ingresa a Teams para solucionar dudas y trabajar en el
+  reto en tiempo real.
+* Duración de la actividad: 1:40 horas. 
+* Forma de trabajo: individual.
+
+Actividad 6
+^^^^^^^^^^^^
+
+* Descripción: procede con la solución del reto.
+* Recursos: no olvides revisar la rúbrica y los ejercicios.
+* Duración de la actividad: 5 horas.
+* Forma de trabajo: individual.
+
+Lee con detenimiento el código de honor y luego los pasos que debes seguir
+para evidenciar esta actividad.
+
+Código de honor
+##################
+
+Para realizar este reto se espera que hagas lo siguiente:
+
+* Colabora con tus compañeros cuando así se indique.
+* Trabaja de manera individual cuando la actividad así te lo proponga.
+* Usa solo la documentación oficial del framework del controlador y .NET de Microsoft.
+* NO DEBES utilizar sitios en Internet con soluciones o ideas para abordar el problema.
+* NO DEBES hacer uso de foros.
+* ¿Entonces qué hacer si no me funciona algo? Te propongo que experimentes, crea hipótesis,
+  experimenta de nuevo, observa y concluye.
+* NO OLVIDES, este curso se trata de pensar y experimentar NO de BUSCAR soluciones
+  en Internet.
+
+Enunciado: 
+##################
+
+Debes controlar el funcionamiento algunos sensores, actuadores y tareas desde el computador.
+
+* Debes crear dos aplicaciones: una para el PC y otra para tu controlador.
+* La aplicación del PC la debes realizar usando Visual Studio y será 
+  del tipo Consola con .NET framework.
+* La aplicación del PC y del controlador interactuarán por medio de un modelo
+  cliente servidor. La aplicación del PC será el cliente y la del controlador el servidor.
+* Para la aplicación del controlador: 
+
+  * Crea 4 tareas concurrentes. 
+  * La tarea uno encenderá y apagará continuamente un LED a 1 Hz;
+    la tarea 2 otro LED a 5 Hz; la tarea 3 otro LED a 7Hz; la tarea 4 recibirá comandos
+    para leer un sensor digital, leer un sensor analógico, modificar un actuador digital,
+    modificar un actuador analógico por PWM.
+
+* En la aplicación del PC debes solicitarle al usuario comandos para interactuar con la
+  aplicación del controlador:
+
+  * Un comando para modificar la frecuencia de cada una de las tareas 1, 2 y 3. Debes
+    especificar la tarea y la frecuencia.
+  * Para la tarea 4 define comandos que te permitan seleccionar el sensor/actuador y los
+    valores respectivos.
+
+* Ten presente que solo podrás comunicarte con el controlador una vez tengas toda la información,
+  es decir, no debes hacer envíos parciales.
+* El PC preguntará si se deseas continuar con la aplicación o terminar.
+
+¿Qué debes entregar?
+++++++++++++++++++++++
+
+* Crea una carpeta principal. Guarda allí dos carpetas más, cada uno con el proyecto para el PC
+  y para el controlador. Guarda los proyectos completos.
+* En la carpeta principal guarda una copia de la `rúbrica <https://auladigital.upb.edu.co/mod/url/view.php?id=691972>`__
+  con tu autoevaluación.
+* En la carpeta principal guarda un archivo .pdf donde colocarás cuatro cosas:
+  
+  * La versión de Visual Studio utilizada.
+  * La versión del software para programar el controlador.
+  * UN ENLACE a tu ONE DRIVE donde estará alojado el video de sustentación.
+  * Una tabla de contenidos que indique el instante de tiempo en el cual se pueden encontrar
+    cada una de las secciones solicitas para el video.
+* Comprime la carpeta principal en formato .ZIP
+* Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=691971>`__.
+
+¿Qué deberá tener el video de sustentación?
++++++++++++++++++++++++++++++++++++++++++++++
+
+* Máximo 20 minutos: debes planear el video tal como aprendiste en segundo semestre
+  en tu curso de narrativa audiovisual.
+* Cuida la calidad del audio y del video.
+* Sección 1: introducción, donde dirás tu nombre y si realizaste el RETO
+  completo. Si no terminaste indica claramente qué te faltó y por qué.
+* Sección 2: muestra que tus dos programas compilan correctamente y sin errores
+  o advertencias problemáticas.
+* Sección 3: Realiza una demostración del funcionamiento donde ilustres todos los
+  aspectos solicitados.
+* Define un conjuntos de vectores de prueba donde indiques los datos de entrada y el
+  resultado esperado.
+* Aplica los vectores de prueba y muestra que si producen los valores esperados.
+* Sección 4: explica la arquitectura de las aplicaciones. Utiliza una
+  aplicación de `WhiteBoard <https://www.microsoft.com/en-us/microsoft-365/microsoft-whiteboard/digital-whiteboard-app>`__
+  para esto.
+* Tus explicaciones deben ser claras, precisas y completas. No olvides planear 
+  bien tu video de sustentación.
+* Debes explicar las partes de la aplicación, la función que realiza cada parte y
+  sus propiedades.
+* Debes explicar las relaciones entre las partes, cómo funcionan esas relaciones y
+  sus propiedades
+* Sección 5: protocolo de integración entre las aplicaciones.
+* Debes explicar claramente cómo se comunicarán tus aplicaciones.
+* Muestra de manera detallada los pasos que deben realizar cada una de las aplicaciones.
+  Te recomiendo utilizar un `diagrama de secuencias <https://en.wikipedia.org/wiki/Sequence_diagram#:~:text=A%20sequence%20diagram%20shows%20object,the%20functionality%20of%20the%20scenario.>`__.
+
+
+Actividad 7
+^^^^^^^^^^^^
+* Descripción: realiza el video de sustentación.
+* Recursos: para realizar el video de sustentación te recomiendo los siguientes recursos
+  
+  * Software para capturar `OBS Studio <https://obsproject.com/>`__.
+  * Ver `este <https://www.youtube.com/watch?time_continue=3&v=1tuJjI7dhw0>`__
+    tutorial para el manejo de OBS Studio.
+
+* Duración de la actividad: 2 horas de trabajo autónomo
+* Forma de trabajo: individual
+
+Actividad 8 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* Fecha: febrero 10 de 2021 - 2 p.m.
+* Descripción: encuentro sincrónico para retroalimentar la unidad 2. 
+* Recursos: ingresa al grupo de Teams.
+* Duración de la actividad: 1:40 horas.
+* Forma de trabajo: colaborativo/sincrónica

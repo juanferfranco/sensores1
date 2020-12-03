@@ -110,32 +110,16 @@ Evaluación
 Dedicación
 -----------
 
-Este curso es de 3 créditos repartidos en 4 horas de trabajo presencial mediado por TIC
-y 5 horas de trabajo autónomo.
+Este curso es de 3 créditos repartidos en 2 horas de trabajo presencial mediado por TIC
+y 7 horas de trabajo autónomo.
 
 .. toctree::
    :maxdepth: 3
-   :caption: Contenidos semanales:
+   :caption: Unidades:
 
    Unidad 1 <_unidad1/unidad1>
-   Semana2 <_semana2/semana2>
-   Semana3 <_semana3/semana3>
-   Semana4 <_semana4/semana4>
-   Semana5 <_semana5/semana5>
-   Semana6 <_semana6/semana6>
-   Semana7 <_semana7/semana7>
-   Semana8 <_semana8/semana8>
-   Semana9 <_semana9/semana9>
-   Semana10 <_semana10/semana10>
-   Semana11 <_semana11/semana11>
-   Semana12 <_semana12/semana12>
-   Semana13 <_semana13/semana13>
-   Semana14 <_semana14/semana14>
-   Semana15 <_semana15/semana15>
-   Semana16 <_semana16/semana16>
-
-
-
-
-
-
+   Unidad 2 <_unidad2/unidad2>
+   Unidad 3 <_unidad3/unidad3>
+   Unidad 4 <_unidad4/unidad4>
+   Unidad 5 <_unidad5/unidad5>
+   Unidad 6 <_unidad6/unidad6>
