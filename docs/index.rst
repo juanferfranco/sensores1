@@ -85,9 +85,9 @@ siguen un trayecto definido por fases así:
 * Fase 4: ejercicios y discusión. Esta fase está compuesta por una serie de
   ejercicios preparatorios para el RETO de la unidad. Estos ejercicios se
   abordarán de manera individual y colaborativa.
-* Fase 5: retroalimentación. En esta fase se revisará de manera grupal la
-  solución de los ejercicios. El estudiante podrá realizar acciones de mejora
-  a sus ejercicios. Y realizar procesos de evaluación formativa GRUPAL.
+* Fase 5: retroalimentación. Fase de trabajo colaborativo entre pares
+  para retroalimentar los ejercicios, realizar evaluación formativa
+  del proceso. Compartir estrategias y soluciones.
 * Fase 6: RETO. En esta fase se propone el RETO evaluativo de la unidad.
 * Fase 7: sustentación. Una vez realizado el RETO, la fase de sustentación
   busca realizar un ejercicio metacognitivo y de síntesis. Mediante un video
