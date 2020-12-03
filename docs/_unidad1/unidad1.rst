@@ -57,7 +57,7 @@ Se trata de una calculadora interactiva
 
 * Crea una carpeta principal. Guarda allí dos carpetas más, cada uno con el proyecto para el PC
   y para el controlador. Guarda los proyectos completos. 
-* En la carpeta principal guarda una copia de la `rúbrica <https://auladigital.upb.edu.co/mod/page/view.php?id=465306>`__
+* En la carpeta principal guarda una copia de la `rúbrica <https://auladigital.upb.edu.co/mod/page/view.php?id=691968>`__
   con tu autoevaluación.
 * En la carpeta principal guarda un archivo .pdf donde colocarás cuatro cosas:
   
@@ -67,7 +67,7 @@ Se trata de una calculadora interactiva
   * Una tabla de contenidos que indique el instante de tiempo en el cual se pueden encontrar
     cada una de las secciones solicitadas para el video.
 * Comprime la carpeta principal en formato .ZIP
-* Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=463170>`__.
+* Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=691967>`__.
 
 ¿Qué deberá tener el video de sustentación?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -107,73 +107,65 @@ con tu compañero.
 Trayecto de acciones, tiempos y formas de trabajo
 ---------------------------------------------------
 
-Fase 1 (motivación)
+Actividad 1
 ^^^^^^^^^^^^^^^^^^^^^^
 
-* Fecha: julio 6 de 2020 - 2 p.m.
+* Fecha: enero 20 de 2021 - 2 p.m.
 * Descripción: asiste al encuentro sincrónico donde se introducirá el curso y se
   explicará la actividad de aprendizaje, su importancia, su relación con los
   criterios de competencia y cómo será evaluada.
 * Recursos: ingresar al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
-* Duración de la actividad: 30 minutos sincrónicos.
-* Forma de trabajo: grupal
+* Duración de la actividad: 1:40 horas.
+* Forma de trabajo: grupal/sincrónica.
 
-Fase 2 (diagnóstico-repaso)
+Actividad 2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 6 de 2020 - 2:30 p.m.
 * Descripción: lee las preguntas y ejercicios orientadores para autoevaluar si tienes
   los conocimientos necesarios para abordar el reto.
-* Recursos: 
+* Recursos: realiza `esta guía <https://docs.google.com/presentation/d/1dJEfVysAZUY0561bICTVKtmZg8D6Ix8klRKGw6DZTp4/edit?usp=sharing>`__.
+* Duración de la actividad: 1 hora
+* Forma de trabajo: individual/asincrónica.
 
-  * Realiza `esta guía <https://docs.google.com/presentation/d/1dJEfVysAZUY0561bICTVKtmZg8D6Ix8klRKGw6DZTp4/edit?usp=sharing>`__.
-  * Ingresa al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
-    para resolver dudas en tiempo real con el docente.
-
-* Duración de la actividad: 1 hora 10 minutos
-* Forma de trabajo: individual con solución de dudas en tiempo real
-
-Fase 3 (realización)
+Actividad 3
 ^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 6-7 de 2020
 * Descripción: procede con la solución del reto.
 * Recursos: para abordar el reto de programación te recomiendo que tengas a la mano el siguiente material
-
-  * Comienza leyendo la rúbrica de evaluación de esta unidad `aquí <https://docs.google.com/spreadsheets/d/1BBX2NvCzYes-8secjsjTpg0Xfz07FXdxTsugO2d8F8M/edit?usp=sharing>`__.
+  
+  * No olvides agendar un encuentro sincrónico con tu compañero.
+  * Antes de comenzar lee con detenimiento la rúbrica de evaluación de la unidad.
   * Lee la documentación y los ejemplos de la clase `Serial Port <https://docs.microsoft.com/en-us/dotnet/api/system.io.ports.serialport?view=netframework-4.8>`__
     de C# y .NET.
   * Lee la documentación del manejo del puerto `serial de arduino <https://www.arduino.cc/reference/en/language/functions/communication/serial/>`__.
     y los ejemplos.
 
-* Duración de la actividad: 3 horas de trabajo autónomo 
-* Forma de trabajo: individual
+* Duración de la actividad: 4 horas. 
+* Forma de trabajo: colaborativa asincrónica.
 
-Fase 4 (sustentación):
+Actividad 4
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 7-8 de 2020
 * Descripción: realiza el video de sustentación.
 * Recursos: para realizar el video de sustentación te recomiendo los siguientes recursos
-  
   * Software para capturar `OBS Studio <https://obsproject.com/>`__.
   * Observa `este <https://www.youtube.com/watch?time_continue=3&v=1tuJjI7dhw0>`__
     tutorial para el manejo de OBS Studio.
+* Duración de la actividad: 2 horas
+* Forma de trabajo: colaborativa/asincrónica.
 
-* Duración de la actividad: 2 horas de trabajo autónomo
-* Forma de trabajo: individual
-
-Fase 5 (retroalimentación): 
+Actividad 5
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 8 de 2020 - 2 p.m.
-* Descripción: encuentro sincrónico para compartir y discutir los resultados del reto. 
-  El docente comparte su solución al reto y se discuten algunas soluciones de los estudiantes.
-  El estudiante realiza acciones de mejora.
-* Recursos: ingresa al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
-* Duración de la actividad: 50 minutos de discusión y 50 minutos para que hagas las
-  acciones de mejora a tu trabajo.
-* Forma de trabajo: colaborativo con solución de dudas en tiempo real y trabajo
-  individual en la acción de mejora.
+* Fecha: enero 27 de 2020 - 2 p.m.
+* Descripción: encuentro sincrónico para compartir y discutir los resultados del reto.
+* Recursos: ingresa al grupo de Teams.
+* Duración de la actividad: 1:40 horas.
+* Forma de trabajo: grupal/sincrónica.
 
 Criterios de evaluación
 ------------------------
+No olvides que tienes todos los criterios de evaluación
+en la `rúbrica <https://auladigital.upb.edu.co/mod/page/view.php?id=691968>`__.
+
+También ten muy presentes los criterios de competencia abordados en la unidad: 
+
 1. Criterio: integro dispositivos de entrada-salida con sistemas de cómputo para la
    creación de sistemas intermediados por el entretenimiento digital (Materialización).
 
@@ -182,4 +174,3 @@ Criterios de evaluación
    diagnóstico del software en la producción de sistemas de entretenimiento digital utilizando los procedimientos y herramientas adecuadas según el contexto (Ingeniería de software).
 
 Esta actividad tendrá un porcentaje sumativo del 5% en la nota final.
-

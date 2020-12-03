@@ -15,7 +15,7 @@ posibilidades y características de su plataforma de software.
 Actividad de aprendizaje
 -------------------------
 
-Se realizará las SEMANA 2 y 3 (julio 13/julio 20).
+Se realizará las SEMANA 2 y 3
 
 Lee con detenimiento el código de honor y luego los pasos que debes seguir
 para evidenciar esta actividad.
@@ -69,7 +69,7 @@ Debes controlar el funcionamiento algunos sensores, actuadores y tareas desde el
 
 * Crea una carpeta principal. Guarda allí dos carpetas más, cada uno con el proyecto para el PC
   y para el controlador. Guarda los proyectos completos.
-* En la carpeta principal guarda una copia de la `rúbrica <https://auladigital.upb.edu.co/mod/url/view.php?id=463520>`__
+* En la carpeta principal guarda una copia de la `rúbrica <https://auladigital.upb.edu.co/mod/url/view.php?id=691972>`__
   con tu autoevaluación.
 * En la carpeta principal guarda un archivo .pdf donde colocarás cuatro cosas:
   
@@ -79,7 +79,7 @@ Debes controlar el funcionamiento algunos sensores, actuadores y tareas desde el
   * Una tabla de contenidos que indique el instante de tiempo en el cual se pueden encontrar
     cada una de las secciones solicitas para el video.
 * Comprime la carpeta principal en formato .ZIP
-* Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=463516>`__.
+* Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=691971>`__.
 
 ¿Qué deberá tener el video de sustentación?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -114,28 +114,16 @@ Debes controlar el funcionamiento algunos sensores, actuadores y tareas desde el
 Trayecto de acciones, tiempos y formas de trabajo
 ---------------------------------------------------
 
-Fase 1 (motivación)
+Actividad 1
 ^^^^^^^^^^^^^^^^^^^^^^
-
-* Fecha: julio 13 de 2020 - 2 p.m.
-* Descripción: asiste al encuentro sincrónico donde se introducirá la actividad de
-  aprendizaje de la unidad 2 correspondiente a las semanas 2 y 3.
-* Recursos: ingresa al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
-* Duración de la actividad: 20 minutos sincrónicos.
-* Forma de trabajo: grupal
-
-Fase 2 (diagnóstico-repaso)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 13 de 2020
 * Descripción: lee las preguntas y ejercicios orientadores para autoevaluar si tienes
   los conocimientos necesarios para abordar el RETO.
 * Recursos: realiza `esta guía <https://docs.google.com/presentation/d/1y270S1bs49Vn-EX6OJqZrTqaCy2EWlUHECcKAD9ZUrg/edit?usp=sharing>`__.
-* Duración de la actividad: 1 hora 10 minutos
-* Forma de trabajo: individual con solución de dudas en tiempo real
+* Duración de la actividad: 1 hora
+* Forma de trabajo: individual/asincrónica.
 
-Fase 3 (fundamentación)
+Actividad 2
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 13-14 de 2020
 * Descripción: realiza las lecturas donde se explican los fundamentos conceptuales de la plataforma de software utilizada para 
   la construcción de los programas del controlador.
 * Recursos: observa `este <https://docs.google.com/presentation/d/1KGtjm8v-BUcXMhfFBSAfXOtJ8RtVSL0e90qEHsblnMc/edit?usp=sharing>`__
@@ -143,9 +131,8 @@ Fase 3 (fundamentación)
 * Duración de la actividad: 1 hora de trabajo autónomo 
 * Forma de trabajo: individual
 
-Fase 4 (ejercicios y discusión)
+Actividad 3
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 13-14-15 de 2020
 * Descripción: realiza los ejercicios propuestos. Acuerda reuniones con tus compañeros para trabajar de manera *colaborativa*
 * Recursos: 
 
