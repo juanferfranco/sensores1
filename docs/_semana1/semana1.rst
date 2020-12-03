@@ -8,10 +8,15 @@ Autoevaluar las competencias en programación abordadas en los cursos previos
 con el fin de determinar estrategias personales que permitan afrontar con
 mayor comodidad el curso.
 
+Aunque el proceso de autoevaluación es personal, la evaluación de la esta
+unidad la vamos a realizar en grupo. La idea es que desde esta primera
+semana identifiques compañeros con los cuales puedas colaborar y ayudarte
+en el proceso del curso.
+
 Actividad de aprendizaje
 -------------------------
 
-Se realizará la SEMANA 1 (julio 6).
+Se realizará la SEMANA 1.
 
 Lee con detenimiento el código de honor y luego los pasos que debes seguir
 para evidenciar esta actividad.
@@ -66,6 +71,12 @@ Se trata de una calculadora interactiva
 
 ¿Qué deberá tener el video de sustentación?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Te propongo que este video lo hagas en formato DIALOGO/CONVERSACIÓN, 
+de preguntas y respuestas con tu compañero. No tienes que reunirte físicamente, 
+PERO si debes reunirte virtualmente para la planeación y si quieres para la realización;
+sin embargo, dejo a tu creatividad la manera de presentar e interactuar
+con tu compañero.
 
 * Máximo 20 minutos: debes planear el video tal como aprendiste en segundo semestre
   en tu curso de narrativa audiovisual.
