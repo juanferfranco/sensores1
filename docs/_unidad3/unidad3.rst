@@ -1,4 +1,4 @@
-Semana 4 : UNIDAD 3
+UNIDAD 3
 ====================
 
 Propósitos de aprendizaje
@@ -13,233 +13,45 @@ programación adecuadas que permitan sacarle el máximo provecho a
 dicho controlador. 
 
 Verificar el software del controlador por medio de la
-contrastación de resultados de funcionamiento con los posibles
+comparación de resultados de funcionamiento con los posibles
 escenarios o vectores de prueba definidos en el modelado.
-
-Actividad de aprendizaje
--------------------------
-
-Se realizará las SEMANAS 4, 5 y 6 (julio 27/agosto 3/agosto 10).
-
-Lee con detenimiento el código de honor y luego los pasos que
-debes seguir para evidenciar esta actividad.
-
-Código de honor
-^^^^^^^^^^^^^^^^^
-Para realizar este reto se espera que hagas lo siguiente:
-
-* Colabora con tus compañeros cuando así se indique.
-* Trabaja de manera individual cuando la actividad así te lo
-  proponga.
-* Usa solo la documentación oficial del framework del controlador
-  y .NET de Microsoft.
-* NO DEBES utilizar sitios en Internet con soluciones o ideas para
-  abordar el problema.
-* NO DEBES hacer uso de foros.
-* ¿Entonces qué hacer si no me funciona algo? Te propongo que
-  experimentes, crea hipótesis, experimenta de nuevo, observa y concluye.
-* NO OLVIDES, este curso se trata de pensar y experimentar NO de
-  BUSCAR soluciones en Internet.
-
-Enunciado
-^^^^^^^^^^
-
-En una experiencia interactiva se requiere comunicar un controlador
-con una aplicación interactiva (AI). El controlador maneja varios
-sensores y varios actuadores. Debes leer con detenimiento la descripción
-del protocolo de comunicación y construir un modelo usando una
-máquina de estados que te permita capturar de manera gráfica el texto.
-Este modelo te permitirá visualizar más fácilmente
-el funcionamiento de tu controlador y todos los posibles escenarios
-de prueba que deberás posteriormente verificar.
-
-En este RETO no vas a implementar la AI, te vas a concentrar en
-el software del controlador. Entonces la AI será simulada.
-
-Para simular la AI utiliza `ScriptCommunicator <https://sourceforge.net/projects/scriptcommunicator/>`__.
-Este software es necesario para poder controlar de manera precisa el
-byte que queremos transmitir. Recuerda que al usar una terminal como
-la de arduino, todos los bytes que transmites están codificados en
-ASCII y por tanto cuando escribes el carácter '1' realmente estás
-transmitiendo el byte 31 en base 16, es decir, la codificación ASCII
-del '1'.
-
-Cuando estés probando la aplicación de tu controlador ten presente
-que la AI siempre iniciará la comunicación.
-
-Los PASOS para realizar la comunicación son:
-
-* La AI inicia una transacción enviando el byte 3E.
-* El controlador deberá responder con el byte 4A.
-* La AI no podrá continuar hasta no recibir la respuesta
-  del controlador.
-* Una vez el controlador responda, la AI enviará una secuencia
-  de bytes. 
-* Cada byte tendrá la siguiente función:
-
-  Byte 1: longitud
-
-  Byte 2: dirección
-  
-  Byte 3: comando
-  
-  Byte 4 a n: datos
-  
-  Byte n+1: verificación
-
-El byte longitud indicará la cantidad de bytes que la AI le enviará
-al controlador a partir del byte 2 hasta el byte n + 1. Para
-este ejercicio no te preocupes por los bytes dirección,
-comando y datos, puedes colocar allí lo que quieras.
-
-El byte de verificación será calculado así: 
-
-Byte1 XOR Byte2 XOR … XOR Byten.
-
-Recuerda que en lenguaje C el operador XOR es este: ^
-
-* Si la AI se demora más de un 1 segundo en enviar la secuencia,
-  el controlador enviará a la AI el byte 3D y la AI deberá iniciar
-  de nuevo la secuencia de comunicación desde el paso 1.
-
-* El controlador deberá calcular el byte de verificación que tendrá
-  que coincidir con el cálculo de la AI. Si el byte de verificación 
-  no corresponde, el controlador enviará el byte 3F y la AI deberá
-  reenviar el paquete.
-
-* Si el controlador recibe bien el paquete deberá responder a la AI con
-  el byte 4A y luego enviar la siguiente secuencia de bytes:
-
-  Byte 1: longitud
-
-  Byte 2: Byte4 recibido
-
-  Byte m: Byten recibido
-
-  Byte m+1: verificación
-
-La verificación será calculada desde el Byte 1 hasta el byte m.
-
-* Si la AI recibe correctamente el paquete deberá responder con el byte 4A.
-
-* El controlador quedará preparado para volver al paso 1,
-  es decir, iniciar una nueva transacción.
-
-* Si pasado 1 segundo el controlador no recibe el 4A, entonces este
-  deberá retransmitir el paquete a la AI. Este comportamiento solo 
-  se detendrá una vez la AI envié el 4A.
-
-
-¿Qué debes entregar?
-^^^^^^^^^^^^^^^^^^^^^
-
-* Crea una carpeta, la llamaremos principal. 
-* Guarda allí el proyecto para el controlador.
-* Guarda el diagrama, en formato .pdf, con el modelo del
-  software del controlador.
-* En la carpeta principal guarda una copia de la `rúbrica <https://auladigital.upb.edu.co/mod/url/view.php?id=483169>`__
-  con tu autoevaluación.
-* En la carpeta principal guarda un archivo .pdf donde colocarás tres cosas:
-  
-  * La versión del software para programar el controlador.
-  * UN ENLACE a tu ONE DRIVE donde estará alojado el video de sustentación.
-  * Una tabla de contenidos que indique el instante de tiempo en el cual se
-    pueden encontrar cada una de las secciones solicitadas en el video.
-
-* Comprime la carpeta principal en formato .ZIP
-* Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=483167>`__.
-
-¿Qué deberá tener el video de sustentación?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-* Máximo 20 minutos: debes planear el video tal como aprendiste en segundo semestre
-  en tu curso de narrativa audiovisual.
-* Cuida la calidad del audio y del video.
-* Sección 1: introducción, donde dirás tu nombre y si realizaste el RETO
-  completo. Si no terminaste indica claramente qué te faltó y por qué.
-* Sección 2: muestra y explica detalladamente tu modelo. Nota que en el enunciado
-  se definen unos tiempos de espera, así como unos bytes de respuesta. Explica,
-  luego de experimentar para qué pueden servir estos mecanismos.
-* Sección 3: muestra que tu programa compila correctamente y sin errores
-  o advertencias problemáticas. Explica tu programa.
-* Sección 4: identifica los posibles escenarios de prueba de tu modelo y
-  realiza un `diagrama de secuencias <https://en.wikipedia.org/wiki/Sequence_diagram#:~:text=A%20sequence%20diagram%20shows%20object,the%20functionality%20of%20the%20scenario.>`__
-  para cada uno. 
-* Sección 5: muestra que tu programa funciona según los escenarios 
-  identificados.
-* Tus explicaciones deben ser claras, precisas y completas. No olvides planear 
-  bien tu video de sustentación.
-
 
 Trayecto de acciones, tiempos y formas de trabajo
 ---------------------------------------------------
 
-Fase 1 (motivación)
-^^^^^^^^^^^^^^^^^^^^^^
+Actividad 1 
+^^^^^^^^^^^^^
 
-* Fecha: julio 27 de 2020 - 2 p.m.
-* Descripción: asiste al encuentro sincrónico donde se introducirá la actividad de
-  aprendizaje de la unidad 3 correspondiente a las semanas 4, 5 y 6.
-* Recursos: ingresa al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
-* Duración de la actividad: 20 minutos sincrónicos.
-* Forma de trabajo: grupal
-
-Fase 2 (diagnóstico-repaso)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 27 de 2020 - 2:30 p.m
 * Descripción: lee las preguntas y ejercicios orientadores para autoevaluar si tienes
   los conocimientos necesarios para abordar el RETO.
-* Recursos: 
+* Recursos: realiza `esta guía <https://docs.google.com/presentation/d/1A6phooetTEDRBksyrAd1Rloe7mCj7lRf1pDp4CRRdSk/edit?usp=sharing>`__.
+* Duración de la actividad: 1 hora
+* Forma de trabajo: individual/asincrónico.
 
-  * Realiza `esta guía <https://docs.google.com/presentation/d/1A6phooetTEDRBksyrAd1Rloe7mCj7lRf1pDp4CRRdSk/edit?usp=sharing>`__.
-  * Ingresa al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
-    para que resuelvas tus dudas en tiempo real con el docente.
-
-* Duración de la actividad: 1 hora 10 minutos
-* Forma de trabajo: individual con solución de dudas en tiempo real
-
-Fase 3 (fundamentación)
+Actividad 2
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 27 de 2020
-* Descripción: realiza las lecturas donde se explican los fundamentos conceptuales de la plataforma de software utilizada para 
-  la construcción de los programas del controlador.
+* Descripción: realiza las lecturas donde se explican los fundamentos conceptuales
+  de la plataforma de software utilizada para la construcción de los programas del controlador.
 * Recursos: observa `este <https://drive.google.com/open?id=1yuDi-tbSpLvV9zAu_TTsXWi9PWn9XyZNPq_NEB4AMao>`__
   material.
-* Duración de la actividad: 1 hora de trabajo autónomo 
-* Forma de trabajo: individual
+* Duración de la actividad: 1 hora
+* Forma de trabajo: individual/asincrónico
 
-Fase 4 (ejercicios y discusión)
+Actividad 3
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 28 de 2020
-* Descripción: realiza los ejercicios propuestos. Acuerda reuniones con tus compañeros para trabajar de manera *colaborativa*
-* Recursos: 
-
-  * realiza estos :ref:`ejercicios`.
-
-* Duración de la actividad: 4 horas de trabajo autónomo y colaborativo. Acuerda reuniones con tus compañeros.
-* Forma de trabajo: individual y colaborativa.
-
-Fase 5 (retroalimentación): 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: julio 29 de 2020 - 2 p.m.
-* Descripción: encuentro sincrónico para compartir y discutir los ejercicios. 
-* Recursos: 
-  
-  * Ingresar al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
-  * Corrige tus ejercicios (acciones de mejora)
-
-* Duración de la actividad: 50 minutos de discusión y 50 minutos para que hagas
-  las acciones de mejora sobre tu trabajo.
-* Forma de trabajo: colaborativo con solución de dudas en tiempo real y 
-  trabajo individual en la acción de mejora.
-
-.. _ejercicios:
+* Descripción: realiza los ejercicios propuestos. Acuerda reuniones 
+  con tus compañeros para trabajar de manera *colaborativa*
+* Recursos: realiza los ejercicios propuestos.
+* Duración de la actividad: 5 horas.
+* Forma de trabajo: individual-colaborativo/asincrónico (puedes acordar reuniones sincrónicas
+  con tu compañero de trabajo.
 
 Ejercicios
-------------
+############
 
 Ejercicio 1: el puerto serial
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++
+
 Lee el material de `este <https://learn.sparkfun.com/tutorials/serial-communication/all>`__
 sitio y responde las siguientes preguntas:
 
@@ -252,7 +64,8 @@ sitio y responde las siguientes preguntas:
 * ¿Es lo mismo transmitir el byte 0x01 que el byte '1'?
 
 Ejercicio 2
-^^^^^^^^^^^^
++++++++++++++++++++++++++++++++
+
 Hiciste el ejercicio 1, verdad? es importante que lo hagas. Un par de preguntas más:
 
 * Considera que deseas transmitir la palabra ``hola`` ¿Cómo sería el diagrama
@@ -260,7 +73,8 @@ Hiciste el ejercicio 1, verdad? es importante que lo hagas. Un par de preguntas 
 * Considera que tienes dos dispositivos ¿Cómo los debes conectar?
 
 Ejercicio 3
-^^^^^^^^^^^^
++++++++++++++++++++++++++++++++
+
 ¿Dónde encuentro el API de arduino para el manejo del serial?
 
 `Aquí <https://www.arduino.cc/reference/en/language/functions/communication/serial/>`__
@@ -274,7 +88,8 @@ lee algunas de las funciones del API del serial y responde:
 * ¿Qué pasa si quieres leer 10 bytes con readBytes pero solo se han recibido 3?
 
 Ejercicio 4
-^^^^^^^^^^^^
++++++++++++++++++++++++++++++++
+
 Qué crees que ocurre cuando:
 
 * ¿Qué pasa cuando hago un Serial.available()?
@@ -296,7 +111,8 @@ Qué crees que ocurre cuando:
   más datos que los que tenga allí.
 
 Ejercicio 5
-^^^^^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++
+
 Vamos a leer 3 datos del puerto serial:
 
 .. code-block:: cpp
@@ -309,7 +125,8 @@ Vamos a leer 3 datos del puerto serial:
     }
 
 Ejercicio 6
-^^^^^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++
+
 ¿Qué escenarios podría tener en este caso?
 
 .. code-block:: cpp
@@ -323,7 +140,8 @@ Ejercicio 6
 
 
 Ejercicio 7: miniRETO
-^^^^^^^^^^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++
+
 Piense cómo podrías hacer lo siguiente:
 
 .. code-block:: cpp
@@ -350,7 +168,8 @@ Piense cómo podrías hacer lo siguiente:
   cuántos datos tengo guardados en el buffer de recepción?
 
 Ejercicio 8
-^^^^^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++
+
 Vamos a detenernos un momento en el software del lado del
 computador: el terminal. Veamos dos de ellas, la terminal
 de arduino y `esta <https://sourceforge.net/projects/scriptcommunicator/>`__
@@ -360,7 +179,8 @@ otra (scriptcommunicator)
 * ¿Para qué sirve?
 
 Ejercicio 9
-^^^^^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++
+
 Considera el siguiente programa
 
 .. code-block:: cpp
@@ -442,7 +262,8 @@ En la siguiente parte del código:
    Serial.print('\n');
 
 Ejercicio 10: miniRETO
-^^^^^^^^^^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++
+
 Considera el siguiente código para analizar en Scriptcommunicator:
 
 .. code-block:: cpp
@@ -472,7 +293,8 @@ Considera el siguiente código para analizar en Scriptcommunicator:
 Explica qué está ocurriendo en cada caso.
 
 Ejercicio 11: máquinas de estado
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+++++++++++++++++++++++++++++++++++++
+
 Una experiencia interactiva posee un sensor que produce ruido eléctrico al
 cambiar de estado. La siguiente figura, capturada con un osciloscopio
 muestra la señal del sensor.
@@ -501,7 +323,8 @@ Para este ejercicio debes:
 * Verificar los escenarios definidos
 
 Ejercicio 12: miniRETO
-^^^^^^^^^^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++
+
 Se requiere construir una aplicación para controlar una bomba temporizada.
 La siguiente figura ilustra la interfaz de la bomba. El circuito de control
 de la bomba está compuesto por tres sensores digitales,
@@ -691,5 +514,310 @@ Para este ejercicio debes:
 
   .. image:: ../_static/SM.jpeg
 
+Actividad 4
+^^^^^^^^^^^^^^^^^^^^^
+* Fecha: febrero 17 - 2021 - 2 p.m.
+* Descripción: solución de dudas en tiempo real/solución al reto.
+* Recursos: ingresa a Teams para solucionar dudas y trabajar en el
+  reto en tiempo real.
+* Duración de la actividad: 1:40 horas. 
+* Forma de trabajo: individual.
 
+Lee con detenimiento el código de honor y luego los pasos que
+debes seguir para evidenciar esta actividad.
+
+Código de honor
+#################
+
+Para realizar este reto se espera que hagas lo siguiente:
+
+* Colabora con tus compañeros cuando así se indique.
+* Trabaja de manera individual cuando la actividad así te lo
+  proponga.
+* Usa solo la documentación oficial del framework del controlador
+  y .NET de Microsoft.
+* NO DEBES utilizar sitios en Internet con soluciones o ideas para
+  abordar el problema.
+* NO DEBES hacer uso de foros.
+* ¿Entonces qué hacer si no me funciona algo? Te propongo que
+  experimentes, crea hipótesis, experimenta de nuevo, observa y concluye.
+* NO OLVIDES, este curso se trata de pensar y experimentar NO de
+  BUSCAR soluciones en Internet.
+
+Enunciado
+#################
+
+En una experiencia interactiva se requiere comunicar un controlador
+con una aplicación interactiva (AI). El controlador maneja varios
+sensores y varios actuadores. Debes leer con detenimiento la descripción
+del protocolo de comunicación y construir un modelo usando una
+máquina de estados que te permita capturar de manera gráfica el texto.
+Este modelo te permitirá visualizar más fácilmente
+el funcionamiento de tu controlador y todos los posibles escenarios
+de prueba que deberás posteriormente verificar.
+
+En este RETO no vas a implementar la AI, te vas a concentrar en
+el software del controlador. Entonces la AI será simulada.
+
+Para simular la AI utiliza `ScriptCommunicator <https://sourceforge.net/projects/scriptcommunicator/>`__.
+Este software es necesario para poder controlar de manera precisa el
+byte que queremos transmitir. Recuerda que al usar una terminal como
+la de arduino, todos los bytes que transmites están codificados en
+ASCII y por tanto cuando escribes el carácter '1' realmente estás
+transmitiendo el byte 31 en base 16, es decir, la codificación ASCII
+del '1'.
+
+Cuando estés probando la aplicación de tu controlador ten presente
+que la AI siempre iniciará la comunicación.
+
+Los PASOS para realizar la comunicación son:
+
+* La AI inicia una transacción enviando el byte 3E.
+* El controlador deberá responder con el byte 4A.
+* La AI no podrá continuar hasta no recibir la respuesta
+  del controlador.
+* Una vez el controlador responda, la AI enviará una secuencia
+  de bytes. 
+* Cada byte tendrá la siguiente función:
+
+  Byte 1: longitud
+
+  Byte 2: dirección
   
+  Byte 3: comando
+  
+  Byte 4 a n: datos
+  
+  Byte n+1: verificación
+
+El byte longitud indicará la cantidad de bytes que la AI le enviará
+al controlador a partir del byte 2 hasta el byte n + 1. Para
+este ejercicio no te preocupes por los bytes dirección,
+comando y datos, puedes colocar allí lo que quieras.
+
+El byte de verificación será calculado así: 
+
+Byte1 XOR Byte2 XOR … XOR Byten.
+
+Recuerda que en lenguaje C el operador XOR es este: ^
+
+* Si la AI se demora más de un 1 segundo en enviar la secuencia,
+  el controlador enviará a la AI el byte 3D y la AI deberá iniciar
+  de nuevo la secuencia de comunicación desde el paso 1.
+
+* El controlador deberá calcular el byte de verificación que tendrá
+  que coincidir con el cálculo de la AI. Si el byte de verificación 
+  no corresponde, el controlador enviará el byte 3F y la AI deberá
+  reenviar el paquete.
+
+* Si el controlador recibe bien el paquete deberá responder a la AI con
+  el byte 4A y luego enviar la siguiente secuencia de bytes:
+
+  Byte 1: longitud
+
+  Byte 2: Byte4 recibido
+
+  Byte m: Byten recibido
+
+  Byte m+1: verificación
+
+La verificación será calculada desde el Byte 1 hasta el byte m.
+
+* Si la AI recibe correctamente el paquete deberá responder con el byte 4A.
+
+* El controlador quedará preparado para volver al paso 1,
+  es decir, iniciar una nueva transacción.
+
+* Si pasado 1 segundo el controlador no recibe el 4A, entonces este
+  deberá retransmitir el paquete a la AI. Este comportamiento solo 
+  se detendrá una vez la AI envié el 4A.
+
+
+¿Qué debes entregar?
+++++++++++++++++++++++
+
+* Crea una carpeta, la llamaremos principal. 
+* Guarda allí el proyecto para el controlador.
+* Guarda el diagrama, en formato .pdf, con el modelo del
+  software del controlador.
+* En la carpeta principal guarda una copia de la `rúbrica <https://auladigital.upb.edu.co/mod/url/view.php?id=483169>`__
+  con tu autoevaluación.
+* En la carpeta principal guarda un archivo .pdf donde colocarás tres cosas:
+  
+  * La versión del software para programar el controlador.
+  * UN ENLACE a tu ONE DRIVE donde estará alojado el video de sustentación.
+  * Una tabla de contenidos que indique el instante de tiempo en el cual se
+    pueden encontrar cada una de las secciones solicitadas en el video.
+
+* Comprime la carpeta principal en formato .ZIP
+* Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=483167>`__.
+
+¿Qué deberá tener el video de sustentación?
+++++++++++++++++++++++++++++++++++++++++++++++
+
+* Máximo 20 minutos: debes planear el video tal como aprendiste en segundo semestre
+  en tu curso de narrativa audiovisual.
+* Cuida la calidad del audio y del video.
+* Sección 1: introducción, donde dirás tu nombre y si realizaste el RETO
+  completo. Si no terminaste indica claramente qué te faltó y por qué.
+* Sección 2: muestra y explica detalladamente tu modelo. Nota que en el enunciado
+  se definen unos tiempos de espera, así como unos bytes de respuesta. Explica,
+  luego de experimentar para qué pueden servir estos mecanismos.
+* Sección 3: muestra que tu programa compila correctamente y sin errores
+  o advertencias problemáticas. Explica tu programa.
+* Sección 4: identifica los posibles escenarios de prueba de tu modelo y
+  realiza un `diagrama de secuencias <https://en.wikipedia.org/wiki/Sequence_diagram#:~:text=A%20sequence%20diagram%20shows%20object,the%20functionality%20of%20the%20scenario.>`__
+  para cada uno. 
+* Sección 5: muestra que tu programa funciona según los escenarios 
+  identificados.
+* Tus explicaciones deben ser claras, precisas y completas. No olvides planear 
+  bien tu video de sustentación.
+
+Actividad 5
+^^^^^^^^^^^^^^^^^^^^^
+* Descripción: solución al reto.
+* Recursos: ejercicios propuestos y tu propio material de solución.
+* Duración de la actividad: 7 horas. 
+* Forma de trabajo: individual.
+
+Actividad 6
+^^^^^^^^^^^^^^^^^^^^^
+* Fecha: febrero 24 - 2021 - 2 p.m.
+* Descripción: solución de dudas en tiempo real/solución al reto.
+* Recursos: ingresa a Teams para solucionar dudas y trabajar en el
+  reto en tiempo real.
+* Duración de la actividad: 1:40 horas. 
+* Forma de trabajo: individual.
+
+Actividad 7
+^^^^^^^^^^^^
+
+* Descripción: termina el reto y realiza el video de sustentación.
+* Recursos: -- 
+* Duración de la actividad: 7 horas
+* Forma de trabajo: individual/asincrónico.
+
+Actividad 8 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Fecha: marzo 3 de 2021 - 2 p.m.
+* Descripción: encuentro sincrónico para retroalimentar la unidad 3. 
+* Recursos: ingresa al grupo de Teams.
+* Duración de la actividad: 1:40 horas.
+* Forma de trabajo: colaborativo/sincrónica
+
+..
+  Un posible modelo de la solución es este:
+
+  .. image:: ../_static/parcial2SM.jpg
+    :scale: 100%
+    :align: center
+
+  Y una posible implementación del modelo es este otro modelo en C++:
+
+  .. code-block:: cpp 
+    :lineno-start: 1
+
+      void setup() {
+        Serial.begin(115200);
+      }
+      
+      void taskCom() {
+        enum class state_t {WAIT_INIT, WAIT_PACKET, WAIT_ACK};
+        static state_t state = state_t::WAIT_INIT;
+        static uint8_t bufferRx[20] = {0};
+        static uint8_t dataCounter = 0;
+        static uint32_t timerOld;
+        static uint8_t bufferTx[20];
+      
+        switch (state) {
+          case  state_t::WAIT_INIT:
+            if (Serial.available()) {
+              if (Serial.read() == 0x3E) {
+                Serial.write(0x4A);
+                dataCounter = 0;
+                timerOld = millis();
+                state = state_t::WAIT_PACKET;
+              }
+            }
+      
+            break;
+      
+          case state_t::WAIT_PACKET:
+      
+            if ( (millis() - timerOld) > 1000 ) {
+              Serial.write(0x3D);
+              state = state_t::WAIT_INIT;
+            }
+            else if (Serial.available()) {
+              uint8_t dataRx = Serial.read();
+              if (dataCounter >= 20) {
+                Serial.write(0x3F);
+                dataCounter = 0;
+                timerOld = millis();
+                state = state_t::WAIT_PACKET;
+              }
+              else {
+                bufferRx[dataCounter] = dataRx;
+                dataCounter++;
+      
+                // is the packet completed?
+                if (bufferRx[0] == dataCounter - 1) {
+      
+                  // Check received data
+                  uint8_t calcChecksum = 0;
+                  for (uint8_t i = 1; i <= dataCounter - 1; i++) {
+                    calcChecksum = calcChecksum ^ bufferRx[i - 1];
+                  }
+                  if (calcChecksum == bufferRx[dataCounter - 1]) {
+                    bufferTx[0] = dataCounter - 3; //Length
+                    calcChecksum = bufferTx[0];
+      
+                    // Calculate Tx checksum
+                    for (uint8_t i = 4; i <= dataCounter - 1; i++) {
+                      bufferTx[i - 3] = bufferRx[i - 1];
+                      calcChecksum = calcChecksum ^ bufferRx[i - 1];
+                    }
+      
+                    bufferTx[dataCounter - 3] = calcChecksum;
+                    Serial.write(0x4A);
+                    Serial.write(bufferTx, dataCounter - 2);
+                    timerOld = millis();
+                    state = state_t::WAIT_ACK;
+                  }
+                  else {
+                    Serial.write(0x3F);
+                    dataCounter = 0;
+                    timerOld = millis();
+                    state = state_t::WAIT_PACKET;
+                  }
+                }
+              }
+            }
+      
+            break;
+      
+          case state_t::WAIT_ACK:
+            if ( (millis() - timerOld) > 1000 ) {
+              timerOld = millis();
+              Serial.write(bufferTx, dataCounter - 2);
+            } else if (Serial.available()) {
+              if (Serial.read() == 0x4A) {
+                state = state_t::WAIT_INIT;
+              }
+            }
+      
+            break;
+        }
+      }
+      
+      
+      void loop() {
+        taskCom();
+      }
+
+  Un ejemplo de una escenario de prueba:
+
+  .. image:: ../_static/vector1.jpg
+    :scale: 100%
+    :align: center

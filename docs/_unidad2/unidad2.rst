@@ -799,7 +799,7 @@ Para realizar este reto se espera que hagas lo siguiente:
 * NO OLVIDES, este curso se trata de pensar y experimentar NO de BUSCAR soluciones
   en Internet.
 
-Enunciado: 
+Enunciado
 ##################
 
 Debes controlar el funcionamiento algunos sensores, actuadores y tareas desde el computador.

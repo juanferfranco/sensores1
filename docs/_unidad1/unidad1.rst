@@ -69,7 +69,7 @@ Para realizar este reto se espera que hagas lo siguiente:
   en Internet.
 
 
-Enunciado: 
+Enunciado
 ##################
 Se trata de una calculadora interactiva
 

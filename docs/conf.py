@@ -127,7 +127,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'sensores1.tex', 'sensores1 Documentation',
+    (master_doc, 'sensores1.tex', 'Curso sensores y actuadores 1',
      'Juan Franco', 'manual'),
 ]
 
@@ -137,7 +137,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'sensores1', 'sensores1 Documentation',
+    (master_doc, 'sensores1', 'Curso sensores y actuadores 1',
      [author], 1)
 ]
 
