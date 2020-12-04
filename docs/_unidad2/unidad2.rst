@@ -14,35 +14,40 @@ posibilidades y características de su plataforma de software.
 Trayecto de acciones, tiempos y formas de trabajo
 ---------------------------------------------------
 
-Actividad 1
-^^^^^^^^^^^^^^^^^^^^^^
-* Descripción: lee las preguntas y ejercicios orientadores para autoevaluar si tienes
-  los conocimientos necesarios para abordar el RETO.
-* Recursos: realiza `esta guía <https://docs.google.com/presentation/d/1y270S1bs49Vn-EX6OJqZrTqaCy2EWlUHECcKAD9ZUrg/edit?usp=sharing>`__.
-* Duración de la actividad: 1 hora
-* Forma de trabajo: individual/asincrónica.
+Actividad 1: encuentros sincrónicos
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Actividad 2
-^^^^^^^^^^^^^^^^^^^^^^^^^
-* Descripción: realiza las lecturas donde se explican los fundamentos conceptuales de la plataforma de software utilizada para 
-  la construcción de los programas del controlador.
-* Recursos: observa `este <https://docs.google.com/presentation/d/1KGtjm8v-BUcXMhfFBSAfXOtJ8RtVSL0e90qEHsblnMc/edit?usp=sharing>`__
-  material.
-* Duración de la actividad: 1 hora de trabajo autónomo 
-* Forma de trabajo: individual
+* Fechas: 
+  
+    * febrero 3 de 2021 - 2:00 p.m.
+    * febrero 10 de 2021 - 2:00 p.m.
+    
+* Descripción: asesorías en tiempo real y retroalimentación final.
+* Recursos: ingresa a `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
+* Duración de la actividad: 4 horas. 
+* Forma de trabajo: individual-colaborativo/sincrónico
 
-Actividad 3
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Descripción: realiza los ejercicios propuestos. 
-  Acuerda reuniones con tus compañeros para trabajar de manera *colaborativa*
-* Recursos: realiza los siguientes ejercicios propuestos
-* Duración de la actividad: 5 horas.
-* Forma de trabajo: individual y colaborativa.
+Actividad 2: preparación para el proyecto
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Descripción: realiza los siguientes ejercicios de preparación para 
+  el proyecto.
+* Recursos: ejercicios propuestos
+* Duración de la actividad: 7 horas. 
+* Forma de trabajo: individual-colaborativo/asincrónico (recuerda programar
+  encuentros con tu compañero de trabajo).
 
 Ejercicios
-###########
+############
 
-Ejercicio 1: explorando la carpeta de arduino
+Ejercicio 1
++++++++++++++
+
+Realiza las lecturas propuestas en `este <https://docs.google.com/presentation/d/1KGtjm8v-BUcXMhfFBSAfXOtJ8RtVSL0e90qEHsblnMc/edit?usp=sharing>`__
+material donde se explican los fundamentos conceptuales de la plataforma de software
+utilizada para la construcción de los programas del controlador.
+
+Ejercicio 2: explorando la carpeta de arduino
 +++++++++++++++++++++++++++++++++++++++++++++++
 
 * Descarga una versión .zip del IDE de Arduino.
@@ -56,7 +61,7 @@ Ejercicio 1: explorando la carpeta de arduino
 * Abre la carpeta hardware/arduino/avr/cores/arduino
 * ¿Qué contiene esta carpeta?
 
-Ejercicio 2: modificar el código fuente de arduino
+Ejercicio 3: modificar el código fuente de arduino
 +++++++++++++++++++++++++++++++++++++++++++++++++++++
 Tomando con referencia el ejercicio anterior:
 
@@ -69,7 +74,7 @@ Tomando con referencia el ejercicio anterior:
 * Abre la consola.
 * ¿Qué puedes concluir?
 
-Ejercicio 3 
+Ejercicio 4 
 +++++++++++++++++++++++++++++++++++++++++++++++
 * ¿Recuerdas el ejemplo BlinkWithoutDelay?
 * Busca de nuevo el ejemplo.
@@ -78,7 +83,7 @@ Ejercicio 3
 * Compara con el ejercicio anterior.
 * ¿Qué puedes concluir con respecto a la función delay?
 
-Ejercicio 4 
+Ejercicio 5
 +++++++++++++++++++++++++++++++++++++++++++++++
 * ¿Recuerdas el ejemplo BlinkWithoutDelay?
 * Busca de nuevo el ejemplo.
@@ -89,7 +94,7 @@ Ejercicio 4
 * Una vez termines, no olvides dejar el archivo main.cpp como
   estaba originalmente.
 
-Ejercicio 5
+Ejercicio 6
 +++++++++++++++++++++++++++++++++++++++++++++++
 Analiza el siguiente código:
 
@@ -154,7 +159,7 @@ Ahora compara con este otro código:
 
 ¿Qué puedes concluir?
 
-Ejercicio 6
+Ejercicio 7
 +++++++++++++++++++++++++++++++++++++++++++++++
 
 Analiza el siguiente ejemplo:
@@ -187,7 +192,7 @@ Analiza el siguiente ejemplo:
 Utilizando como referencia el código anterior crea un programa que
 encienda y apague tres LEDs a 1 Hz, 5 Hz y 7 Hz respectivamente.
 
-Ejercicio 7
+Ejercicio 8
 +++++++++++++++++++++++++++++++++++++++++++++++
 Vamos a analizar uno de los ejemplos que vienen con el
 SDK de arduino. Este ejemplo nos permite ver cómo podemos
@@ -232,7 +237,7 @@ hacer uso de los arreglos para manipular varios LEDs:
     }
 
 
-Ejercicio 8
+Ejercicio 9
 +++++++++++++++++++++++++++++++++++++++++++++++
 El siguiente código muestra cómo puedes encapsular completamente
 el código del ejercicio 6 en tareas.
@@ -333,7 +338,7 @@ todas las tareas así:
 Analiza detenidamente el código anterior. Experimenta y asegurate de entenderlo
 perfectamente antes de continuar.
 
-Ejercicio 9
+Ejercicio 10
 +++++++++++++++++++++++++++++++++++++++++++++++
 Observa detenidamente el código de las siguientes tareas. ¿Es muy similar, verdad?
 En este ejercicio veremos una construcción interesante de
@@ -643,7 +648,7 @@ La versión final del código será:
 	    task2();
 	  }
 
-Ejercicio 10
+Ejercicio 11
 +++++++++++++++++++++++++++++++++++++++++++++++
 Podemos llevar un paso más allá el ejercicio anterior si añadimos
 el concepto de arreglo. ¿Para qué? Observa que el código de
@@ -701,7 +706,7 @@ usando únicamente una tarea:
 
 De nuevo, analiza el código anterior. Experimenta. ¿Está todo claro?
 
-Ejercicio 11: miniRETO
+Ejercicio 12: miniRETO
 +++++++++++++++++++++++++++++++++++++++++++++++
 ¿Qué son los punteros? para entenderlos te propongo un mini RETO. Analiza
 en detalle el siguiente código
@@ -756,30 +761,13 @@ result.
 * ¿Qué crees entonces que son los punteros? 
 * ¿Para qué sirven los punteros?
 
-Actividad 4 
-^^^^^^^^^^^^^
+Actividad 3: proyecto y sustentación
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Descripción: discute con tu compañero de equipo los ejercicios. 
-* Recursos: ejercicios y tu propio material de solución y consulta.
-* Duración de la actividad: 2 horas.
-* Forma de trabajo: colaborativo/acuerda un encuentro con tu compañero
-
-Actividad 5
-^^^^^^^^^^^^
-* Fecha: febrero 3 - 2021 - 2 p.m.
-* Descripción: solución de dudas en tiempo real/solución al reto.
-* Recursos: ingresa a Teams para solucionar dudas y trabajar en el
-  reto en tiempo real.
-* Duración de la actividad: 1:40 horas. 
-* Forma de trabajo: individual.
-
-Actividad 6
-^^^^^^^^^^^^
-
-* Descripción: procede con la solución del reto.
-* Recursos: no olvides revisar la rúbrica y los ejercicios.
-* Duración de la actividad: 5 horas.
-* Forma de trabajo: individual.
+* Descripción: resuelve el proyecto y prepara la sustentación
+* Recursos: material de esta unidad
+* Duración de la actividad: 7 horas.
+* Forma de trabajo: individual
 
 Lee con detenimiento el código de honor y luego los pasos que debes seguir
 para evidenciar esta actividad.
@@ -875,23 +863,3 @@ Debes controlar el funcionamiento algunos sensores, actuadores y tareas desde el
 * Muestra de manera detallada los pasos que deben realizar cada una de las aplicaciones.
   Te recomiendo utilizar un `diagrama de secuencias <https://en.wikipedia.org/wiki/Sequence_diagram#:~:text=A%20sequence%20diagram%20shows%20object,the%20functionality%20of%20the%20scenario.>`__.
 
-
-Actividad 7
-^^^^^^^^^^^^
-* Descripción: realiza el video de sustentación.
-* Recursos: para realizar el video de sustentación te recomiendo los siguientes recursos
-  
-  * Software para capturar `OBS Studio <https://obsproject.com/>`__.
-  * Ver `este <https://www.youtube.com/watch?time_continue=3&v=1tuJjI7dhw0>`__
-    tutorial para el manejo de OBS Studio.
-
-* Duración de la actividad: 2 horas de trabajo autónomo
-* Forma de trabajo: individual
-
-Actividad 8 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: febrero 10 de 2021 - 2 p.m.
-* Descripción: encuentro sincrónico para retroalimentar la unidad 2. 
-* Recursos: ingresa al grupo de Teams.
-* Duración de la actividad: 1:40 horas.
-* Forma de trabajo: colaborativo/sincrónica

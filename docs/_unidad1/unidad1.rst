@@ -32,8 +32,8 @@ Actividad 1: encuentros sincrónicos
 Actividad 2: preparación para el proyecto
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Descripción: lee las preguntas y ejercicios orientadores para autoevaluar si tienes
-  los conocimientos necesarios para abordar el reto.
+* Descripción: realiza los siguientes ejercicios de preparación para 
+  el proyecto.
 * Recursos: realiza `esta guía <https://docs.google.com/presentation/d/1dJEfVysAZUY0561bICTVKtmZg8D6Ix8klRKGw6DZTp4/edit?usp=sharing>`__.
 * Duración de la actividad: 1 hora
 * Forma de trabajo: individual/asincrónica.
@@ -51,7 +51,7 @@ Actividad 3: proyecto y sustentación
   * Lee la documentación del manejo del puerto `serial de arduino <https://www.arduino.cc/reference/en/language/functions/communication/serial/>`__.
     y los ejemplos.
 
-* Duración de la actividad: 4 horas. 
+* Duración de la actividad: 6 horas. 
 * Forma de trabajo: colaborativa asincrónica.
 
 Lee con detenimiento el código de honor y luego los pasos que debes seguir

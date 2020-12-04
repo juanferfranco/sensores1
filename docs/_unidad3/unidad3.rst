@@ -19,37 +19,41 @@ escenarios o vectores de prueba definidos en el modelado.
 Trayecto de acciones, tiempos y formas de trabajo
 ---------------------------------------------------
 
-Actividad 1 
-^^^^^^^^^^^^^
+Actividad 1: encuentros sincrónicos
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Descripción: lee las preguntas y ejercicios orientadores para autoevaluar si tienes
-  los conocimientos necesarios para abordar el RETO.
-* Recursos: realiza `esta guía <https://docs.google.com/presentation/d/1A6phooetTEDRBksyrAd1Rloe7mCj7lRf1pDp4CRRdSk/edit?usp=sharing>`__.
-* Duración de la actividad: 1 hora
-* Forma de trabajo: individual/asincrónico.
+* Fechas: 
+  
+    * febrero 17 de 2021 - 2:00 p.m.
+    * febrero 24 de 2021 - 2:00 p.m.
+    * marzo 3 de 2021 - 2:00 p.m.
+    
+* Descripción: asesorías en tiempo real y retroalimentación final.
+* Recursos: ingresa a `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
+* Duración de la actividad: 6 horas. 
+* Forma de trabajo: individual-colaborativo/sincrónico
 
-Actividad 2
-^^^^^^^^^^^^^^^^^^^^^^^^^
-* Descripción: realiza las lecturas donde se explican los fundamentos conceptuales
-  de la plataforma de software utilizada para la construcción de los programas del controlador.
-* Recursos: observa `este <https://drive.google.com/open?id=1yuDi-tbSpLvV9zAu_TTsXWi9PWn9XyZNPq_NEB4AMao>`__
-  material.
-* Duración de la actividad: 1 hora
-* Forma de trabajo: individual/asincrónico
 
-Actividad 3
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Descripción: realiza los ejercicios propuestos. Acuerda reuniones 
-  con tus compañeros para trabajar de manera *colaborativa*
-* Recursos: realiza los ejercicios propuestos.
-* Duración de la actividad: 5 horas.
-* Forma de trabajo: individual-colaborativo/asincrónico (puedes acordar reuniones sincrónicas
-  con tu compañero de trabajo.
+Actividad 2: preparación para el proyecto
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Descripción: realiza los siguientes ejercicios de preparación para 
+  el proyecto.
+* Recursos: ejercicios propuestos
+* Duración de la actividad: 7 horas. 
+* Forma de trabajo: individual-colaborativo/asincrónico (recuerda programar
+  encuentros con tu compañero de trabajo).
 
 Ejercicios
-############
+###########
 
-Ejercicio 1: el puerto serial
+Ejercicio 1
++++++++++++++
+
+Inicia leyendo `este <https://drive.google.com/open?id=1yuDi-tbSpLvV9zAu_TTsXWi9PWn9XyZNPq_NEB4AMao>`__
+material.
+
+Ejercicio 2: el puerto serial
 +++++++++++++++++++++++++++++++
 
 Lee el material de `este <https://learn.sparkfun.com/tutorials/serial-communication/all>`__
@@ -63,7 +67,7 @@ sitio y responde las siguientes preguntas:
   se transmite el byte 0x01 y el carácter '1'
 * ¿Es lo mismo transmitir el byte 0x01 que el byte '1'?
 
-Ejercicio 2
+Ejercicio 3
 +++++++++++++++++++++++++++++++
 
 Hiciste el ejercicio 1, verdad? es importante que lo hagas. Un par de preguntas más:
@@ -72,7 +76,7 @@ Hiciste el ejercicio 1, verdad? es importante que lo hagas. Un par de preguntas 
   de tiempo?
 * Considera que tienes dos dispositivos ¿Cómo los debes conectar?
 
-Ejercicio 3
+Ejercicio 4
 +++++++++++++++++++++++++++++++
 
 ¿Dónde encuentro el API de arduino para el manejo del serial?
@@ -87,7 +91,7 @@ lee algunas de las funciones del API del serial y responde:
 * ¿Cuál es la diferencia entre readBytes? y readBytesUntil()?
 * ¿Qué pasa si quieres leer 10 bytes con readBytes pero solo se han recibido 3?
 
-Ejercicio 4
+Ejercicio 5
 +++++++++++++++++++++++++++++++
 
 Qué crees que ocurre cuando:
@@ -110,7 +114,7 @@ Qué crees que ocurre cuando:
   de los disponibles en el buffer de recepción, claramente porque no hay
   más datos que los que tenga allí.
 
-Ejercicio 5
+Ejercicio 6
 +++++++++++++++++++++++++++++++
 
 Vamos a leer 3 datos del puerto serial:
@@ -124,7 +128,7 @@ Vamos a leer 3 datos del puerto serial:
         int dataRx3 = Serial.read() 
     }
 
-Ejercicio 6
+Ejercicio 7
 +++++++++++++++++++++++++++++++
 
 ¿Qué escenarios podría tener en este caso?
@@ -139,7 +143,7 @@ Ejercicio 6
     }
 
 
-Ejercicio 7: miniRETO
+Ejercicio 8: miniRETO
 +++++++++++++++++++++++++++++++
 
 Piense cómo podrías hacer lo siguiente:
@@ -167,7 +171,7 @@ Piense cómo podrías hacer lo siguiente:
 * ¿Qué debes hacer para saber, en cualquier parte del código de taskSerial(),
   cuántos datos tengo guardados en el buffer de recepción?
 
-Ejercicio 8
+Ejercicio 9
 +++++++++++++++++++++++++++++++
 
 Vamos a detenernos un momento en el software del lado del
@@ -178,7 +182,7 @@ otra (scriptcommunicator)
 * ¿Qué es un programa terminal? 
 * ¿Para qué sirve?
 
-Ejercicio 9
+Ejercicio 10
 +++++++++++++++++++++++++++++++
 
 Considera el siguiente programa
@@ -261,7 +265,7 @@ En la siguiente parte del código:
 
    Serial.print('\n');
 
-Ejercicio 10: miniRETO
+Ejercicio 11: miniRETO
 +++++++++++++++++++++++++++++++
 
 Considera el siguiente código para analizar en Scriptcommunicator:
@@ -292,7 +296,7 @@ Considera el siguiente código para analizar en Scriptcommunicator:
 
 Explica qué está ocurriendo en cada caso.
 
-Ejercicio 11: máquinas de estado
+Ejercicio 12: máquinas de estado
 ++++++++++++++++++++++++++++++++++++
 
 Una experiencia interactiva posee un sensor que produce ruido eléctrico al
@@ -322,7 +326,7 @@ Para este ejercicio debes:
 * Implementar el modelo.
 * Verificar los escenarios definidos
 
-Ejercicio 12: miniRETO
+Ejercicio 13: miniRETO
 +++++++++++++++++++++++++++++++
 
 Se requiere construir una aplicación para controlar una bomba temporizada.
@@ -514,17 +518,16 @@ Para este ejercicio debes:
 
   .. image:: ../_static/SM.jpeg
 
-Actividad 4
-^^^^^^^^^^^^^^^^^^^^^
-* Fecha: febrero 17 - 2021 - 2 p.m.
-* Descripción: solución de dudas en tiempo real/solución al reto.
-* Recursos: ingresa a Teams para solucionar dudas y trabajar en el
-  reto en tiempo real.
-* Duración de la actividad: 1:40 horas. 
-* Forma de trabajo: individual.
+Actividad 3: proyecto y sustentación
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Lee con detenimiento el código de honor y luego los pasos que
-debes seguir para evidenciar esta actividad.
+* Descripción: resuelve el proyecto y prepara la sustentación
+* Recursos: material de esta unidad
+* Duración de la actividad: 14 horas.
+* Forma de trabajo: individual
+
+Lee con detenimiento el código de honor y luego los pasos que debes seguir
+para evidenciar esta actividad.
 
 Código de honor
 #################
@@ -672,39 +675,6 @@ La verificación será calculada desde el Byte 1 hasta el byte m.
   identificados.
 * Tus explicaciones deben ser claras, precisas y completas. No olvides planear 
   bien tu video de sustentación.
-
-Actividad 5
-^^^^^^^^^^^^^^^^^^^^^
-* Descripción: solución al reto.
-* Recursos: ejercicios propuestos y tu propio material de solución.
-* Duración de la actividad: 7 horas. 
-* Forma de trabajo: individual.
-
-Actividad 6
-^^^^^^^^^^^^^^^^^^^^^
-* Fecha: febrero 24 - 2021 - 2 p.m.
-* Descripción: solución de dudas en tiempo real/solución al reto.
-* Recursos: ingresa a Teams para solucionar dudas y trabajar en el
-  reto en tiempo real.
-* Duración de la actividad: 1:40 horas. 
-* Forma de trabajo: individual.
-
-Actividad 7
-^^^^^^^^^^^^
-
-* Descripción: termina el reto y realiza el video de sustentación.
-* Recursos: -- 
-* Duración de la actividad: 7 horas
-* Forma de trabajo: individual/asincrónico.
-
-Actividad 8 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-* Fecha: marzo 3 de 2021 - 2 p.m.
-* Descripción: encuentro sincrónico para retroalimentar la unidad 3. 
-* Recursos: ingresa al grupo de Teams.
-* Duración de la actividad: 1:40 horas.
-* Forma de trabajo: colaborativo/sincrónica
 
 ..
   Un posible modelo de la solución es este:
