@@ -1,5 +1,5 @@
-Semana 13: Unidad 6
-======================
+Unidad 6
+==========
 
 Propósitos de aprendizaje
 --------------------------
