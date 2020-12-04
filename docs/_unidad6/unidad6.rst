@@ -9,41 +9,39 @@ cómo integrar sensores y actuadores a herramientas de software
 para la construcción de aplicaciones interactivas.
 
 
-Código de honor
-----------------
-
-Para realizar las actividades y el RETO de evaluación se espera que hagas
-lo siguiente:
-
-* Colabora con tus compañeros cuando así se indique.
-* Trabaja de manera individual cuando la actividad así te lo
-  proponga.
-* Usa solo la documentación oficial del framework del controlador,
-  .NET de Microsoft y Unity
-* NO DEBES utilizar sitios en Internet con soluciones o ideas para
-  abordar el problema.
-* NO DEBES hacer uso de foros.
-* ¿Entonces qué hacer si no me funciona algo? Te propongo que
-  experimentes, crea hipótesis, experimenta de nuevo, observa y concluye.
-* NO OLVIDES, este curso se trata de pensar y experimentar NO de
-  BUSCAR soluciones en Internet.
-* VAMOS A TENER SESIONES sincrónicas donde podrás trabajar y resolver
-  dudas en tiempo real con el docente.
-
 Trayecto de acciones, tiempos y formas de trabajo
 ---------------------------------------------------
 
-Actividad 1
-^^^^^^^^^^^^^
-* Fecha: septiembre 28 de 2020
-* Descripción: vamos a introducir la unidad. 
-* Recursos: ingresa a Teams
-* Duración de la actividad: 1 hora , 20 minutos. 
-* Forma de trabajo: grupal
+Actividad 1: encuentros sincrónicos
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Fechas: 
+  
+    * abril 28 de 2021 - 2:00 p.m.
+    * mayo 5 de 2021 - 2:00 p.m.
+    * mayo 12 de 2021 - 2:00 p.m.
+    
+* Descripción: asesorías en tiempo real y retroalimentación final.
+* Recursos: ejercicios propuestos y tu propio material de solución.
+* Duración de la actividad: 6 horas. 
+* Forma de trabajo: individual-colaborativo/sincrónico.
 
 
-Reto de la Unidad anterior sin hilos
-#######################################
+Actividad 2: preparación para el proyecto
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Descripción: realiza los siguientes ejercicios para introducir
+  el reto y repasar algunos asuntos fundamentales.
+* Recursos: ejercicios propuestos
+* Duración de la actividad: 7 horas. 
+* Forma de trabajo: individual-colaborativo/asincrónico (recuerda programar
+  encuentros con tu compañero de trabajo).
+
+Ejercicios
+############
+
+Ejercicio 1
+++++++++++++++
 
 Te dejo una propuesta de solución al reto de la
 unidad anterior. Primero sin el hilo que imprime el contador
@@ -376,8 +374,9 @@ Ahora adicionamos el hilo que muestra el contador cada 100 ms
     }
 
 
-Integración con Unity
-#######################
+Ejercicio 2
+++++++++++++++
+
 Para realizar la integración, vamos a utilizar un plugin para Unity llamada
 Ardity. Sin embargo, vamos a analizar este plugin completamente hasta entender
 cada una de sus partes.
@@ -385,17 +384,9 @@ cada una de sus partes.
 La guía de trabajo se encuentra 
 `aquí <https://docs.google.com/presentation/d/1uHoIzJGHLZxLbkMdF1o_Ov14xSD3wP31-MQtsbOSa2E/edit?usp=sharing>`__
 
+Ejercicio 3
++++++++++++++
 
-Actividad 2
-^^^^^^^^^^^^^
-* Fecha: septiembre 28 a septiembre 30 de 2020
-* Descripción: realiza los ejercicios propuestos.
-* Recursos: mira los ejercicios abajo.
-* Duración de la actividad: 5 horas. 
-* Forma de trabajo: individual
-
-Ejercicio 1
-###############
 Al final de la guía te dejo un MINI-RETO. Este consiste en estudiar a fondo
 el código fuente del plugin. Es un reto grande porque posiblemente tengas que 
 recordar algunas de tus cursos anteriores de programación en el programa.
@@ -409,49 +400,11 @@ Una vez hagas el paso anterior:
 * Ahora toma únicamente LOS SCRIPTS de Ardity necesarios (SOLO LOS NECESARIOS)
   para hacer que la aplicación de la guía funcione de nuevo.
 
-Actividad 3
-^^^^^^^^^^^^^
-* Fecha: septiembre 30 de 2020
-* Descripción: realiza los ejercicios propuestos con soporte
-  del docente para resolver dudas en tiempo real.
-* Recursos: ingresa a Teams
-* Duración de la actividad: 1 hora , 20 minutos. 
-* Forma de trabajo: grupal
+Ejercicio 4
++++++++++++++
 
-En esta sesión vamos a terminar el material de esta semana y a resolver dudas
-de la actividad final de análisis de Ardity.
-
-Semana 14:  Unidad 6
-======================
-
-Trayecto de acciones, tiempos y formas de trabajo
----------------------------------------------------
-
-Actividad 1
-^^^^^^^^^^^^^
-* Fecha: octubre 5 de 2020
-* Descripción: solución de dudas en tiempo real con el docente 
-* Recursos: ingresa a Teams
-* Duración de la actividad: 1 hora , 20 minutos. 
-* Forma de trabajo: grupal
-
-
-Ejercicio 1
-###############
-La semana pasada dejamos este minireto para realizar
-
-* Crea un proyecto nuevo en Unity.
-* Configura el soporte para el puerto serial tal como lo viste en la guía.
-* OJO, no instales el paquete Ardity. SI YA LO HICISTE, vuelva a comenzar.
-* Ahora toma únicamente LOS SCRIPTS de Ardity necesarios (SOLO LOS NECESARIOS)
-  para hacer que la aplicación de la guía funcione de nuevo.
-
-¿Vemos los resultados obtenidos?
-
-Ejercicio 2
-##############
-Este ejercicio, de repaso, te propone una nueva iteración al estudio
-de la aplicación demo de la semana pasada.
+Vamos a analizar más detalladamente una de las escenas demo de Ardity:
+DemoScene_UserPoll_ReadWrite
 
 Primero, vamos a analizar rápidamente el código de arduino:
 
@@ -979,26 +932,8 @@ Mira con detenimiento el código. La siguiente línea te dará una pista.
     // to complete.
     private const int readTimeout = 100;
 
-Actividad 2
-^^^^^^^^^^^^^
-* Fecha: octubre 5 a octubre 7 de 2020
-* Descripción: trabaja en el ejercicio 2. Asegúrate de entenderlo por favor.
-  Aprovecha para repasar los conceptos de programación orientada a objetos
-  que no recuerdes.
-* Recursos: mira los ejercicios abajo.
-* Duración de la actividad: 5 horas. 
-* Forma de trabajo: individual
-
-Actividad 3
-^^^^^^^^^^^^^
-* Fecha: octubre 7 de 2020
-* Descripción: MINI RETO EN CLASE.
-* Recursos: ingresa a Teams
-* Duración de la actividad: 1 hora , 20 minutos. 
-* Forma de trabajo: grupal
-
-Trabaja en el siguiente mini-reto y aprovecha al profesor para resolver
-dudas en tiempo real.
+Ejercicio 5
++++++++++++++
 
 * Crea un proyecto nuevo en Unity.
 * Configura el soporte para el puerto serial tal como lo viste en la guía.
@@ -1007,60 +942,32 @@ dudas en tiempo real.
   planteada por el autor. 
 * Ahora implementa el protocolo binario de la unidad anterior (el sensor RFID).
 
-Semana 15: Unidad 6 
-=======================
-
-Trayecto de acciones, tiempos y formas de trabajo
----------------------------------------------------
-
-Actividad 1
-^^^^^^^^^^^^^
-* Fecha: octubre 12 a octubre 14 de 2020
-* Descripción: trabaja en los ejercicios propuestos y/o termina
-  el min-reto de la semana pasada.
-* Recursos: mira los ejercicios abajo.
-* Duración de la actividad: 5 horas. 
-* Forma de trabajo: individual
-
-Volvamos al código DEMO que hemos venido analizando.
-
-Ejercicio 1
-##############
-¿Qué excepciones se están considerando en el código?
-
-Ejercicio 2
-############
-¿Qué pasa si no reciben datos por el puerto serial durante 100ms?
-
-Ejercicio 3
-#############
-¿Qué pasa si el cable serial se desconecta de manera inesperada?
-
-Ejercicio 4
-#############
-¿Cómo se reestablece el funcionamiento de la aplicación?
-
-Ejercicio 5
-##############
-¿Qué modificación tendríamos que hacer a la aplicación de arduino para
-reestablecer la comunicación?
-
 Ejercicio 6
-##############
++++++++++++++
+
+De nuevo vamos a visitar el demo: DemoScene_UserPoll_ReadWrite.
+
+Resuelve las siguientes cuestiones:
+
+* ¿Qué excepciones se están considerando en el código?
+
+* ¿Qué pasa si no reciben datos por el puerto serial durante 100ms?
+
+* ¿Qué pasa si el cable serial se desconecta de manera inesperada?
+
+* ¿Cómo se reestablece el funcionamiento de la aplicación?
+
+* ¿Qué modificación tendríamos que hacer a la aplicación de arduino para
+  reestablecer la comunicación?
+
+Ejercicio 7
+++++++++++++++++
+
 Describe detalladamente qué pasos debes realizar para soportar un nuevo
 protocolo de comunicaciones en Ardity.     
 
-
-Actividad 3
-^^^^^^^^^^^^^
-* Fecha: octubre 14 de 2020
-* Descripción: Mini-reto y solución de dudas en tiempo real con el docente.
-* Recursos: ingresa a Teams
-* Duración de la actividad: 1 hora , 40 minutos. 
-* Forma de trabajo: grupal
-
-Mini-reto
-##########
+Ejercicio 8
+++++++++++++++
 
 #. Realiza una aplicación en Arduino que MEDIANTE un protocolo BINARIO
    envíe el valor de dos variables en punto flotante y una entera con signo 32
@@ -1072,27 +979,45 @@ Mini-reto
 #. Construye una interfaz de usuario en Unity para visualizar las variables. 
    RECUERDA: una interfaz de usuario, no la consola de Unity.
 
-Semana 16: Unidad 6 
-=======================
+Actividad 3: proyecto y sustentación
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Trayecto de acciones, tiempos y formas de trabajo
----------------------------------------------------
-
-Actividad 1
-^^^^^^^^^^^^^
-* Fecha: octubre 19 de 2020
-* Descripción: Evaluación final
-* Recursos: ingresa a Teams
-* Duración de la actividad: 1 hora , 40 minutos. 
+* Descripción: resuelve el RETO y prepara la sustentación
+* Recursos: material de esta unidad
+* Duración de la actividad: 14 horas.
 * Forma de trabajo: individual
 
-Evaluación final
-#################
+Lee con detenimiento el código de honor y luego los pasos que
+debes seguir para evidenciar esta actividad.
+
+Código de honor
+##################
+
+Para realizar las actividades y el RETO de evaluación se espera que hagas
+lo siguiente:
+
+* Colabora con tus compañeros cuando así se indique.
+* Trabaja de manera individual cuando la actividad así te lo
+  proponga.
+* Usa solo la documentación oficial del framework del controlador,
+  .NET de Microsoft y Unity
+* NO DEBES utilizar sitios en Internet con soluciones o ideas para
+  abordar el problema.
+* NO DEBES hacer uso de foros.
+* ¿Entonces qué hacer si no me funciona algo? Te propongo que
+  experimentes, crea hipótesis, experimenta de nuevo, observa y concluye.
+* NO OLVIDES, este curso se trata de pensar y experimentar NO de
+  BUSCAR soluciones en Internet.
+* VAMOS A TENER SESIONES sincrónicas donde podrás trabajar y resolver
+  dudas en tiempo real con el docente.
+
+Enunciado
+###########
 
 Construye una aplicación interactiva (AI), utilizando Unity-Ardity,
 que tendrá que comunicarse con un controlador que posee varios sensores y actuadores. 
 
-Considera:
+Consideraciones:
 
 * El protocolo de integración es BINARIO.
 * Deberás extender la funcionalidad de Ardity heredando de la clase
@@ -1102,8 +1027,6 @@ Considera:
 * Muestra en la Consola de Unity los paquetes que estás transmitiendo
   y qué paquetes estás recibiendo.
 * La secuencia de bytes más grande será de 20 bytes.
-* COMPRIME la carpeta del proyecto de Unity en formato .ZIP (OJO, solo .ZIP)
-* Entrega tu evaluación `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=487316>`__.
 
 PASOS para realizar la comunicación:
 
@@ -1270,27 +1193,15 @@ Un ejemplo de una escenario de prueba:
    :scale: 100%
    :align: center
 
+¿Qué debes entregar?
++++++++++++++++++++++++
 
-Actividad 2
-^^^^^^^^^^^^^
-* Fecha: octubre 19 a octubre 21 de 2020
-* Descripción: prepara la sustentación de la evaluación final
-* Recursos: mira los ejercicios abajo.
-* Duración de la actividad: 5 horas. 
-* Forma de trabajo: individual
+.. warning::
 
-Actividad 3
-^^^^^^^^^^^^^
-* Fecha: octubre 21 de 2020
-* Descripción: sustentación de la evaluación final
-* Recursos: debes estar pendiente de la llamada del docente
-  por medio de Teams.
-* Duración de la actividad: 1 hora , 40 minutos. 
-* Forma de trabajo: individual
-
-
-
-
-
-
-
+  * Crea una carpeta, la llamaremos principal. 
+  * Guarda allí el proyecto para el controlador, el proyecto para la aplicación
+    interactiva y un pdf con el documento de sustentación.
+  * En la carpeta principal guarda una copia de la `rúbrica <https://docs.google.com/spreadsheets/d/1jT7QiRZixG6Vt0M_D5vrKe8c4RpuhSuSgh9a6pDKNNo/edit?usp=sharing>`__
+    con tu autoevaluación.
+  * Comprime la carpeta principal en formato .ZIP
+  * Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=691991>`__.

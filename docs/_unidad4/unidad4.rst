@@ -393,8 +393,8 @@ La aplicación interactiva en el PC es tipo consola en C# y debe tener:
 
 .. warning::
   * Crea una carpeta, la llamaremos principal. 
-  * Guarda allí el proyecto para el controlador y el proyecto para la aplicación
-    interactiva.
+  * Guarda allí el proyecto para el controlador, el proyecto para la aplicación
+    interactiva y un documento en formato pdf con la sustentación.
   * En la carpeta principal guarda una copia de la rúbrica con tu autoevaluación.
   * Comprime la carpeta principal en formato .ZIP
   * Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=487305>`__.
@@ -402,11 +402,8 @@ La aplicación interactiva en el PC es tipo consola en C# y debe tener:
 ¿Qué deberás tener en cuenta para la sustentación?
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-* La sustentación se realizará en la última sesión de esta unidad.
-* Tendrá una duración máxima de 10 minutos. Allí mostrarás: el funcionamiento y explicarás
-  cómo realizaste las pruebas, qué problemas tuviste, cómo los solucionaste.
-* Estudia muy bien tu solución y prepárate para responder algunas preguntas. 
-* Ten en cuenta la rúbrica para preparar tu sustentación.
+* Realiza el documento teniendo en cuentas todas las consideraciones de la rúbrica
+* Tus explicaciones deben ser claras, precisas y completas.
 
 Actividad 5
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -10,98 +10,39 @@ para la producción y el prototipado de experiencias interactivas.
 Integrar controladores con aplicaciones interactivas mediante
 el uso de protocolos seriales binarios.
 
-Actividad de aprendizaje
--------------------------
-
-Se realizará las SEMANAS 10, 11 y 12 (septiembre 7-septiembre 23).
-
-Lee con detenimiento el código de honor y luego los pasos que
-debes seguir para evidenciar esta actividad.
-
-Código de honor
-^^^^^^^^^^^^^^^^^
-Para realizar este reto se espera que hagas lo siguiente:
-
-* Colabora con tus compañeros cuando así se indique.
-* Trabaja de manera individual cuando la actividad así te lo
-  proponga.
-* Usa solo la documentación oficial del framework del controlador
-  y .NET de Microsoft.
-* NO DEBES utilizar sitios en Internet con soluciones o ideas para
-  abordar el problema.
-* NO DEBES hacer uso de foros.
-* ¿Entonces qué hacer si no me funciona algo? Te propongo que
-  experimentes, crea hipótesis, experimenta de nuevo, observa y concluye.
-* NO OLVIDES, este curso se trata de pensar y experimentar NO de
-  BUSCAR soluciones en Internet.
-
-Enunciado
-^^^^^^^^^^
-
-El reto consiste en ser capaz de reproducir el archivo de prueba
-que provee el fabricante de un sensor de RFID. El archivo se encuentra
-`aquí <https://drive.google.com/file/d/1iVr2Fiv8wXLqNyShr_EOplSvOJBIPqJP/view>`__.
-
-Para ello vamos a programar un arduino para simular el sensor (vale un millón
-de pesos el sensor) y vamos a programar una aplicación interactiva en C# desde
-la cual enviaremos comandos al sensor tal como aparecen en el archivo de
-prueba.
-
-No olviden calcular y verificar el checksum en Arduino y en C#.
-
-La aplicación debe tener:
-
-* Dos hilos.
-* Un hilo debe imprimir cada 100 ms el valor de un contador (aquí simulamos
-  el funcionamiento de un motor o aplicación interactiva que debe mantener
-  un framerate constante.
-* Otro hilo responsable de realizar las operaciones de entrada salida: eventos
-  del teclado y comunicaciones seriales con el sensor. 
-* Asigne una tecla a cada comando que será enviado al arduino.
-
-
-¿Qué debes entregar?
-^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-  * Crea una carpeta, la llamaremos principal. 
-  * Guarda allí el proyecto para el controlador y el proyecto para la aplicación
-    interactiva.
-  * En la carpeta principal guarda una copia de la `rúbrica <https://docs.google.com/spreadsheets/d/1dDYGM7RKUWipoPZPhid-FIbw5sHI9WIYka1IgCu6OKw/edit?usp=sharing>`__
-    con tu autoevaluación.
-  * Comprime la carpeta principal en formato .ZIP
-  * Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=487312>`__.
-
-¿Qué deberás tener en cuenta para la sustentación?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-* La sustentación se realizará en la última sesión de esta unidad.
-* Tendrá una duración máxima de 10 minutos. Allí mostrarás: el funcionamiento y explicarás
-  cómo realizaste las pruebas, qué problemas tuviste, cómo los solucionaste.
-* Estudia muy bien tu solución y prepárate para responder algunas preguntas. 
-* Ten en cuenta la rúbrica para preparar tu sustentación.
-
 Trayecto de acciones, tiempos y formas de trabajo
 ---------------------------------------------------
 
-Actividad 1
-^^^^^^^^^^^^^
-* Fecha: septiembre 7 de 2020
-* Descripción: vamos a introducir el reto.
-* Recursos: ingresa a Teams
-* Duración de la actividad: 1 hora , 20 minutos. 
-* Forma de trabajo: grupal
+Actividad 1: encuentros sincrónicos
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Actividad 2
-^^^^^^^^^^^^^
-* Fecha: septiembre 7 a septiembre 9 de 2020
-* Descripción: realiza algunos ejercicios.
-* Recursos: mira los ejercicios abajo.
-* Duración de la actividad: 5 horas. 
-* Forma de trabajo: individual
+* Fechas: 
+  
+    * abril 7 de 2021 - 2:00 p.m.
+    * abril 14 de 2021 - 2:00 p.m.
+    * abril 21 de 2021 - 2:00 p.m.
+    
+* Descripción: asesorías en tiempo real y retroalimentación final.
+* Recursos: ejercicios propuestos y tu propio material de solución.
+* Duración de la actividad: 6 horas. 
+* Forma de trabajo: individual-colaborativo/sincrónico.
+
+
+Actividad 2: preparación para el proyecto
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Descripción: realiza los siguientes ejercicios para introducir
+  el reto y repasar algunos asuntos fundamentales.
+* Recursos: ejercicios propuestos
+* Duración de la actividad: 7 horas. 
+* Forma de trabajo: individual-colaborativo/asincrónico (recuerda programar
+  encuentros con tu compañero de trabajo).
+
+Ejercicios
+############
 
 Ejercicio 1
-#############
++++++++++++++
 
 ¿Cómo se ve un protocolo binario?
 
@@ -109,11 +50,12 @@ Para responder esta pregunta vamos a utilizar como ejemplo
 `este sensor <http://www.chafon.com/productdetails.aspx?pid=382>`__.
 Cuyo manual del fabricante se encuentra `aquí <https://drive.google.com/open?id=1uDtgNkUCknkj3iTkykwhthjLoTGJCcea>`__
 
-Explora la documentación, pero lee con mucho detalle hasta la página 5. NO abandones el documento hasta no
-entender, es clave para realizar el RETO.
+Explora la documentación, pero lee con mucho detalle hasta la página 5. 
+NO abandones el documento hasta no entender, es clave para realizar el RETO.
 
 Ejercicio 2
-#############
++++++++++++++
+
 Recuerda el `API de arduino <https://www.arduino.cc/reference/en/language/functions/communication/serial/>`__
 para el manejo del serial. En particular los siguientes métodos:
 
@@ -142,7 +84,8 @@ previos.
 
 
 Ejercicio 3
-#############
+++++++++++++++
+
 Mira `este <https://drive.google.com/file/d/1iVr2Fiv8wXLqNyShr_EOplSvOJBIPqJP/view>`__
 documento del fabricante del sensor. Podrás ver unos ejemplos de tramas. Utiliza
 ScriptCommunicator para reproducir al menos un par de tramas. ¿Cuál es la idea? que
@@ -181,16 +124,9 @@ checksum. Entiendes cómo utilizar este método? Si tienes dudas con algunos exp
       return uiCrcValue;
     }
 
-Actividad 3
-^^^^^^^^^^^^^
-* Fecha: septiembre 9 de 2020
-* Descripción: ¿qué te parece si discutimos las dudas?
-* Recursos: ingresa a Teams
-* Duración de la actividad: 1 horas 20 minutos 
-* Forma de trabajo: grupal
+Ejercicio 4
++++++++++++++
 
-Ejercicio
-##########
 Vamos a repasar el protocolo binario del reto de la unidad 3.
 
 Un posible modelo de la solución es este:
@@ -308,23 +244,8 @@ Un ejemplo de una escenario de prueba:
    :scale: 100%
    :align: center
 
-Semana 11: Unidad 5
-=======================
-
-Trayecto de acciones, tiempos y formas de trabajo
----------------------------------------------------
-
-Actividad 4
-^^^^^^^^^^^^^
-* Fecha: septiembre 14 de 2020
-* Descripción: Te propondré otros ejercicios complementarios
-  que necesitarás para afrontar otros protocolos binarios
-* Recursos: ingresa a Teams
-* Duración de la actividad: 1 hora , 20 minutos. 
-* Forma de trabajo: grupal
-
-Ejercicio 1
-#############
+Ejercicio 5
++++++++++++++++
 
 Analicemos el siguiente asunto:
 
@@ -340,8 +261,9 @@ tenemos dos posibilidades: transmitir primero el byte de menor peso (little endi
 o transmitir primero el byte de mayor peso (big endian). Al diseñar un protocolo
 binario deberemos escoger una de las dos posibilidades.
 
-Ejercicio 2
-#############
+Ejercicio 6
++++++++++++++
+
 ¿Cómo transmitir un número de 16 bits?
 
 .. code-block:: cpp
@@ -367,8 +289,9 @@ Ejercicio 2
 
 * ¿Qué endian estamos utilizando en este caso?
 
-Ejercicio 3
-#############
+Ejercicio 7
++++++++++++++
+
 ¿Cómo transmitir un número en punto flotante?
 
 Veamos dos maneras:
@@ -445,8 +368,9 @@ previamente en un arreglo:
         }
     }
 
-Ejercicio 4
-#############
+Ejercicio 8
+++++++++++++++
+
 Y ahora cómo lidiamos con el protocolo binario del sensor 
 de RFID desde la aplicación interactiva?
 
@@ -497,8 +421,9 @@ desde el arduino (toma el ejercicio anterior).
             }
     }
 
-Ejercicio 5
-#############
+Ejercicio 9
++++++++++++++
+
 Y si queremos que la aplicación interactiva lea los 4 bytes y lo
 convierta al número en punto flotante?
 
@@ -548,50 +473,77 @@ del ejercicio 3?
             }
     }
 
-Actividad 5
-^^^^^^^^^^^^^
-* Fecha: septiembre 14 a septiembre 16 de 2020
-* Descripción: Repasa todo los visto hasta ahora
-* Recursos: material semana 10 y 11
-* Duración de la actividad: 5 horas
-* Forma de trabajo: individual
 
-Actividad 6
-^^^^^^^^^^^^^
-* Fecha: septiembre 16 de 2020
-* Descripción: sigamos aclarando dudas. ¿Ya estás preparado
-  para el reto?
-* Recursos: ingresa a Teams
-* Duración de la actividad: 1 hora 40 minutos.
-* Forma de trabajo: grupal.
+Actividad 3: proyecto y sustentación
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
-Semana 12: Unidad 5
-=======================
-
-Trayecto de acciones, tiempos y formas de trabajo
----------------------------------------------------
-
-Actividad 7
-^^^^^^^^^^^^^
-* Fecha: septiembre 21 de 2020
-* Descripción: resolvemos dudas para el RETO?
-* Recursos: ingresa a Teams
-* Duración de la actividad: 1 hora 40 minutos. 
-* Forma de trabajo: grupal
-
-Actividad 8
-^^^^^^^^^^^^^
-* Fecha: septiembre 21 a septiembre 23 de 2020
-* Descripción: resuelve el RETO
+* Descripción: resuelve el RETO y prepara la sustentación
 * Recursos: material de esta unidad
-* Duración de la actividad: 5 horas.
+* Duración de la actividad: 14 horas.
 * Forma de trabajo: individual
 
-Actividad 9
-^^^^^^^^^^^^^
-* Fecha: septiembre 23 de 2020
-* Descripción: sustentación
-* Recursos: la solución al RETO
-* Duración de la actividad: 1 hora 40 minutos 
-* Forma de trabajo: individual
+Lee con detenimiento el código de honor y luego los pasos que
+debes seguir para evidenciar esta actividad.
+
+Código de honor
+#################
+
+Para realizar este reto se espera que hagas lo siguiente:
+
+* Colabora con tus compañeros cuando así se indique.
+* Trabaja de manera individual cuando la actividad así te lo
+  proponga.
+* Usa solo la documentación oficial del framework del controlador
+  y .NET de Microsoft.
+* NO DEBES utilizar sitios en Internet con soluciones o ideas para
+  abordar el problema.
+* NO DEBES hacer uso de foros.
+* ¿Entonces qué hacer si no me funciona algo? Te propongo que
+  experimentes, crea hipótesis, experimenta de nuevo, observa y concluye.
+* NO OLVIDES, este curso se trata de pensar y experimentar NO de
+  BUSCAR soluciones en Internet.
+
+Enunciado
+###########
+
+El reto consiste en ser capaz de reproducir el archivo de prueba
+que provee el fabricante de un sensor de RFID. El archivo se encuentra
+`aquí <https://drive.google.com/file/d/1iVr2Fiv8wXLqNyShr_EOplSvOJBIPqJP/view>`__.
+
+Para ello vamos a programar un arduino para simular el sensor (vale un millón
+de pesos el sensor) y vamos a programar una aplicación interactiva en C# desde
+la cual enviaremos comandos al sensor tal como aparecen en el archivo de
+prueba.
+
+No olviden calcular y verificar el checksum en Arduino y en C#.
+
+La aplicación debe tener:
+
+* Dos hilos.
+* Un hilo debe imprimir cada 100 ms el valor de un contador (aquí simulamos
+  el funcionamiento de un motor o aplicación interactiva que debe mantener
+  un framerate constante.
+* Otro hilo responsable de realizar las operaciones de entrada salida: eventos
+  del teclado y comunicaciones seriales con el sensor. 
+* Asigne una tecla a cada comando que será enviado al arduino.
+
+
+¿Qué debes entregar?
++++++++++++++++++++++++
+
+.. warning::
+
+  * Crea una carpeta, la llamaremos principal. 
+  * Guarda allí el proyecto para el controlador, el proyecto para la aplicación
+    interactiva y un pdf con el documento de sustentación.
+  * En la carpeta principal guarda una copia de la `rúbrica <https://docs.google.com/spreadsheets/d/1dDYGM7RKUWipoPZPhid-FIbw5sHI9WIYka1IgCu6OKw/edit?usp=sharing>`__
+    con tu autoevaluación.
+  * Comprime la carpeta principal en formato .ZIP
+  * Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=487312>`__.
+
+¿Qué deberás tener en cuenta para la sustentación?
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+* Realiza el documento teniendo en cuentas todas las consideraciones de la rúbrica
+* Tus explicaciones deben ser claras, precisas y completas.
+
