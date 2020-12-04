@@ -14,39 +14,46 @@ el uso de protocolos seriales ascii.
 Trayecto de acciones, tiempos y formas de trabajo
 ---------------------------------------------------
 
-Actividad 1
-^^^^^^^^^^^^^^^^^^^^^^
+Actividad 1: encuentros sincrónicos
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Descripción: lee las preguntas y ejercicios orientadores para autoevaluar si tienes
-  los conocimientos necesarios para abordar el RETO.
-* Recursos: realiza `esta guía <https://docs.google.com/presentation/d/1AyKBtJ3QKP-Qsuv8qFn9Azz4jPwjxEodjj5MLBXLy60/edit?usp=sharing>`__.
-* Duración de la actividad: 1 hora
-* Forma de trabajo: individual/asincrónico
+* Fechas: 
+  
+    * marzo 10 de 2021 - 2:00 p.m.
+    * marzo 17 de 2021 - 2:00 p.m.
+    * marzo 24 de 2021 - 2:00 p.m.
+    
+* Descripción: asesorías en tiempo real y retroalimentación final.
+* Recursos: ingresa a `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
+* Duración de la actividad: 6 horas. 
+* Forma de trabajo: individual-colaborativo/sincrónico
 
-Actividad 2
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Actividad 2: preparación para el proyecto
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Descripción: realiza las lecturas donde se explican los fundamentos conceptuales de la plataforma de software utilizada para 
-  la construcción de los programas del controlador.
-* Recursos: lee `este blog <http://www.albahari.com/threading/>`__ hasta la la sección que dice Join and Sleep
-  y reproduce de manera analítica los ejemplos que están allí.
-* Duración de la actividad: 1 hora. 
-* Forma de trabajo: individual/asincrónico.
-
-Actividad 3
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-* Descripción: realiza los ejercicios propuestos. 
-  Acuerda reuniones con tus compañeros para trabajar de manera *colaborativa*
-* Recursos: realiza los ejercicios propuestos
-* Duración de la actividad: 5 horas.
-* Forma de trabajo: individual/asincrónica (puedes acordar reuniones
-  sincrónicas con tu compañero).
+* Descripción: realiza los siguientes ejercicios de preparación para 
+  el proyecto.
+* Recursos: ejercicios propuestos
+* Duración de la actividad: 7 horas. 
+* Forma de trabajo: individual-colaborativo/asincrónico (recuerda programar
+  encuentros con tu compañero de trabajo).
 
 Ejercicios
 ############
 
 Ejercicio 1
++++++++++++++
+
+Realiza `esta guía <https://docs.google.com/presentation/d/1AyKBtJ3QKP-Qsuv8qFn9Azz4jPwjxEodjj5MLBXLy60/edit?usp=sharing>`__.
+
+Ejercicio 2
++++++++++++++
+
+Lee `este blog <http://www.albahari.com/threading/>`__ hasta la la sección que dice 
+Join and Sleep y reproduce los ejemplos que están allí. Analiza con detenimiento cada
+ejemplo.
+
+Ejercicio 3
 +++++++++++++
 
 Hasta este punto del curso hemos utilizado .NET para la construcción de aplicaciones
@@ -57,7 +64,7 @@ de software que estamos usando:
 * `¿Qué es el CLR? <https://dotnettutorials.net/lesson/common-language-runtime-dotnet/>`__
 * `¿Cómo se ejecuta un programa .NET? <https://dotnettutorials.net/lesson/dotnet-program-execution-process/>`__
 
-Ejercicio 2
+Ejercicio 4
 +++++++++++++
 
 Al finalizar el curso estaremos utilizando el motor Unity para construir aplicaciones interactivas
@@ -68,7 +75,7 @@ Profundiza un poco más sobre la relación entre .NET, código compilado y Unity
 * `IL2CPP <https://docs.unity3d.com/Manual/IL2CPP.html>`__
 * `¿Cómo funciona IL2CPP <https://docs.unity3d.com/Manual/IL2CPP.html>`__
 
-Ejercicio 3
+Ejercicio 5
 +++++++++++++
 
 La idea del ejercicio es comunicar a través del puerto serial
@@ -147,7 +154,7 @@ Y este es el código para el computador:
         }
     }
 
-Ejercicio 4
+Ejercicio 6
 +++++++++++++
 
 Ahora programa tanto el controlador como el PC con los siguientes
@@ -219,7 +226,7 @@ Este es el código para programar el computador
 * Corra el código del computador.
 * Al presionar cualquier tecla qué pasa?
 
-Ejercicio 5
+Ejercicio 7
 +++++++++++++
 
 Te diste cuenta que al presionar una tecla, el conteo se detiene
@@ -289,14 +296,13 @@ ser dos flujos independientes, es decir, dos hilos.
         }
     }
 
-Actividad 4
-^^^^^^^^^^^^^^^^^^^^^
-* Fecha: marzo 10 - 2021 - 2 p.m.
-* Descripción: solución de dudas en tiempo real/solución al reto.
-* Recursos: ingresa a Teams para solucionar dudas y trabajar en el
-  reto en tiempo real.
-* Duración de la actividad: 1:40 horas. 
-* Forma de trabajo: individual.
+Actividad 3: proyecto y sustentación
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Descripción: resuelve el proyecto y prepara la sustentación
+* Recursos: material de esta unidad
+* Duración de la actividad: 14 horas.
+* Forma de trabajo: individual
 
 Lee con detenimiento el código de honor y luego los pasos que
 debes seguir para evidenciar esta actividad.
@@ -404,314 +410,3 @@ La aplicación interactiva en el PC es tipo consola en C# y debe tener:
 
 * Realiza el documento teniendo en cuentas todas las consideraciones de la rúbrica
 * Tus explicaciones deben ser claras, precisas y completas.
-
-Actividad 5
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Descripción: solución al reto.
-* Recursos: ejercicios propuestos y tu propio material de solución.
-* Duración de la actividad: 7 horas. 
-* Forma de trabajo: individual.
-
-Actividad 6
-^^^^^^^^^^^^^^^^^^^^^
-* Fecha: marzo 17 - 2021 - 2 p.m.
-* Descripción: solución de dudas en tiempo real/solución al reto.
-* Recursos: ingresa a Teams para solucionar dudas y trabajar en el
-  reto en tiempo real.
-* Duración de la actividad: 1:40 horas. 
-* Forma de trabajo: individual.
-
-Actividad 7
-^^^^^^^^^^^^
-
-* Descripción: termina el reto y realiza el video de sustentación.
-* Recursos: -- 
-* Duración de la actividad: 7 horas
-* Forma de trabajo: individual/asincrónico.
-
-Actividad 8 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-* Fecha: marzo 24 de 2021 - 2 p.m.
-* Descripción: encuentro sincrónico para retroalimentar la unidad 4. 
-* Recursos: ingresa al grupo de Teams.
-* Duración de la actividad: 1:40 horas.
-* Forma de trabajo: colaborativo/sincrónica
-
-..
-  Sesión 1
-  ----------
-  Continuareamos analizando el material sobre hilos `aquí <http://www.albahari.com/threading/>`__
-
-  Sesión 2
-  ----------
-  Vamos a realizar los siguientes ejercicios para introducir la necesidad de contar con hilos
-  al utilizar entrada salida.
-
-  Ejercicio 1
-  ^^^^^^^^^^^^
-
-  Un ejercicio extra para comenzar a calentar, sin hilos aún.
-  La idea del ejercicio es comunicar a través del puerto serial
-  el computador con un arduino, en este caso, un ESP32. Si desea
-  trabajar en visual studio solo se requiere crear una aplicación
-  .NET framework tipo consola. En caso de utilizar .netcore se pueden
-  seguir los siguientes pasos en la terminal:
-
-  * mkdir dotNetTest
-  * cd dotNetTest
-  * dotnet new console
-  * En la siguiente línea, antes de versión tenemos doble guión. Ojo se ve como
-    un solo guión, pero son dos.
-  * dotnet add package System.IO.Ports --version 4.7
-  * code .
-  * copiar el código
-  * dotnet build
-  * dotnet run
-
-  Este es el código para programar en el arduino:
-
-  .. code-block:: cpp
-    :lineno-start: 1
-
-      void setup() {
-        Serial.begin(115200);
-      }
-
-      void loop() {
-
-        if(Serial.available()){
-          if(Serial.read() == '1'){
-            Serial.print("Hello from ESP32");
-          }
-        }
-      }
-
-
-  Este es el código para programar en el computador:
-
-  .. code-block:: csharp
-    :lineno-start: 1
-
-      using System;
-      using System.IO.Ports;
-
-      namespace hello_serialport{
-          class Program{
-              static void Main(string[] args)
-              {
-                  SerialPort _serialPort = new SerialPort();
-                  // Allow the user to set the appropriate properties.
-                  _serialPort.PortName = "/dev/ttyUSB0";
-                  _serialPort.BaudRate = 115200;
-                  _serialPort.DtrEnable = true;
-                  _serialPort.Open();
-                  byte[] data = {0x31};
-                  _serialPort.Write(data,0,1);
-                  byte[] buffer = new byte[20];
-
-                  while(true){
-                      if(_serialPort.BytesToRead > 0){
-                          _serialPort.Read(buffer,0,20);
-                          Console.WriteLine(System.Text.Encoding.ASCII.GetString(buffer));
-                          Console.ReadKey();
-                          _serialPort.Write(data,0,1);
-                      }
-                  }
-              }
-          }
-      }
-
-  Ejercicio 2
-  ^^^^^^^^^^^^
-  Este es el código para programar en el arduino:
-
-  .. code-block:: cpp
-    :lineno-start: 1
-
-      void setup() {
-        Serial.begin(115200);
-      }
-
-      void loop() {
-
-        if(Serial.available()){
-          if(Serial.read() == '1'){
-            delay(1000);
-            Serial.print("Hello from ESP32\n");
-          }
-        }
-      }
-
-  Este es el código para programar el computador
-
-  .. code-block:: cpp
-    :lineno-start: 1
-
-      using System;
-      using System.IO.Ports;
-      using System.Threading;
-
-      namespace serialTestBlock
-      {
-      class Program{
-              static void Main(string[] args)
-              {
-                  SerialPort _serialPort = new SerialPort();
-                  _serialPort.PortName = "/dev/ttyUSB0";
-                  _serialPort.BaudRate = 115200;
-                  _serialPort.DtrEnable = true;
-                  _serialPort.Open();
-
-                  byte[] data = {0x31};
-                  byte[] buffer = new byte[20];
-                  int counter = 0;
-
-                  while(true){
-                      if(Console.KeyAvailable == true){
-                          Console.ReadKey(true);
-                          _serialPort.Write(data,0,1);
-                          string message = _serialPort.ReadLine();
-                          Console.WriteLine(message);
-                      }
-                      Console.WriteLine(counter);
-                      counter = (counter + 1) % 100;
-                      Thread.Sleep(100);
-                  } 
-              }   
-          }
-      }
-
-  * Conecte el arduino.
-  * Modifique el código del computador asignando el puerto
-    serial correcto.
-  * Corra el código del computador.
-  * Al presionar cualquier tecla qué pasa?
-
-  Ejercicio 3: Reto
-  ^^^^^^^^^^^^^^^^^^
-  Con lo que hemos discutido hoy cómo podríamos solucionar el
-  problema anterior, considerando que no es posible (por el
-  ejercicio académico) modificar el código de Arduino?
-
-  .. warning::
-    Alerta de spoiler
-
-    El siguiente código muestra una posible solución al reto
-
-  .. code-block:: csharp
-    :lineno-start: 1
-
-      using System;
-      using System.IO.Ports;
-      using System.Threading;
-
-      namespace SerialTest
-      {
-          class Program
-          {
-              static void Main(string[] args)
-              {
-
-                  int counter = 0;
-
-                  Thread t = new Thread(readKeyboard);
-                  t.Start();
-
-                  while (true)
-                  {
-                      Console.WriteLine(counter);
-                      counter = (counter + 1) % 100;
-                      Thread.Sleep(100);
-                  }
-              }
-
-              static void readKeyboard()
-              {
-
-                  SerialPort _serialPort = new SerialPort(); ;
-                  _serialPort.PortName = "COM4";
-                  _serialPort.BaudRate = 115200;
-                  _serialPort.DtrEnable = true;
-                  _serialPort.Open();
-
-                  byte[] data = { 0x31 };
-
-                  while (true) {     
-                      if (Console.KeyAvailable == true)
-                      {
-                          Console.ReadKey(true);
-                          _serialPort.Write(data, 0, 1);
-                          string message = _serialPort.ReadLine();
-                          Console.WriteLine(message);
-                      }
-                  }
-              }
-          }
-      }
-
-  Ejercicio 4: Reto
-  ^^^^^^^^^^^^^^^^^^^^
-  Este ejercicio lo podemos comenzar en la sesión 2 y la idea
-  es terminarlo en las horas de trabajo autónomas:
-
-  Asuma que un arduino tiene conectados varios sensores y actuadores así:
-
-  * Dos sensores digitales
-  * Dos sensores analógicos: valores de 0 a 1023
-  * Dos actuadores digitales.
-  * Dos actuadores analógicos.
-
-  A su vez el arduino se conecta a un computador a través del puerto USB y se comunica 
-  utilizando la interfaz Serial. Realice un programa, en el arduino, que realice las siguientes tareas 
-  concurrentes:
-
-  * Recibir comandos a través de la interfaz Serial
-  * Enciende y apaga un LED a una frecuencia de 10 Hz
-  * Enciende y apaga un LED a una frecuencia de 5 Hz.
-
-  Los comandos recibidos por el puerto serial serán los siguientes:
-
-  * read D1. Este comando hace que se envie al PC el valor del sensor digital 1. 
-    El arduino devuelve la cadena:  D1 estado. Donde estado puede ser 1 o 0.
-
-  * read D2: enviar al PC el valor del sensor digital 2.  
-    El arduino devuelve la cadena: D2 estado. Donde estado puede ser 1 o 0.
-
-  * read A1: enviar el PC el valor del sensor analógico 1.  
-    El arduino devuelve la cadena A1 valor. Donde valor está entre 0 y 1023.
-
-  * read A2: enviar el PC el valor del sensor analógico 2. 
-    El arduino devuelve la cadena A2 valor. Donde valor está entre 0 y 1023.
-
-  * write O1 estado: donde estado puede ser 1 o 0. 
-    Activa o desactiva la salida digital 1 
-
-  * write O2 estado: donde estado puede ser 1 o 0. 
-    Activa o desactiva la salida digital 2 
-
-  * write P1 valor: donde valor puede ser de 0 a 255. 
-    Escribir un valor de PWM igual a valor en el actuador analógico 1. 
-
-  * write P2 valor: donde valor puede ser de 0 a 255. 
-    Escribir un valor de PWM igual a valor en el actuador analógico 2.
-
-  La aplicación del computador es tipo consola en C# y debe tener:
-
-  * Dos hilos.
-  * Un hilo debe imprimir cada 100 ms el valor de un contador.
-  * Otro hilo pendiente de los eventos del teclado.
-  * Asigne una tecla a cada comando que será enviado al arduino.
-  * Indicar si el arduino entendió o no entendió el comando, es decir,
-    mostrar el NACK o el ACK.
-
-  NOTAS:
-
-  Para cualquier de los comandos write el arduino debe devolver ACK si reconoce el comando y 
-  NACK si no lo reconoce. Usted debe decidir, dados los requisitos de la aplicación, 
-  si requiere introducir caracteres de nueva línea y/o retorno de carro. 
-  TENGA PRESENTE que LOS LEDs deben funcionar SIEMPRE a 5 Hz y 10 HZ como se declaró previamente, 
-  ese decir, su funcionamiento no puede ser interrumpido por las operaciones del puerto serial
-
-
-
