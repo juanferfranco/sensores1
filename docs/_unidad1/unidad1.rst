@@ -16,27 +16,31 @@ en el proceso del curso.
 Trayecto de acciones, tiempos y formas de trabajo
 ---------------------------------------------------
 
-Actividad 1
-^^^^^^^^^^^^^^^^^^^^^^
+Actividad 1: encuentros sincrónicos
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Fecha: enero 20 de 2021 - 2 p.m.
-* Descripción: asiste al encuentro sincrónico donde se introducirá el curso y se
-  explicará la actividad de aprendizaje, su importancia, su relación con los
-  criterios de competencia y cómo será evaluada.
-* Recursos: ingresar al grupo de `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
-* Duración de la actividad: 1:40 horas.
-* Forma de trabajo: grupal/sincrónica.
+* Fechas: 
+  
+    * enero 20 de 2021 - 2:00 p.m.
+    * enero 27 de 2021 - 2:00 p.m.
+    
+* Descripción: asesorías en tiempo real y retroalimentación final.
+* Recursos: ingresa a `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
+* Duración de la actividad: 4 horas. 
+* Forma de trabajo: individual-colaborativo/sincrónico
 
-Actividad 2
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Actividad 2: preparación para el proyecto
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 * Descripción: lee las preguntas y ejercicios orientadores para autoevaluar si tienes
   los conocimientos necesarios para abordar el reto.
 * Recursos: realiza `esta guía <https://docs.google.com/presentation/d/1dJEfVysAZUY0561bICTVKtmZg8D6Ix8klRKGw6DZTp4/edit?usp=sharing>`__.
 * Duración de la actividad: 1 hora
 * Forma de trabajo: individual/asincrónica.
 
-Actividad 3
-^^^^^^^^^^^^^^^^^^^^^
+Actividad 3: proyecto y sustentación
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 * Descripción: procede con la solución del reto.
 * Recursos: para abordar el reto de programación te recomiendo que tengas a la mano el siguiente material
   
@@ -114,6 +118,9 @@ con tu compañero.
 * Máximo 20 minutos: debes planear el video tal como aprendiste en segundo semestre
   en tu curso de narrativa audiovisual.
 * Cuida la calidad del audio y del video.
+* Opcional: software para capturar `OBS Studio <https://obsproject.com/>`__.
+* Opcional: observa `este <https://www.youtube.com/watch?time_continue=3&v=1tuJjI7dhw0>`__
+  tutorial para el manejo de OBS Studio.
 * Sección 1: introducción, donde dirás tu nombre y si realizaste el RETO
   completo. Si no terminaste indica claramente qué te faltó y por qué.
 * Sección 2: muestra que tus dos programas compilan correctamente y sin errores
@@ -136,22 +143,3 @@ con tu compañero.
 * Debes explicar claramente cómo se comunicarán tus aplicaciones.
 * Muestra de manera detallada los pasos que deben realizar cada una de las aplicaciones.
   Te recomiendo utilizar un `diagrama de secuencias <https://en.wikipedia.org/wiki/Sequence_diagram#:~:text=A%20sequence%20diagram%20shows%20object,the%20functionality%20of%20the%20scenario.>`__.
-
-
-Actividad 4
-^^^^^^^^^^^^^^^^^^^^^^^^^
-* Descripción: realiza el video de sustentación.
-* Recursos: para realizar el video de sustentación te recomiendo los siguientes recursos
-  * Software para capturar `OBS Studio <https://obsproject.com/>`__.
-  * Observa `este <https://www.youtube.com/watch?time_continue=3&v=1tuJjI7dhw0>`__
-    tutorial para el manejo de OBS Studio.
-* Duración de la actividad: 2 horas
-* Forma de trabajo: colaborativa/asincrónica.
-
-Actividad 5
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Fecha: enero 27 de 2020 - 2 p.m.
-* Descripción: encuentro sincrónico para compartir y discutir los resultados del reto.
-* Recursos: ingresa al grupo de Teams.
-* Duración de la actividad: 1:40 horas.
-* Forma de trabajo: grupal/sincrónica.
