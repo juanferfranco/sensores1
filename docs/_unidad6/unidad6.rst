@@ -1,13 +1,28 @@
 Unidad 6
 ==========
 
+Introducción 
+-------------
+
+Hemos llegado al final del curso. En esta unidad
+aplicarás todos los conceptos que has aprendido para la construcción
+de aplicaciones interactivas que integren sistemas embebidos con
+plataformas de cómputo interactivas. En particular vamos a utilizar
+Unity.
+
 Propósitos de aprendizaje
---------------------------
-En esta unidad 6 abordaremos la última parte del curso. Vamos
-a utilizar todo lo aprendido hasta ahora para aprender
-cómo integrar sensores y actuadores a herramientas de software
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Integrar sensores y actuadores a plataformas de software
 para la construcción de aplicaciones interactivas.
 
+Temas
+^^^^^^^
+
+* Integración de sistemas embebidos a plataformas de cómputo
+  interactivas: hilos, colas, sincronización, protocolos.
+* Repaso de conceptos de programación orientado a objetos: herencia,
+  clases abstractas, manejo de memoria.
 
 Trayecto de acciones, tiempos y formas de trabajo
 ---------------------------------------------------

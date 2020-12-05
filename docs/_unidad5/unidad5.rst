@@ -1,14 +1,32 @@
 Unidad 5
 =======================
 
+Introducción 
+--------------
+
+En esta unidad seguiremos profundizando en la construcción
+de aplicaciones interactivas utilizando hilos y la integración
+con sistemas embebidos mediante el uso de protocolos binarios.
+
 Propósitos de aprendizaje
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Construir aplicaciones interactivas utilizando múltiples hilos
 para la producción y el prototipado de experiencias interactivas.
 
 Integrar controladores con aplicaciones interactivas mediante
 el uso de protocolos seriales binarios.
+
+Temas 
+^^^^^^
+
+* Protocolos binarios
+* Diferencia entre los protocolos binarios y los protocolos ASCII
+* Técnicas de programación en el sistema embebidos para manejo
+  de protocolos binarios.
+* Construcción de aplicaciones tipo consola que usen
+  protocolos binarios.
+
 
 Trayecto de acciones, tiempos y formas de trabajo
 ---------------------------------------------------

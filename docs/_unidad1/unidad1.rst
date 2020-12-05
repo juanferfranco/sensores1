@@ -1,8 +1,17 @@
 UNIDAD 1
 =========
 
+Introducción
+--------------
+Para poder abordar con éxito este curso es importante que repases
+tus conocimientos de programación de sistemas embebidos y programación
+orientada a objetos. Adicionalmente, es importante identificar de una
+vez compañeros con los cuales puedas colaborar y establecer mecanismos
+de comunicación. Por tanto, en esta unidad te propondré un proyecto
+que te perita repasar y colaborar.
+
 Propósito de aprendizaje
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Autoevaluar las competencias en programación abordadas en los cursos previos
 con el fin de determinar estrategias personales que permitan afrontar con
@@ -12,6 +21,12 @@ Aunque el proceso de autoevaluación es personal, la evaluación de la esta
 unidad la vamos a realizar en grupo. La idea es que desde esta primera
 semana identifiques compañeros con los cuales puedas colaborar y ayudarte
 en el proceso del curso.
+
+Temas
+^^^^^^
+
+* Repaso de la programación básica de sistemas embebidos usando el framework de arduino.
+* Repaso de la programación orientada a objetos
 
 Trayecto de acciones, tiempos y formas de trabajo
 ---------------------------------------------------

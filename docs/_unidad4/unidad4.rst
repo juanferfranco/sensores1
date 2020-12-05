@@ -1,8 +1,16 @@
 UNIDAD 4
 ====================
 
+Introducción 
+-------------
+En las unidades anteriores te has concentrado en
+la construcción de software para sistemas embebidos.
+En esta unidad aprenderás como integrar a una plataforma
+de cómputo interactiva dichos sistemas embebidos mediante
+el uso de HILOS y protocolos de comunicación ASCII.
+
 Propósitos de aprendizaje
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Construir aplicaciones interactivas utilizando múltiples hilos
 para la producción y el prototipado de experiencias interactivas.
@@ -10,6 +18,17 @@ para la producción y el prototipado de experiencias interactivas.
 Integrar controladores con aplicaciones interactivas mediante
 el uso de protocolos seriales ascii.
 
+Temas
+^^^^^^
+
+* Repaso de tipos de dato valor y tipos referencia en C#.
+* Concepto de hilo y programación básica.
+* Conceptos básicos de sincronización de hilos.
+* Introducción al concepto de máquina virtual y su uso
+  en la plataforma interactiva Unity.
+* Construcción de aplicaciones tipo consola que hagan uso del
+  puerto serial.
+* Protocolos de comunicación ASCII.
 
 Trayecto de acciones, tiempos y formas de trabajo
 ---------------------------------------------------

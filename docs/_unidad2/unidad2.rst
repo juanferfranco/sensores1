@@ -1,8 +1,16 @@
 UNIDAD 2
 ====================
 
+Introducción
+---------------
+Para poder construir aplicaciones para sistemas embebidos
+es necesario conocer en detalle el hardware, pero también
+las herramientas de software. Este conocimiento te permitirá,
+no solo construir aplicaciones eficientes, sino también
+solucionar problemas o errores.
+
 Propósito de aprendizaje
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Analizar la plataforma de hardware y software del controlador que se empleará
 como interfaz entre los sensores-actuadores y las plataformas de software
@@ -10,6 +18,20 @@ interactivas a utilizar en el curso.
 
 Construir aplicaciones simples para el controlador con el fin de explorar algunas
 posibilidades y características de su plataforma de software.
+
+Temas
+^^^^^^
+
+* Herramientas del framework de arduino: toolchain, bootloader.
+* Código fuente del framework de arduino: estructura y modificaciones
+  simples.
+* Introducción a la programación NO BLOQUEANTE.
+* Técnicas de programación: encapsulamiento mediante tareas, programación
+  concurrente.
+* Framework de arduino: uso de clases en C++ en un ambiente de programación
+  para sistemas embebidos.
+* Introducción a los punteros.
+
 
 Trayecto de acciones, tiempos y formas de trabajo
 ---------------------------------------------------
