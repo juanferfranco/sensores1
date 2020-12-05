@@ -77,7 +77,21 @@ material.
 Ejercicio 2: el puerto serial
 +++++++++++++++++++++++++++++++
 
-Lee el material de `este <https://learn.sparkfun.com/tutorials/serial-communication/all>`__
+Observa este video corto que introducirá como funcionan las
+comunicaciones seriales entre un sistema embebidos y una
+plataforma de cómputo interactiva.
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nm0EdjXEBGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+Ejercicio 3
++++++++++++++++++++++++++++++++
+
+Ahora lee el material de `este <https://learn.sparkfun.com/tutorials/serial-communication/all>`__
 sitio y responde las siguientes preguntas:
 
 * ¿Cuál es la diferencia entre una interfaz de comunicación paralela y una serial?
@@ -87,20 +101,6 @@ sitio y responde las siguientes preguntas:
   un bit de parada, sin bit de paridad y a 9600 bps dibuja los diagramas de tiempo cuando
   se transmite el byte 0x01 y el carácter '1'
 * ¿Es lo mismo transmitir el byte 0x01 que el byte '1'?
-
-Ejercicio 3
-+++++++++++++++++++++++++++++++
-
-Observa este video corto:
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/nm0EdjXEBGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-Considera que deseas transmitir la palabra ``hola`` ¿Cómo sería el diagrama
-de tiempo?
 
 Ejercicio 4
 +++++++++++++++++++++++++++++++
