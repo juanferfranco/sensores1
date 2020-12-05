@@ -91,11 +91,16 @@ sitio y responde las siguientes preguntas:
 Ejercicio 3
 +++++++++++++++++++++++++++++++
 
-Hiciste el ejercicio 1, verdad? es importante que lo hagas. Un par de preguntas más:
+Observa este video corto:
 
-* Considera que deseas transmitir la palabra ``hola`` ¿Cómo sería el diagrama
-  de tiempo?
-* Considera que tienes dos dispositivos ¿Cómo los debes conectar?
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nm0EdjXEBGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+Considera que deseas transmitir la palabra ``hola`` ¿Cómo sería el diagrama
+de tiempo?
 
 Ejercicio 4
 +++++++++++++++++++++++++++++++
