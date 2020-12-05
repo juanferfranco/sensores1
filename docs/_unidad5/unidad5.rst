@@ -531,15 +531,13 @@ La aplicación debe tener:
 ¿Qué debes entregar?
 +++++++++++++++++++++++
 
-.. warning::
-
-  * Crea una carpeta, la llamaremos principal. 
-  * Guarda allí el proyecto para el controlador, el proyecto para la aplicación
-    interactiva y un pdf con el documento de sustentación.
-  * En la carpeta principal guarda una copia de la `rúbrica <https://docs.google.com/spreadsheets/d/1dDYGM7RKUWipoPZPhid-FIbw5sHI9WIYka1IgCu6OKw/edit?usp=sharing>`__
-    con tu autoevaluación.
-  * Comprime la carpeta principal en formato .ZIP
-  * Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=487312>`__.
+* Crea una carpeta, la llamaremos principal. 
+* Guarda allí el proyecto para el controlador, el proyecto para la aplicación
+  interactiva y un pdf con el documento de sustentación.
+* En la carpeta principal guarda una copia de la `rúbrica <https://docs.google.com/spreadsheets/d/13nRHlfSx1HICjRtzvhPPXkDnt_iev6F52Oi_djBK8OA/edit?usp=sharing>`__
+  con tu autoevaluación.
+* Comprime la carpeta principal en formato .ZIP
+* Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=691986>`__.
 
 ¿Qué deberás tener en cuenta para la sustentación?
 ++++++++++++++++++++++++++++++++++++++++++++++++++++

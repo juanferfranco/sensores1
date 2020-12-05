@@ -822,7 +822,7 @@ Debes controlar el funcionamiento algunos sensores, actuadores y tareas desde el
 
 * Crea una carpeta principal. Guarda allí dos carpetas más, cada uno con el proyecto para el PC
   y para el controlador. Guarda los proyectos completos.
-* En la carpeta principal guarda una copia de la `rúbrica <https://auladigital.upb.edu.co/mod/url/view.php?id=691972>`__
+* En la carpeta principal guarda una copia de la `rúbrica <https://docs.google.com/spreadsheets/d/1F4iZ5iFgyxHRecQW1TeAi12MosEwSVgZQYYLSFQ5I3Y/edit?usp=sharing>`__
   con tu autoevaluación.
 * En la carpeta principal guarda un archivo .pdf donde colocarás cuatro cosas:
   

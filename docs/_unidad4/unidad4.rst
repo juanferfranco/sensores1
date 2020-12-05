@@ -397,13 +397,13 @@ La aplicación interactiva en el PC es tipo consola en C# y debe tener:
 ¿Qué debes entregar?
 ++++++++++++++++++++++
 
-.. warning::
-  * Crea una carpeta, la llamaremos principal. 
-  * Guarda allí el proyecto para el controlador, el proyecto para la aplicación
-    interactiva y un documento en formato pdf con la sustentación.
-  * En la carpeta principal guarda una copia de la rúbrica con tu autoevaluación.
-  * Comprime la carpeta principal en formato .ZIP
-  * Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=487305>`__.
+* Crea una carpeta, la llamaremos principal. 
+* Guarda allí el proyecto para el controlador, el proyecto para la aplicación
+  interactiva y un documento en formato pdf con la sustentación.
+* En la carpeta principal guarda una copia de la `rúbrica <https://docs.google.com/spreadsheets/d/1MtSkyPv1LxwISHYPAlm8fDHAWm_o4yMrJsr3duF1chY/edit?usp=sharing>`__
+  con tu autoevaluación.
+* Comprime la carpeta principal en formato .ZIP
+* Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=691981>`__.
 
 ¿Qué deberás tener en cuenta para la sustentación?
 ++++++++++++++++++++++++++++++++++++++++++++++++++++

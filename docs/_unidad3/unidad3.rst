@@ -643,7 +643,7 @@ La verificación será calculada desde el Byte 1 hasta el byte m.
 * Guarda allí el proyecto para el controlador.
 * Guarda el diagrama, en formato .pdf, con el modelo del
   software del controlador.
-* En la carpeta principal guarda una copia de la `rúbrica <https://auladigital.upb.edu.co/mod/url/view.php?id=483169>`__
+* En la carpeta principal guarda una copia de la `rúbrica <https://docs.google.com/spreadsheets/d/1TzlR4PaQZPJrlFNM9YianianLSLw-yC01S8TDYTT0Xg/edit?usp=sharing>`__
   con tu autoevaluación.
 * En la carpeta principal guarda un archivo .pdf donde colocarás tres cosas:
   
@@ -653,7 +653,7 @@ La verificación será calculada desde el Byte 1 hasta el byte m.
     pueden encontrar cada una de las secciones solicitadas en el video.
 
 * Comprime la carpeta principal en formato .ZIP
-* Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=483167>`__.
+* Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=691976>`__.
 
 ¿Qué deberá tener el video de sustentación?
 ++++++++++++++++++++++++++++++++++++++++++++++
@@ -675,119 +675,3 @@ La verificación será calculada desde el Byte 1 hasta el byte m.
   identificados.
 * Tus explicaciones deben ser claras, precisas y completas. No olvides planear 
   bien tu video de sustentación.
-
-..
-  Un posible modelo de la solución es este:
-
-  .. image:: ../_static/parcial2SM.jpg
-    :scale: 100%
-    :align: center
-
-  Y una posible implementación del modelo es este otro modelo en C++:
-
-  .. code-block:: cpp 
-    :lineno-start: 1
-
-      void setup() {
-        Serial.begin(115200);
-      }
-      
-      void taskCom() {
-        enum class state_t {WAIT_INIT, WAIT_PACKET, WAIT_ACK};
-        static state_t state = state_t::WAIT_INIT;
-        static uint8_t bufferRx[20] = {0};
-        static uint8_t dataCounter = 0;
-        static uint32_t timerOld;
-        static uint8_t bufferTx[20];
-      
-        switch (state) {
-          case  state_t::WAIT_INIT:
-            if (Serial.available()) {
-              if (Serial.read() == 0x3E) {
-                Serial.write(0x4A);
-                dataCounter = 0;
-                timerOld = millis();
-                state = state_t::WAIT_PACKET;
-              }
-            }
-      
-            break;
-      
-          case state_t::WAIT_PACKET:
-      
-            if ( (millis() - timerOld) > 1000 ) {
-              Serial.write(0x3D);
-              state = state_t::WAIT_INIT;
-            }
-            else if (Serial.available()) {
-              uint8_t dataRx = Serial.read();
-              if (dataCounter >= 20) {
-                Serial.write(0x3F);
-                dataCounter = 0;
-                timerOld = millis();
-                state = state_t::WAIT_PACKET;
-              }
-              else {
-                bufferRx[dataCounter] = dataRx;
-                dataCounter++;
-      
-                // is the packet completed?
-                if (bufferRx[0] == dataCounter - 1) {
-      
-                  // Check received data
-                  uint8_t calcChecksum = 0;
-                  for (uint8_t i = 1; i <= dataCounter - 1; i++) {
-                    calcChecksum = calcChecksum ^ bufferRx[i - 1];
-                  }
-                  if (calcChecksum == bufferRx[dataCounter - 1]) {
-                    bufferTx[0] = dataCounter - 3; //Length
-                    calcChecksum = bufferTx[0];
-      
-                    // Calculate Tx checksum
-                    for (uint8_t i = 4; i <= dataCounter - 1; i++) {
-                      bufferTx[i - 3] = bufferRx[i - 1];
-                      calcChecksum = calcChecksum ^ bufferRx[i - 1];
-                    }
-      
-                    bufferTx[dataCounter - 3] = calcChecksum;
-                    Serial.write(0x4A);
-                    Serial.write(bufferTx, dataCounter - 2);
-                    timerOld = millis();
-                    state = state_t::WAIT_ACK;
-                  }
-                  else {
-                    Serial.write(0x3F);
-                    dataCounter = 0;
-                    timerOld = millis();
-                    state = state_t::WAIT_PACKET;
-                  }
-                }
-              }
-            }
-      
-            break;
-      
-          case state_t::WAIT_ACK:
-            if ( (millis() - timerOld) > 1000 ) {
-              timerOld = millis();
-              Serial.write(bufferTx, dataCounter - 2);
-            } else if (Serial.available()) {
-              if (Serial.read() == 0x4A) {
-                state = state_t::WAIT_INIT;
-              }
-            }
-      
-            break;
-        }
-      }
-      
-      
-      void loop() {
-        taskCom();
-      }
-
-  Un ejemplo de una escenario de prueba:
-
-  .. image:: ../_static/vector1.jpg
-    :scale: 100%
-    :align: center

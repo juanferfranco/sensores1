@@ -1196,12 +1196,10 @@ Un ejemplo de una escenario de prueba:
 ¿Qué debes entregar?
 +++++++++++++++++++++++
 
-.. warning::
-
-  * Crea una carpeta, la llamaremos principal. 
-  * Guarda allí el proyecto para el controlador, el proyecto para la aplicación
-    interactiva y un pdf con el documento de sustentación.
-  * En la carpeta principal guarda una copia de la `rúbrica <https://docs.google.com/spreadsheets/d/1jT7QiRZixG6Vt0M_D5vrKe8c4RpuhSuSgh9a6pDKNNo/edit?usp=sharing>`__
-    con tu autoevaluación.
-  * Comprime la carpeta principal en formato .ZIP
-  * Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=691991>`__.
+* Crea una carpeta, la llamaremos principal. 
+* Guarda allí el proyecto para el controlador, el proyecto para la aplicación
+  interactiva y un pdf con el documento de sustentación.
+* En la carpeta principal guarda una copia de la `rúbrica <https://docs.google.com/spreadsheets/d/1jT7QiRZixG6Vt0M_D5vrKe8c4RpuhSuSgh9a6pDKNNo/edit?usp=sharing>`__
+  con tu autoevaluación.
+* Comprime la carpeta principal en formato .ZIP
+* Entrega el archivo .ZIP `aquí <https://auladigital.upb.edu.co/mod/assign/view.php?id=691991>`__.
