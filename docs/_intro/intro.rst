@@ -96,12 +96,12 @@ Evaluación
 -----------
 6 evaluaciones sumativas de carácter acumulativo:
 
-* Unidad 1: 5%
-* Unidad 2: 15%
-* Unidad 3: 20%
-* Unidad 4: 20%
-* Unidad 5: 20%
-* Unidad 6: 20%
+* Unidad 1: 5%. Evaluación grupal.
+* Unidad 2: 15%. Evaluación individual.
+* Unidad 3: 20%. Evaluación individual.
+* Unidad 4: 20%. Evaluación individual.
+* Unidad 5: 20%. Evaluación individual.
+* Unidad 6: 20%. Evaluación individual.
 
 Dedicación
 -----------
