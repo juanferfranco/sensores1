@@ -18,9 +18,9 @@ Actividad 1: encuentros sincrónicos
 
 * Fechas: 
   
-    * abril 7 de 2021 - 2:00 p.m.
-    * abril 14 de 2021 - 2:00 p.m.
-    * abril 21 de 2021 - 2:00 p.m.
+    * abril 7 de 2021 - 2:00 p.m. Sesión de asesoría.
+    * abril 14 de 2021 - 2:00 p.m. Sesión de asesoría.
+    * abril 21 de 2021 - 2:00 p.m. Sesión de retroalimentación.
     
 * Descripción: asesorías en tiempo real y retroalimentación final.
 * Recursos: ejercicios propuestos y tu propio material de solución.

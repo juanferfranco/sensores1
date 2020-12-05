@@ -19,9 +19,9 @@ Actividad 1: encuentros sincrónicos
 
 * Fechas: 
   
-    * marzo 10 de 2021 - 2:00 p.m.
-    * marzo 17 de 2021 - 2:00 p.m.
-    * marzo 24 de 2021 - 2:00 p.m.
+    * marzo 10 de 2021 - 2:00 p.m. Sesión de asesoría.
+    * marzo 17 de 2021 - 2:00 p.m. Sesión de asesoría.
+    * marzo 24 de 2021 - 2:00 p.m. Sesión de retroalimentación.
     
 * Descripción: asesorías en tiempo real y retroalimentación final.
 * Recursos: ingresa a `Teams <https://teams.microsoft.com/l/team/19%3a919658982cb4457e85d706bad345b5dc%40thread.tacv2/conversations?groupId=16c098de-d737-4b8a-839d-8faf7400b06e&tenantId=618bab0f-20a4-4de3-a10c-e20cee96bb35>`__
