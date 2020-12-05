@@ -45,8 +45,8 @@ Actividad 1: encuentros sincrónicos
 Actividad 2: preparación para el proyecto
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Descripción: realiza los siguientes ejercicios para introducir
-  el reto y repasar algunos asuntos fundamentales.
+* Descripción: realiza los siguientes ejercicios de preparación para el
+  proyecto y repasar algunos asuntos fundamentales.
 * Recursos: ejercicios propuestos
 * Duración de la actividad: 7 horas. 
 * Forma de trabajo: individual-colaborativo/asincrónico (recuerda programar
@@ -58,7 +58,7 @@ Ejercicios
 Ejercicio 1
 ++++++++++++++
 
-Te dejo una propuesta de solución al reto de la
+Te dejo una propuesta de solución al proyecto de la
 unidad anterior. Primero sin el hilo que imprime el contador
 y luego con ese hilo.
 
@@ -997,7 +997,7 @@ Ejercicio 8
 Actividad 3: proyecto y sustentación
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Descripción: resuelve el RETO y prepara la sustentación
+* Descripción: resuelve el proyecto y prepara la sustentación
 * Recursos: material de esta unidad
 * Duración de la actividad: 14 horas.
 * Forma de trabajo: individual
@@ -1008,7 +1008,7 @@ debes seguir para evidenciar esta actividad.
 Código de honor
 ##################
 
-Para realizar las actividades y el RETO de evaluación se espera que hagas
+Para realizar las actividades y el proyecto de evaluación se espera que hagas
 lo siguiente:
 
 * Colabora con tus compañeros cuando así se indique.

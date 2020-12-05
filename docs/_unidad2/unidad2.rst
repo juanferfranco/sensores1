@@ -797,7 +797,7 @@ para evidenciar esta actividad.
 Código de honor
 ##################
 
-Para realizar este reto se espera que hagas lo siguiente:
+Para realizar este proyecto se espera que hagas lo siguiente:
 
 * Colabora con tus compañeros cuando así se indique.
 * Trabaja de manera individual cuando la actividad así te lo proponga.
@@ -862,7 +862,7 @@ Debes controlar el funcionamiento algunos sensores, actuadores y tareas desde el
 * Máximo 20 minutos: debes planear el video tal como aprendiste en segundo semestre
   en tu curso de narrativa audiovisual.
 * Cuida la calidad del audio y del video.
-* Sección 1: introducción, donde dirás tu nombre y si realizaste el RETO
+* Sección 1: introducción, donde dirás tu nombre y si realizaste el proyecto
   completo. Si no terminaste indica claramente qué te faltó y por qué.
 * Sección 2: muestra que tus dos programas compilan correctamente y sin errores
   o advertencias problemáticas.

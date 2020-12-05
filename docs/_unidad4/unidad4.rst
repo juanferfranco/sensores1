@@ -329,7 +329,7 @@ debes seguir para evidenciar esta actividad.
 Código de honor
 ##################
 
-Para realizar este reto se espera que hagas lo siguiente:
+Para realizar este proyecto se espera que hagas lo siguiente:
 
 * Colabora con tus compañeros cuando así se indique.
 * Trabaja de manera individual cuando la actividad así te lo

@@ -49,8 +49,8 @@ Actividad 1: encuentros sincrónicos
 Actividad 2: preparación para el proyecto
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Descripción: realiza los siguientes ejercicios para introducir
-  el reto y repasar algunos asuntos fundamentales.
+* Descripción: realiza los siguientes ejercicios de preparación para
+  el proyecto y repasar algunos asuntos fundamentales.
 * Recursos: ejercicios propuestos
 * Duración de la actividad: 7 horas. 
 * Forma de trabajo: individual-colaborativo/asincrónico (recuerda programar
@@ -69,7 +69,7 @@ Para responder esta pregunta vamos a utilizar como ejemplo
 Cuyo manual del fabricante se encuentra `aquí <https://drive.google.com/open?id=1uDtgNkUCknkj3iTkykwhthjLoTGJCcea>`__
 
 Explora la documentación, pero lee con mucho detalle hasta la página 5. 
-NO abandones el documento hasta no entender, es clave para realizar el RETO.
+NO abandones el documento hasta no entender, es clave para realizar el proyecto.
 
 Ejercicio 2
 +++++++++++++
@@ -145,7 +145,7 @@ checksum. Entiendes cómo utilizar este método? Si tienes dudas con algunos exp
 Ejercicio 4
 +++++++++++++
 
-Vamos a repasar el protocolo binario del reto de la unidad 3.
+Vamos a repasar el protocolo binario del proyecto de la unidad 3.
 
 Un posible modelo de la solución es este:
 
@@ -495,7 +495,7 @@ del ejercicio 3?
 Actividad 3: proyecto y sustentación
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Descripción: resuelve el RETO y prepara la sustentación
+* Descripción: resuelve el proyecto y prepara la sustentación
 * Recursos: material de esta unidad
 * Duración de la actividad: 14 horas.
 * Forma de trabajo: individual
@@ -506,7 +506,7 @@ debes seguir para evidenciar esta actividad.
 Código de honor
 #################
 
-Para realizar este reto se espera que hagas lo siguiente:
+Para realizar este proyecto se espera que hagas lo siguiente:
 
 * Colabora con tus compañeros cuando así se indique.
 * Trabaja de manera individual cuando la actividad así te lo
@@ -524,7 +524,7 @@ Para realizar este reto se espera que hagas lo siguiente:
 Enunciado
 ###########
 
-El reto consiste en ser capaz de reproducir el archivo de prueba
+El proyecto consiste en ser capaz de reproducir el archivo de prueba
 que provee el fabricante de un sensor de RFID. El archivo se encuentra
 `aquí <https://drive.google.com/file/d/1iVr2Fiv8wXLqNyShr_EOplSvOJBIPqJP/view>`__.
 

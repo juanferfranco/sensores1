@@ -56,8 +56,8 @@ Actividad 2: preparación para el proyecto
 Actividad 3: proyecto y sustentación
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Descripción: procede con la solución del reto.
-* Recursos: para abordar el reto de programación te recomiendo que tengas a la mano el siguiente material
+* Descripción: procede con la solución del proyecto.
+* Recursos: para abordar el proyecto de programación te recomiendo que:
   
   * No olvides agendar un encuentro sincrónico con tu compañero.
   * Antes de comenzar lee con detenimiento la rúbrica de evaluación de la unidad.
@@ -75,7 +75,7 @@ para evidenciar esta actividad.
 Código de honor
 ##################
 
-Para realizar este reto se espera que hagas lo siguiente:
+Para realizar este proyecto se espera que hagas lo siguiente:
 
 * Colabora con tus compañeros cuando así se indique.
 * Trabaja de manera individual cuando la actividad así te lo proponga.
@@ -136,7 +136,7 @@ con tu compañero.
 * Opcional: software para capturar `OBS Studio <https://obsproject.com/>`__.
 * Opcional: observa `este <https://www.youtube.com/watch?time_continue=3&v=1tuJjI7dhw0>`__
   tutorial para el manejo de OBS Studio.
-* Sección 1: introducción, donde dirás tu nombre y si realizaste el RETO
+* Sección 1: introducción, donde dirás tu nombre y si realizaste el proyecto
   completo. Si no terminaste indica claramente qué te faltó y por qué.
 * Sección 2: muestra que tus dos programas compilan correctamente y sin errores
   o advertencias problemáticas.

@@ -558,7 +558,7 @@ para evidenciar esta actividad.
 Código de honor
 #################
 
-Para realizar este reto se espera que hagas lo siguiente:
+Para realizar este proyecto se espera que hagas lo siguiente:
 
 * Colabora con tus compañeros cuando así se indique.
 * Trabaja de manera individual cuando la actividad así te lo
@@ -585,7 +585,7 @@ Este modelo te permitirá visualizar más fácilmente
 el funcionamiento de tu controlador y todos los posibles escenarios
 de prueba que deberás posteriormente verificar.
 
-En este RETO no vas a implementar la AI, te vas a concentrar en
+En este proyecto no vas a implementar la AI, te vas a concentrar en
 el software del controlador. Entonces la AI será simulada.
 
 Para simular la AI utiliza `ScriptCommunicator <https://sourceforge.net/projects/scriptcommunicator/>`__.
@@ -687,7 +687,7 @@ La verificación será calculada desde el Byte 1 hasta el byte m.
 * Máximo 20 minutos: debes planear el video tal como aprendiste en segundo semestre
   en tu curso de narrativa audiovisual.
 * Cuida la calidad del audio y del video.
-* Sección 1: introducción, donde dirás tu nombre y si realizaste el RETO
+* Sección 1: introducción, donde dirás tu nombre y si realizaste el proyecto
   completo. Si no terminaste indica claramente qué te faltó y por qué.
 * Sección 2: muestra y explica detalladamente tu modelo. Nota que en el enunciado
   se definen unos tiempos de espera, así como unos bytes de respuesta. Explica,
