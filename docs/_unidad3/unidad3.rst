@@ -8,8 +8,8 @@ Cuando escribes software es importante
 que te familiarices con patrones arquitectónicos que
 te permitan estructurar los programas para favorecer
 el trabajo modular y el trabajo en equipo. En esta unidad
-te propondré una arquitectura te software que te permitirá
-construir software para sistemas embebidos guiado por
+te propondré una arquitectura de software que te permitirá
+construir aplicaciones para sistemas embebidos guiadas por
 eventos mediante el uso de máquinas de estado. Ten presente
 que esta técnica no solamente será útil para programar sistemas
 embebidos, sino también, aplicaciones interactivas.
@@ -33,7 +33,7 @@ Temas
 ^^^^^^
 
 * Modelamiento y programación utilizando máquinas de estado.
-* Manejo del puerto serial y de medidas de tiempo y retardos
+* Manejo del puerto serial, medidas de tiempo y retardos
   utilizando técnicas de programación no bloqueantes.
 
 
