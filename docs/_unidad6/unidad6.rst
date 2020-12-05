@@ -1,5 +1,5 @@
-Unidad 6
-==========
+Unidad 6. Integración: plataformas de software interactivas
+=============================================================
 
 Introducción 
 -------------

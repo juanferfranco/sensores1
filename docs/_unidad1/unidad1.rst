@@ -1,5 +1,5 @@
-UNIDAD 1
-=========
+Unidad 1. Programación: diagnóstico y repaso
+==============================================
 
 Introducción
 --------------

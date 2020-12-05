@@ -1,5 +1,5 @@
-UNIDAD 2
-====================
+Unidad 2. Software embebidos: plataforma
+==========================================
 
 Introducción
 ---------------
