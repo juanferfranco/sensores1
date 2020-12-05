@@ -94,7 +94,14 @@ Cronograma
 
 Evaluación
 -----------
-6 evaluaciones sumativas de carácter acumulativo del 5%, 15%, 20%, 20%, 20%, 20%.
+6 evaluaciones sumativas de carácter acumulativo:
+
+* Unidad 1: 5%
+* Unidad 2: 15%
+* Unidad 3: 20%
+* Unidad 4: 20%
+* Unidad 5: 20%
+* Unidad 6: 20%
 
 Dedicación
 -----------
