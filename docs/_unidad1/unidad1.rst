@@ -7,8 +7,8 @@ Para poder abordar con éxito este curso es importante que repases
 tus conocimientos de programación de sistemas embebidos y programación
 orientada a objetos. Adicionalmente, es importante identificar de una
 vez compañeros con los cuales puedas colaborar y establecer mecanismos
-de comunicación. Por tanto, en esta unidad te propondré un proyecto
-que te perita repasar y colaborar.
+de comunicación. Por tanto, en esta unidad te propondré unas actividades
+que te permitan repasar y colaborar con otros.
 
 Propósito de aprendizaje
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
