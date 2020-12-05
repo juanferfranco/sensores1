@@ -149,6 +149,6 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'sensores1', 'sensores1 Documentation',
-     author, 'sensores1', 'One line description of project.',
+     author, 'sensores1', 'Documentación del curso sensores y actuadores 1',
      'Miscellaneous'),
 ]
