@@ -77,8 +77,8 @@ material.
 Ejercicio 2: el puerto serial
 +++++++++++++++++++++++++++++++
 
-Observa este video corto que introducirá como funcionan las
-comunicaciones seriales entre un sistema embebidos y una
+Observa `este <https://www.youtube.com/embed/nm0EdjXEBGQ>`__ video corto que introducirá como
+funcionan las comunicaciones seriales entre un sistema embebidos y una
 plataforma de cómputo interactiva.
 
 .. raw:: html
