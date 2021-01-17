@@ -56,55 +56,152 @@ Capacidades humanas y competencias
 
 Estructura y metodología del curso
 -----------------------------------
-El curso está dividido en 6 unidades que se realizarán en 16
-semanas. Cada unidad tendrá asociadas unas actividades de aprendizaje
-que buscarán llevar al estudiante al nivel de desarrollo del criterio
-de competencia definido en la carta descriptiva del curso. Las actividades
-siguen un trayecto definido por fases así:
 
-* Fase 1: motivación. En esta fase se presentará la actividad de aprendizaje
-  de la unidad, su relación con las competencias del curso y la carrera, se
-  presentarán las acciones de aprendizaje, la rúbrica y la evidencia
-  correspondiente a la evaluación sumativa de la unidad.
-* Fase 2: diagnóstico-repaso. En esta fase se presentarán una serie de
-  preguntas y ejercicios que buscan la AUTOEVALUACIÓN de los conocimientos
-  previos necesarios para abordar la actividad de aprendizaje de la unidad.
-* Fase 3: fundamentación. Esta fase se entregará el material teórico-práctico
-  necesarios para abordar el RETO de la unidad. 
-* Fase 4: ejercicios y discusión. Esta fase está compuesta por una serie de
-  ejercicios preparatorios para el RETO de la unidad. Estos ejercicios se
-  abordarán de manera individual y colaborativa.
-* Fase 5: retroalimentación. Fase de trabajo colaborativo entre pares
-  para retroalimentar los ejercicios, realizar evaluación formativa
-  del proceso. Compartir estrategias y soluciones.
-* Fase 6: RETO. En esta fase se propone el RETO evaluativo de la unidad.
-* Fase 7: sustentación. Una vez realizado el RETO, la fase de sustentación
-  busca realizar un ejercicio metacognitivo y de síntesis. Mediante un video
-  el estudiante presenta su solución y la analiza.
-* Fase 8: retroalimentación. Esta fase presentará la solución del docente y
-  de algunos compañeros. También permitirá realizar acciones de mejora al
-  RETO realizado.
+El curso está divido en 4 unidades:
+
+#. Unidad 1: Software para sistemas embebidos
+#. Unidad 2: Protocolos ascii
+#. Unidad 3: Protocolos binarios
+#. Unidad 4: Plataformas de software interactivas de tiempo real
+
+Cada unidad estará constituida por tres fases:
+
+#. Fase 1: fundamentación. En esta fase estudiarás los conceptos teóricos más relevantes de
+   cada unidad. Así mismo complementarás con lecturas. En esta fase debes repasar 
+   los conceptos olvidados de los semestres anteriores.
+#. Fase 2: proyecto. En esta fase se realizarán uno o más proyecto.
+#. Fase 3: evaluación. En esta fase se discute el resultado de los proyectos de la unidad.
 
 Cronograma
 -----------
-.. raw:: html
 
-   <a href="https://docs.google.com/spreadsheets/d/1tA9ktVUOZrnCLJ92JmVgAscYVuMrLc5WQInV23Vt06g/edit?usp=sharing" target="_blank">Proyecto docente</a>
-   <br> </br>
+Te recomiendo que organices tu tiempo para hacer cada 4 semanas 
+una unidad del curso.
 
 Evaluación
 -----------
-6 evaluaciones sumativas de carácter acumulativo:
 
-* Unidad 1: 5%. Evaluación grupal.
-* Unidad 2: 15%. Evaluación individual.
-* Unidad 3: 20%. Evaluación individual.
-* Unidad 4: 20%. Evaluación individual.
-* Unidad 5: 20%. Evaluación individual.
-* Unidad 6: 20%. Evaluación individual.
+Cada unidad tiene un peso del 25% en la nota final. 
+
+La unidad solo se considera terminada cuando termines todos los ejercicios y
+los proyectos que están en ella al 100%. Por tanto, la nota de cada unidad, 
+una vez la termines, será 5.
+
+Puedes entregar cada unidad cuando quieras, pero considera lo siguiente:
+
+En la semana 8 haré un primer corte del 50% y reportaré al sistema
+las unidades terminadas. Ten presente que la evaluación se realiza
+mediante una entrevista con el profesor en la cual discutiremos los resultados
+de tu trabajo y recibirás retroalimentación personalizada. Para la semana 8
+deberías tener terminadas las unidades 1 y 2. Si no alcanzas, cuando las termines
+se actualizará tu nota.
+
+En la semana 17 se reportaré al sistema todas las unidades terminadas. ES MUY
+IMPORTANTE que tengas en cuenta que una unidad se considera terminada SI y SOLO
+si la completaste al 100% y realizaste el proceso de evaluación con el docente.
 
 Dedicación
 -----------
 
 Este curso es de 3 créditos repartidos en 2 horas de trabajo presencial mediado por TIC
 y 7 horas de trabajo autónomo.
+
+Actividades de cada unidad
+----------------------------
+
+Actividad 1: encuentros sincrónicos
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Fechas: miércoles a las 2 p.m.
+* Descripción: asesorías en tiempo real y evaluación.
+* Recursos: ingresa a `Discord <https://discord.gg/vC5RaagNcE>`__
+* Duración de la actividad: sesiones de 1:40. 
+* Forma de trabajo: individual-colaborativo/sincrónico
+
+Actividad 2: fundamentación
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Descripción: realiza los ejercicios, retos y preguntas
+  propuestas.
+* Recursos: trayecto de actividades en cada unidad.
+* Duración de la actividad: depende de ti.
+* Forma de trabajo: individual-colaborativo
+
+Actividad 3: proyectos y sustentación
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Descripción: realiza los proyectos, usa las herramientas
+  de control de versión y productividad y actualiza
+  tu portafolio.
+* Duración de la actividad: depende de ti.
+* Forma de trabajo: individual.
+
+Evidencias de evaluación
+-------------------------
+
+Código de honor
+^^^^^^^^^^^^^^^^
+
+Para realizar el trabajo de cada unidad se espera que hagas lo siguiente:
+
+* Colabora con tus compañeros cuando así se indique.
+* Trabaja de manera individual cuando la actividad así te lo
+  proponga.
+* No busques la solución a los ejercicios y proyectos porque DAÑARÍAS tu
+  proceso de aprendizaje. Recuerda, se trata de seguir un camino
+  y aprender en el recorrido.
+* ¿Entonces qué hacer si no me funciona algo? Te propongo que
+  experimentes, crea hipótesis, experimenta de nuevo, observa y concluye.
+* NO OLVIDES, este curso se trata de pensar y experimentar NO de
+  BUSCAR soluciones en Internet.
+
+Detalle de las evidencias  
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Vamos a utilizar dos herramientas para la presentación de evidencias, tanto
+para los ejercicios de fundamentación como para los proyectos.
+
+* GitHub
+* `Notion <https://www.notion.so>`__
+
+En GitHub mantendrás todo tu código bajo control de versión y
+debe reflejar un flujo de trabajo. Debes evidenciar el flujo
+de trabajo.
+
+En Notion vas a presentar la documentación de la fundamentación y 
+del proyecto o proyectos de cada unidad. El formato de tu documentación es 
+libre, pero deberás incluir al menos lo siguiente:
+
+* ¿De qué se trataba el proyecto? ¿Cuál era el problema a resolver?
+
+* Presenta tus resultados: muestra un video del proyecto funcionando.
+
+* Explica cómo resolviste el problema.
+
+* No olvides dejar un enlace a tu repositorio público en GitHub.
+
+* Tu repositorio público debe reflejar un PROCESO por tanto debes tener
+  commits muy frecuentes. Conserva la rama principal de tu repositorio
+  estable, es decir, cada que implementes características nuevas en tu
+  código crea una rama y luego realiza merges a la rama principal. No 
+  es necesario que borres las ramas que crees.
+
+¿Cómo inicio con Notion? Te dejo `aquí <https://www.youtube.com/watch?v=0iS_E9tN8nk>`__
+un enlace.
+
+Control de versión
+--------------------
+
+* Crea una cuenta en GitHub con tu correo institucional de la UPB. Si
+  tienes la cuenta, tanto mejor.
+* Explora `este <https://www.gitkraken.com/student-resources>`__ sitio y 
+  solicita, por medio de tu cuenta de GitHub, el paquete de herramientas
+  para estudiantes. Este proceso requiere aprobación, así que te recomiendo
+  que lo hagas YA.
+* Ingresa a `este <https://www.youtube.com/c/Gitkraken/playlists>`__ canal
+  de youtube y observa la lista de reproducción Learn Git with GitKraken.
+* Finalmente, observa el siguiente `video <https://www.youtube.com/watch?v=lYAHmthUO1M>`__
+  para que analices un posible flujo de trabajo típico con una herramienta de
+  control de versión y de productividad (puedes emplear notion para la creación
+  de tus boards de tareas)
+
