@@ -47,8 +47,8 @@ Temas
 * Manejo del puerto serial, medidas de tiempo y retardos
   utilizando técnicas de programación no bloqueantes.
 
-Trayecto de acciones, tiempos y formas de trabajo
----------------------------------------------------
+Trayecto de acciones
+-----------------------
 
 
 PROYECTO 1

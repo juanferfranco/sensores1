@@ -28,8 +28,8 @@ Temas
   protocolos binarios.
 
 
-Trayecto de acciones, tiempos y formas de trabajo
----------------------------------------------------
+Trayecto de acciones
+-----------------------
 
 
 Ejercicio 1

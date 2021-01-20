@@ -31,8 +31,8 @@ Temas
   puerto serial.
 * Protocolos de comunicación ASCII.
 
-Trayecto de acciones, tiempos y formas de trabajo
----------------------------------------------------
+Trayecto de acciones
+-----------------------
 
 Ejercicio 1
 ^^^^^^^^^^^^

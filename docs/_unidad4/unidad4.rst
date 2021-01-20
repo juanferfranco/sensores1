@@ -25,8 +25,8 @@ Temas
 * Repaso de conceptos de programación orientado a objetos: herencia,
   clases abstractas, manejo de memoria.
 
-Trayecto de acciones, tiempos y formas de trabajo
----------------------------------------------------
+Trayecto de acciones
+-----------------------
 
 Ejercicio 1
 ^^^^^^^^^^^^
