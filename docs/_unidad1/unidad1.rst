@@ -89,6 +89,11 @@ Ejercicio 2: explorando la carpeta de arduino
 
 * Descarga una versión .zip del IDE de Arduino.
 * Descomprime el archivo.
+* En la carpeta donde está el ejecutable de arduino crea 
+  la carpeta portable.
+* Si estás trabajando con el ESP32 debes instalar el soporte para esta plataforma 
+  en el IDE de arduino como indica `este <https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md>`__ 
+  sitio.
 * Abre la carpeta y explore la estructura de directorios
 * ¿Qué contiene la carpeta drivers? ¿Para qué sirve?
 * ¿Qué contiene la carpeta examples y cuál es la relación con los ejemplos del IDE de arduino.
@@ -103,7 +108,13 @@ Ejercicio 3: modificar el código fuente de arduino
 
 Tomando con referencia el ejercicio anterior:
 
-* Busca el archivo main.cpp.
+* Busca el archivo main.cpp. Si trabajas con un arduino uno, 
+  el archivo está en hardware-arduino-avr-cores-arduino. Si trabajas
+  con el ESP32 busca en la carpeta portable-packages-esp32-hardware... 
+  sigue hasta encontrar la carpeta cores.
+* GUARDA UNA COPIA DE ESTE ARCHIVO porque lo vamos a modificar 
+  pero luego debemos dejarlo como estaba para no dañar el código 
+  del framework de arduino.
 * Modifica este archivo de tal manera que antes y después de llamar
   la función loop se envíe por  el puerto serial el valor que devuelve
   la función millis().
