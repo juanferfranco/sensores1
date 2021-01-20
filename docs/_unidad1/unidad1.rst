@@ -1402,3 +1402,8 @@ La verificación será calculada desde el Byte 1 hasta el byte m.
 * Si pasado 1 segundo el controlador no recibe el 4A, entonces este
   deberá retransmitir el paquete a la AI. Este comportamiento solo 
   se detendrá una vez la AI envié el 4A.
+
+
+kjaslkdjlkajdsasdasdñlkasñdlkañlskdañlkdñlsakd
+asdlkjalskdjlkajsdlkajsdlkajsdlkjsadlkajsldkjasldkj
+lkjlkjasdlkajsdlkajsdlkajsdalj
