@@ -1414,5 +1414,3 @@ La verificación será calculada desde el Byte 1 hasta el byte m.
   deberá retransmitir el paquete a la AI. Este comportamiento solo 
   se detendrá una vez la AI envié el 4A.
 
-jlajsdflkjsañldkfjlksajdfñlkjasdf
-asdfjakshdfkashdfkjashfdlkjhasdkjlfhlasd
