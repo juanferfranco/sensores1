@@ -232,13 +232,16 @@ Analiza el siguiente ejemplo:
     void loop() {
       uint32_t currentMillis = millis();
     
-      if (currentMillis - previousMillis >= interval) {
+      if (currentMillis - previousMillis >= interval) 
+      {
         previousMillis = currentMillis;
         if (ledState == LOW) {
           ledState = HIGH;
         } else {
           ledState = LOW;
         }
+        digital(ledPin, ledState);     
+      }
     }
 
 Utilizando como referencia el código anterior crea un programa que
