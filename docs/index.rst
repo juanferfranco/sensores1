@@ -1,4 +1,4 @@
-Curso Sistemas Físicos Interactivos 1 2021-10
+Curso Sensores y Actuadores 1 2021-10
 =====================================================
 
 Docente diseñador del curso: Juan Fernando Franco Higuita
@@ -7,8 +7,7 @@ Nombre del docente moderador: Juan Fernando Franco Higuita
 
 Programa: Ingeniería en Diseño de Entretenimiento Digital
 
-Créditos y horas totales del curso: 2 créditos - 96 horas totales
-
+Créditos y horas totales del curso: 3 créditos - 144 horas totales
 
 .. toctree::
    :maxdepth: 1

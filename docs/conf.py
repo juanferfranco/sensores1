@@ -19,14 +19,14 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Sistemas Físicos Interactivos 1'
+project = 'Sensores y Actuadores 1'
 copyright = '2021, Juan Franco'
 author = 'Juan Franco'
 
 # The short X.Y version
 version = '2021.20.0'
 # The full version, including alpha/beta/rc tags
-release = 'beta'
+release = 'rc'
 
 # -- General configuration ---------------------------------------------------
 
@@ -100,7 +100,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Sistemas Físicos Interactivos 1'
+htmlhelp_basename = 'Sensores y actuadores 1'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -127,7 +127,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'sistemasFisicosInteractivos1.tex', 'Curso Sistemas Físicos Interactivos 1',
+    (master_doc, 'sensores1.tex', 'Curso Sensores y actuadores 1',
      'Juan Franco', 'manual'),
 ]
 
@@ -137,7 +137,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'sistemasFisicosInteractivos1', 'Curso Sistemas Físicos Interactivos 1',
+    (master_doc, 'sensores1', 'Curso Sensores y actuadores 1',
      [author], 1)
 ]
 
@@ -148,7 +148,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'sistemasFisicosInteractivos1', 'sistemasFisicosInteractivos1 Documentation',
-     author, 'sistemasFisicosInteractivos1', 'Documentación del curso Sistemas Físicos Interactivos 1',
+    (master_doc, 'sensores1', 'sensores1 Documentation',
+     author, 'sensores1', 'Documentación del curso Sensores y actuadores 1',
      'Miscellaneous'),
 ]

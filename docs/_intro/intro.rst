@@ -1,45 +1,58 @@
 INTRODUCCIÓN AL CURSO 
 =======================
 
+En la implementación de experiencias interactivas es necesario capturar
+información del mundo físico usando sensores; procesar dicha información
+con las reglas definidas en el diseño de la experiencia interactiva por
+medio de plataformas de software interactivas; y modificar el mundo físico
+usando actuadores. La correcta INTEGRACIÓN de los tres procesos anteriores
+es fundamental para el funcionamiento adecuado de la experiencia. Este curso
+buscará entonces que el estudiante entienda y use los fundamentos,
+herramientas y procesos mediante los cuales es posible INTEGRAR sensores,
+sistemas de cómputo y actuadores para la correcta construcción de experiencias
+interactivas. En el curso se aprenderá a modelar y programar el software de
+los controladores usando máquinas de estado; a comunicar los diferentes sistemas
+mediante protocolos de comunicación seriales de tipo binario, ASCII e híbridos;
+y las técnicas de programación concurrente en la plataforma de software para 
+integrar los datos de los sensores al contenido digital de la experiencia.
+
+Finalmente, para abordar este curso, es necesario que el estudiante tenga 
+las competencias de programación adquiridas en los cursos de fundamentos de 
+programación y programación y diseño orientada a objetos. Adicionalmente, 
+es deseable que tenga las competencias en sistemas embebidos desarrolladas 
+en taller 5.
+
+¿Para qué sirve este curso?
+-----------------------------
+
+Para aprender a integrar sistemas de cómputo con sensores y
+actuadores conectados a controladores mediante la utilización de puertos de
+comunicación serial.
+
 Descripción del curso
 ----------------------
 
-El objeto de este curso es aprender a integrar dispositivos periféricos a 
-sistemas de cómputo para la construcción de aplicaciones interactivas.
+El objetivo del curso es aprender a integrar sensores y actuadores
+a sistemas de cómputo para la producción de experiencias interactivas.
 
 Propósito del curso
 ---------------------
 
-El entendimiento y uso de los fundamentos, herramientas y procesos mediante los cuales es 
-posible integrar dispositivos periféricos a sistemas de cómputo con el 
-fin de lograr que una aplicación interactiva entienda y modifique su entorno físico en 
-base a unos requerimientos y metas de diseño.
+El entendimiento y la creación de sistemas que integren sensores,
+actuadores y sistemas de cómputo que permitan leer el entorno
+físico y también modificarlo permitiendo de esta manera el
+prototipado y la producción de experiencias interactivas.
 
-Competencias
+Capacidades humanas y competencias
 -------------------------------------
 
-#. Construye aplicaciones que posibilitan la interacción entre personas,
-   mediada por tecnologías digitales, utilizando lenguajes y
-   metodologías apropiadas según el contexto (Ingeniería de software).
-#. Materializa sistemas intermediados por el entretenimiento digital
+1. Materializa sistemas intermediados por el entretenimiento digital
    para resolver problemas de acuerdo con requerimientos condicionados
    por el contexto (Materialización).
 
-Criterios de competencia
--------------------------------------
-
-#. Aplico los conceptos necesarios para el correcto diseño, implementación, funcionamiento y 
-   diagnóstico del software en la producción de sistemas de entretenimiento digital utilizando los 
-   procedimientos y herramientas adecuadas según el contexto (para la competencia 1).
-#. Integro dispositivos de entrada, salida e interfaces mecánicas con sistemas de cómputo para la 
-   creación de sistemas intermediados por el entretenimiento digital (para la competencia 2).
-
-Carta descriptiva del curso
------------------------------
-
-En `este <https://drive.google.com/file/d/1RuKTTdtdDgD3W9p2v3OYsrI4IiEmhkZX/view?usp=sharing>`__ enlace 
-puedes descargar la carta descriptiva del curso.
-
+2. Construye aplicaciones que posibilitan la interacción entre personas,
+   mediada por tecnologías digitales, utilizando lenguajes y
+   metodologías apropiadas según el contexto (Ingeniería de software).
 
 Estructura y metodología del curso
 -----------------------------------
@@ -79,14 +92,14 @@ Evaluación
 Dedicación
 -----------
 
-Este curso es de 2 créditos y se ofrecerá en 2020-20 en modalidad proyecto. Por tanto, 
-tendremos encuentros sincrónicos semanales de 1 hora 40 minutos y 4 horas de trabajo autónomo.
+Este curso es de 3 créditos y se ofrecerá en 2021-20 en modalidad proyecto. Por tanto, 
+tendremos encuentros sincrónicos semanales de 1 hora 40 minutos y 7 horas de trabajo autónomo.
 
 Actividades de cada unidad
 ----------------------------
 
 Cada semana nos reuniremos para discutir los conceptos y resolver las inquietudes. Debes 
-dedicar 4 horas de trabajo autónomo para trabajar en las lecturas, ejercicios y en la evaluación 
+dedicar 7 horas de trabajo autónomo para trabajar en las lecturas, ejercicios y en la evaluación 
 de cada unidad.
 
 
@@ -117,7 +130,7 @@ Bitácora
 
 Vamos a utilizar dos herramientas para que documentes y organices tu trabajo:
 
-* GitHub
+* GitHub (obligatorio).
 * `Notion <https://www.notion.so>`__
 
 En GitHub mantendrás todo tu código bajo control de versión.
