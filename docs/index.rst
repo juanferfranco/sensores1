@@ -1,4 +1,4 @@
-Curso Sensores y Actuadores 1 2021-10
+Curso Sensores y Actuadores 1 2021-20
 =====================================================
 
 Docente diseñador del curso: Juan Fernando Franco Higuita
