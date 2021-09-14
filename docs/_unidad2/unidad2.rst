@@ -351,105 +351,43 @@ comunicaciones seriales.
         }
     }
 
-Ejercicio 4: comunicación entre hilos
+Ejercicio 4: RETO protocolos ASCII
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. note:: MATERIAL EN CONSTRUCCIÓN.
+Este reto está compuesto de dos partes: aplicación para el PC y aplicación para 
+el microcontrolador.
 
-    Vuelve a unos días a este ejercicio y presiona F5 para que sea cargado.
+Aplicación para el PC:
 
+* Debe tener dos hilos. Uno de los hilos se debe ejecutar a 10 frames por segundo imprimiendo 
+  el valor de un contador de frames. El otro hilo se debe encargar de las comunicaciones seriales.
 
-RETO 2: comunicación entre hilos
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Aplicación para el microcontrolador:
 
-.. note:: MATERIAL EN CONSTRUCCIÓN.
+La aplicación del microcontrolador debe tener dos tareas. La tarea uno debe encender 
+y apagar un LED a una frecuencia de 1Hz. La segunda tarea debe enviar al PC el estado 
+de un sensor digital, un sensor analógico y el estado de una de sus salidas.
 
-    Vuelve a unos días a este RETO y presiona F5 para que sea cargado.
+Protocolo de comunicación:
 
-Lectura 4: protocolos ASCII
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. note:: MATERIAL EN CONSTRUCCIÓN.
-
-    Vuelve a unos días a este aquí y presiona F5 para que sea cargado.
-
-Ejercicio 5: protocolos ASCII
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    
-.. note:: MATERIAL EN CONSTRUCCIÓN.
-
-    Vuelve a unos días a este aquí y presiona F5 para que sea cargado.
+* El PC SIEMPRE inicia la comunicación solicitando información al microcontrolador.
+* Desde el PC se enviarán tres posible comandos: ``"read"``, ``"outON"``, ``"outOFF"``.
+* Para enviar los comandos anteriores se presionará en el PC las teclas r,i,o respectivamente.
+* El framerate NO DEBE CAERSE al leer las teclas por tanto debes usar la técnica no 
+  bloqueante de lectura del teclado usada en el ejercicio anterior.
+* El microcontrolador enviará los siguientes mensajes de respuesta a cada comando:
+  
+  * Respuesta a ``"read"``: ``"valorSensorDigital,valorSensorAnalógico,estadoSalida"``
+  * Respuesta a ``"outON"`` y ``"outOFF"``: ``estadoSalida``. Es decir, al recibir el comando 
+    por parte del PC realiza la orden solicitada y devuelve el estado en el cual quedó la salida 
+    luego de la orden.
+* No olvides que DEBES terminar TODOS los mensajes con el carácter NEWLINE (``\n``) para que 
+  ambas partes sepan que el mensaje está completo.
 
 Proyecto evaluativo de la unidad 2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning:: REGRESA AQUÍ EN LA SEMANA DE EVALUACIÓN
 
-    No olvides presionar F5 para cargar de nuevo la paǵina con la evaluación 
+    No olvides presionar F5 para cargar de nuevo la página con la evaluación 
     en la semana correspondiente.
-
-..
-    Debes realizar un sistema interactivo compuesto por una aplicación en el PC y
-    un controlador al cual se conectan varios sensores y actuadores.
-
-    Para el controlador tienes:
-
-    * Dos sensores digitales
-    * Dos sensores analógicos: valores de 0 a 1023
-    * Dos actuadores digitales.
-    * Dos actuadores analógicos (pwm)
-
-    El controlador se conecta a un computador a través del puerto USB y se comunica 
-    utilizando la interfaz Serial.
-
-    Realiza un programa, para le controlador, que haga las siguientes tareas 
-    concurrentes:
-
-    * Recibir comandos a través de la interfaz Serial
-    * Enciende y apaga un LED a una frecuencia de 10 Hz
-    * Enciende y apaga un LED a una frecuencia de 5 Hz.
-
-    Los comandos recibidos por el puerto serial serán los siguientes:
-
-    * read D1. Este comando hace que se envíe al PC el valor del sensor digital 1. 
-      El controlador devuelve la cadena:  D1 estado. Donde estado puede ser 1 o 0.
-
-    * read D2: enviar al PC el valor del sensor digital 2.  
-      El controlador devuelve la cadena: D2 estado. Donde estado puede ser 1 o 0.
-
-    * read A1: enviar el PC el valor del sensor analógico 1.  
-      El controlador devuelve la cadena A1 valor. Donde valor está entre 0 y 1023.
-
-    * read A2: enviar el PC el valor del sensor analógico 2. 
-      El controlador devuelve la cadena A2 valor. Donde valor está entre 0 y 1023.
-
-    * write O1 estado: donde estado puede ser 1 o 0. 
-      Activa o desactiva la salida digital 1 
-
-    * write O2 estado: donde estado puede ser 1 o 0. 
-      Activa o desactiva la salida digital 2 
-
-    * write P1 valor: donde valor puede ser de 0 a 255. 
-      Escribir un valor de PWM igual a valor en el actuador analógico 1. 
-
-    * write P2 valor: donde valor puede ser de 0 a 255. 
-      Escribir un valor de PWM igual a valor en el actuador analógico 2.
-
-    La aplicación interactiva en el PC es tipo consola en C# y debe tener:
-
-    * Dos hilos.
-    * Un hilo debe imprimir cada 100 ms el valor de un contador.
-    * El otro hilo estará atento a los eventos del teclado producidos por el usuario.
-    * Asigne una tecla a cada comando que será enviado al controlador.
-    * Indicar si el controlador entendió o no entendió el comando, es decir,
-      mostrar el NACK o el ACK (abajo la explicación de esto)
-
-    .. note::
-
-      Para cualquiera de los comandos tipo write el controlador debe devolver los caraceres
-      ACK si reconoce el comando y NACK si no los reconoce. 
-
-      Debes decidir, dados los requisitos
-      de la aplicación, si requieres introducir caracteres de nueva línea y/o retorno de carro. 
-      TEN PRESENTE que LOS LEDs deben funcionar SIEMPRE a 5 Hz y 10 HZ como se declaró previamente, 
-      ese decir, su funcionamiento no puede ser interrumpido por las operaciones del puerto serial
