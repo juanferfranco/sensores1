@@ -301,6 +301,7 @@ comunicaciones seriales.
 
   El siguiente código muestra una posible solución al reto
 
+
 .. code-block:: csharp
 
     using System;
@@ -384,10 +385,194 @@ Protocolo de comunicación:
 * No olvides que DEBES terminar TODOS los mensajes con el carácter NEWLINE (``\n``) para que 
   ambas partes sepan que el mensaje está completo.
 
+.. warning:: ALERTA DE SPOILER
+
+  Te dejo aquí una posible solución al problema.
+
+El código del PC:
+
+.. code-block:: csharp
+
+    using System;
+    using System.IO.Ports;
+    using System.Threading;
+
+    namespace un2_reto_ej4_2021_20
+    {
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                int counter = 0;
+
+                Thread t = new Thread(serialCom);
+                t.Start();
+
+                while (true)
+                {
+                    Console.WriteLine(counter);
+                    counter = (counter + 1);
+                    Thread.Sleep(100);
+                }
+            }
+
+            static void serialCom()
+            {
+                SerialPort _serialPort = new SerialPort(); ;
+                _serialPort.PortName = "/dev/ttyUSB0";
+                _serialPort.BaudRate = 115200;
+                _serialPort.DtrEnable = true;
+                _serialPort.Open();
+
+                while (true)
+                {
+                    if (Console.KeyAvailable == true)
+                    {
+                        ConsoleKeyInfo key;
+                        key = Console.ReadKey(true);
+
+                        if (key.Key == ConsoleKey.R)
+                        {
+                            _serialPort.WriteLine("read");
+                            string message = _serialPort.ReadLine();
+                            Console.WriteLine(message);
+                            
+                        }else if (key.Key == ConsoleKey.I)
+                        {
+                            _serialPort.WriteLine("outON");
+                            string message = _serialPort.ReadLine();
+                            Console.WriteLine(message);
+                            
+                        }else if (key.Key == ConsoleKey.O)
+                        {
+                            _serialPort.WriteLine("outOFF");
+                            string message = _serialPort.ReadLine();
+                            Console.WriteLine(message);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+El código del microcontrolar:
+
+.. code-block:: cpp
+
+  #define DIGITAL_IN 19
+  #define ANALOG_IN 34
+  #define DIGITAL_OUT 5
+  #define LED 18
+
+  void setup() {
+
+    Serial.begin(115200);
+    pinMode(DIGITAL_IN, INPUT_PULLUP);
+    digitalWrite(DIGITAL_OUT, true);
+    pinMode(DIGITAL_OUT, OUTPUT);
+    
+    pinMode(LED, OUTPUT);
+    analogReadResolution(10);
+  }
+
+
+  void Task1() {
+    static uint32_t previousMillis = 0;
+    const uint32_t interval = 500;
+    static bool ledState = false;
+
+    uint32_t currentMillis = millis();
+
+    if ( (currentMillis - previousMillis) >= interval) {
+      previousMillis = currentMillis;
+
+      if (ledState == false) {
+        ledState = true;
+      } else {
+        ledState = false;
+      }
+      digitalWrite(LED, ledState);
+    }
+  }
+
+  void Task2() {
+    static bool outState = false;
+
+    
+    if (Serial.available() > 0) {
+      String dato = Serial.readStringUntil('\n');
+      if(dato == "read"){
+        Serial.print(digitalRead(DIGITAL_IN)); // se envía un 0 o un 1
+        Serial.print(',');
+        Serial.print(analogRead(ANALOG_IN));
+        Serial.print(',');
+        Serial.print(outState);
+        Serial.print('\n');
+              
+      }else if(dato == "outOFF"){
+        outState = false;
+        digitalWrite(DIGITAL_OUT,!outState);
+        Serial.print(outState);
+        Serial.print('\n');
+      }else if(dato == "outON"){
+        outState = true;
+        digitalWrite(DIGITAL_OUT,!outState);
+        Serial.print(outState);
+        Serial.print('\n');
+      }
+    }
+  }
+
+  void loop() {
+    Task1();
+    Task2();
+  }
+
 Proyecto evaluativo de la unidad 2
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
-.. warning:: REGRESA AQUÍ EN LA SEMANA DE EVALUACIÓN
+Esta evaluación la puedes realizar con otro compañero o de manera individual si no 
+encuentras con quién trabajar.
 
-    No olvides presionar F5 para cargar de nuevo la página con la evaluación 
-    en la semana correspondiente.
+¿Qué debes hacer?
+^^^^^^^^^^^^^^^^^^
+
+Para esta evaluación te voy a proponer que realices una modificación a una aplicación 
+interactiva desarrollada por Zachary Patten a la cual le hice unas pequeñas modificación.
+
+El reto consiste en controlar el personaje de la aplicación usando 4 sensores digitales.
+
+* En `este <https://github.com/juanferfranco/dotnet-console-games/tree/main/Projects/Snake>`__ 
+  enlace vas a encontrar dos archivos: Program.cs y arduinoKeyboard.ino que serán los archivos 
+  sobre los cuales realizarás tu trabajo, uno para el PC y el otro para el arduino respectivamente.
+* Vas a definir un protocolo ASCII con el cual ambas aplicaciones se comunicarán.
+* La aplicación del PC SIEMPRE deberá solicitar primero la información que necesite del microcontrolador.
+* El microcontrolador tendrá conectados los 4 sensores digitales (pulsadores), leerá su estado 
+  y reportará dicho estado a la aplicación del PC una vez este se lo solicite.
+
+Al final se verá algo como `esto <https://youtu.be/hR9nPCNaFIk>`__.
+
+¿Cómo vas a entregar la evaluación?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+La evaluación consta de dos partes:
+
+#. Vas a explicar con tus propias palabras cómo funciona el ejercicios 4: RETO protocolos ASCII. 
+   Debes grabar un video con una duración máxima de 5 minutos. 
+#. Vas a realizar el RETO propuesto. Debes grabar un video con una duración máxima de 5 minutos, donde 
+   expliques cómo solucionaste la aplicación del PC y la del microcontrolador. Finalmente, 
+   `muestra las aplicaciones funcionando <https://youtu.be/hR9nPCNaFIk>`__ 
+   de manera conjunta, es decir, en la misma pantalla, la aplicación interactiva y el accionamiento 
+   de los sensores. 
+
+Sube a `este <https://www.dropbox.com/request/MpzVuXWbHnH0ecJPWO11>`__ enlace un .pdf con 
+los nombres y ID de los miembros del equipo de trabajo y las dos URLs de los videos de youtube 
+solicitados. NO OLVIDES, POR FAVOR, 5 minutos MÁXIMO cada video. Recuerda que puedes trabajar 
+solo si así lo deseas
+
+Criterios de evaluación
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#. Parte 1: 2 unidades.
+#. Parte 2: 3 unidades.
