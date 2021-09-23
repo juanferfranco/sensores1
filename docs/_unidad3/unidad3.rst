@@ -17,10 +17,9 @@ protocolos seriales binarios.
 Temas 
 ************
 
-* Protocolos binarios
-* Diferencia entre los protocolos binarios y los protocolos ASCII
-* Técnicas de programación en el sistema embebidos para manejo
-  de protocolos binarios.
+* Protocolos binarios.
+* Diferencia entre los protocolos binarios y los protocolos ASCII.
+* Técnicas de programación basadas en máquinas de estado.
 
 Trayecto de acciones
 -----------------------
