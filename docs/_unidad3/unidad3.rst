@@ -598,7 +598,7 @@ El flujo de la aplicación será así:
 * Luego del igual presionará ENTER.
 * El PC enviará la información así: 8 bytes con los números + 1 byte con la operación + checksum.
 * El microcontrolador recibirá los datos, realizará la operación y devolverá 
-  el resultado así: 4 bytes con el resultado + 2 bytes de checksum.
+  el resultado así: 4 bytes con el resultado + checksum.
 * El checksum se calculará como en el ejercicio 5.
 * El PC mostrará el resultado luego del igual.
 * El flujo comenzará de nuevo.
