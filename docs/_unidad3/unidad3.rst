@@ -580,7 +580,7 @@ Evaluación de la Unidad 3
 Enunciado
 *************
 Te voy a proponer un RETO interesante para esta evaluación que podrás 
-resolver en equipo máximo de 3 de personas.
+resolver en un equipo máximo de 3 personas.
 
 Vas a realizar dos aplicaciones interactivas. Una para el PC tipo consola 
 y la otra para el microcontrolador. Las aplicaciones deben intercambiar 
