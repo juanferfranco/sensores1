@@ -631,6 +631,7 @@ Consideraciones para el video:
 
 #. El video DEBE TENER una duración ``MÁXIMA`` de 10 minutos.
 #. El video debe tener los siguientes capítulos en este mismo orden:
+   
    * Demostración de la solución.
    * Explicación del código con la implementación.
 
