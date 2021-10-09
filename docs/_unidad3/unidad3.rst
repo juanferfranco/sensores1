@@ -574,16 +574,13 @@ interactiva (tipo consola aún) que realicen el siguiente protocolo:
   que la aplicación interactiva tendrá que renunciar al paquete y pedir uno nuevo.
 
 Evaluación de la Unidad 3
-***************************
+----------------------------
 (Tiempo total estimado: 6 horas).
 
 Enunciado
 *************
 Te voy a proponer un RETO interesante para esta evaluación que podrás 
 resolver en equipo máximo de 3 de personas.
-
-Problema 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Vas a realizar dos aplicaciones interactivas. Una para el PC tipo consola 
 y la otra para el microcontrolador. Las aplicaciones deben intercambiar 
