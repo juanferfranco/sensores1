@@ -634,8 +634,8 @@ Consideraciones para el video:
    * Demostración de la solución.
    * Explicación del código con la implementación.
 
-* En `este video <https://youtu.be/6-0cERIVsFg>`__ puedes aprender a adicionar 
-  capítulos a tu video.
+#. En `este video <https://youtu.be/6-0cERIVsFg>`__ puedes aprender a adicionar 
+   capítulos a tu video.
 
 Criterios de evaluación
 ****************************
