@@ -21,7 +21,7 @@ Temas
 * Diferencia entre los protocolos binarios y los protocolos ASCII.
 * Técnicas de programación basadas en máquinas de estado.
 
-Trayecto de acciones
+Ejercicios y lecturas
 -----------------------
 
 Sesión 1: introducción a los protocolos binarios
